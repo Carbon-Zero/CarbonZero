@@ -153,7 +153,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "U.S. News & World Report Jan 28 2016 With His Absence, Trump Dominates Another Debate";
+        const char* pszTimestamp = "NBC News Sep 3 2018 Trump admin rejected report showing refugees did not pose major security threat";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -166,11 +166,13 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1536182255;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2402015;
+        genesis.nNonce = 561476;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
-        assert(genesis.hashMerkleRoot == uint256("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
+        printf("%s\n", hashGenesisBlock.ToString().c_str());
+		printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
+        assert(hashGenesisBlock == uint256("0x000008ad312789ad5a6266232e27231fb6b443ec4be84e5c2e000e69defdaba7"));
+        assert(genesis.hashMerkleRoot == uint256("0x6cf175a4188603b4ebcc0cce32ccf186e2e7a0dd146f534ce00ba630fe712399"));
 
         vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "carbonzero.seed.fuzzbawls.pw"));     // Primary DNS Seeder from Fuzzbawls
         vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "carbonzero.seed2.fuzzbawls.pw"));    // Secondary DNS Seeder from Fuzzbawls
@@ -269,10 +271,10 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1536182255;
-        genesis.nNonce = 2402015;
+        genesis.nNonce = 561476;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
+        assert(hashGenesisBlock == uint256("0x000008ad312789ad5a6266232e27231fb6b443ec4be84e5c2e000e69defdaba7"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -338,13 +340,13 @@ public:
         nTargetTimespan = 24 * 60 * 60; // CarbonZero: 1 day
         nTargetSpacing = 1 * 60;        // CarbonZero: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1454124731;
+        genesis.nTime = 1536182255;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 12345;
+        genesis.nNonce = 561476;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51216;
-        assert(hashGenesisBlock == uint256("0x4f023a2120d9127b21bbad01724fdb79b519f593f2a85b60d3d79160ec5f29df"));
+        assert(hashGenesisBlock == uint256("0x000008ad312789ad5a6266232e27231fb6b443ec4be84e5c2e000e69defdaba7"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
