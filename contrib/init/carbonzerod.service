@@ -1,0 +1,26 @@
+[Unit]
+Description=CarbonZero's distributed currency daemon
+After=network.target
+
+[Service]
+User=carbonzero
+Group=carbonzero
+
+Type=forking
+PIDFile=/var/lib/carbonzerod/carbonzerod.pid
+
+ExecStart=/usr/bin/carbonzerod -daemon -pid=/var/lib/carbonzerod/carbonzerod.pid \
+          -conf=/etc/carbonzero/carbonzero.conf -datadir=/var/lib/carbonzerod
+
+ExecStop=-/usr/bin/carbonzero-cli -conf=/etc/carbonzero/carbonzero.conf \
+         -datadir=/var/lib/carbonzerod stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

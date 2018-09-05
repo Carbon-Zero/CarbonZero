@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=CarbonZero
+Comment=CarbonZero P2P Cryptocurrency
+Comment[fr]=CarbonZero, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=CarbonZero, eşten eşe kriptografik sanal para birimi
+Exec=carbonzero-qt %u
+Terminal=false
+Type=Application
+Icon=carbonzero128
+MimeType=x-scheme-handler/carbonzero;
+Categories=Office;Finance;
