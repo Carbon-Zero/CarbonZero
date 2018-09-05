@@ -1809,10 +1809,9 @@ int64_t GetBlockValue(int nHeight)
 {
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
         if (nHeight < 200 && nHeight > 0)
-            return 250000 * COIN;
-    }
+            return 250000 * COIN;}
     {
-    int64_t nSubsidy = 0;
+    int64_t nSubsidy = 0;{
     if (nHeight == 0) {
         nSubsidy = 500000 * COIN;
     } else if (nHeight > 0 && nHeight <= 50000) {
@@ -1836,7 +1835,7 @@ int64_t GetBlockValue(int nHeight)
     } else
         nSubsidy = 1 * COIN;
     }
-    return nSubsidy;
+    return nSubsidy;}
 }
 
 CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
