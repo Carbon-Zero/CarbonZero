@@ -1,4 +1,4 @@
-// Copyright (c) 2010 Satoshi Nakamoto
+Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The CarbonZero developers
@@ -52,12 +52,12 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //    timestamp before)
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of(0, uint256("0x001"));
+    boost::assign::map_list_of(0, uint256("0x000008ad312789ad5a6266232e27231fb6b443ec4be84e5c2e000e69defdaba7"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1536182255, // * UNIX timestamp of last checkpoint block
-    2498834,    // * total number of transactions between genesis and last checkpoint
+    0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -179,7 +179,7 @@ public:
         vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
         vSeeds.push_back(CDNSSeedData("178.254.23.111", "178.254.23.111"));           // Single node address
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 29);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
@@ -189,7 +189,7 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
