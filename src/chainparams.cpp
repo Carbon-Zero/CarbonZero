@@ -129,18 +129,18 @@ public:
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 400;
-        nModifierUpdateBlock = 1;
-        nZerocoinStartHeight = 500;
-        nZerocoinStartTime = 1536182255; // October 17, 2017 4:30:00 AM
-        nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 1; //Trigger a recalculation of accumulators
+        nModifierUpdateBlock = 10000;
+        nZerocoinStartHeight = 5000000;
+        nZerocoinStartTime = 1636182255; // October 17, 2017 4:30:00 AM
+        nBlockEnforceSerialRange = 100000; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = 100000; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 1; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 1; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 1; //Start enforcing the invalid UTXO's
-        nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = 500; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
-        nEnforceNewSporkKey = 1536182255; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
-        nRejectOldSporkKey = 1536182255; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
+        nBlockEnforceInvalidUTXO = 100000; //Start enforcing the invalid UTXO's
+        nInvalidAmountFiltered = 1*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
+        nBlockZerocoinV2 = 50000; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
+        nEnforceNewSporkKey = 1636182255; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
+        nRejectOldSporkKey = 1636182255; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -189,7 +189,7 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = false;
+        fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
