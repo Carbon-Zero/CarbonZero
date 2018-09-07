@@ -128,7 +128,7 @@ public:
         nMaxMoneyOut = 28000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 400;
+        nLastPOWBlock = 2000;
         nModifierUpdateBlock = 10000;
         nZerocoinStartHeight = 5000000;
         nZerocoinStartTime = 1636182255; // October 17, 2017 4:30:00 AM
@@ -190,11 +190,11 @@ public:
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fMiningRequiresPeers = true;
-        fAllowMinDifficultyBlocks = false;
+        fAllowMinDifficultyBlocks = true;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = false;
+        fSkipProofOfWorkCheck = true;
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
