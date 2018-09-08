@@ -10,6 +10,7 @@
 #include "masternodeman.h"
 #include "protocol.h"
 #include "spork.h"
+#include "chainparams.h"
 
 //
 // Bootup the Masternode, look for a 10000 CarbonZero input and register on the network
