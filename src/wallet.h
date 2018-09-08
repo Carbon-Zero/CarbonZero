@@ -25,6 +25,7 @@
 #include "walletdb.h"
 #include "zcarbonwallet.h"
 #include "zcarbontracker.h"
+#include "chainparams.h"
 
 #include <algorithm>
 #include <map>
