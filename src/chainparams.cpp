@@ -125,6 +125,7 @@ public:
         nTargetSpacing = 1 * 60;  // CarbonZero: 1 minute
         nMaturity = 100;
         nMasternodeCountDrift = 20;
+	nMasternodeColleteralLimxDev = 1000; //Params().MasternodeColleteralLimxDev()
         nMaxMoneyOut = 28000000 * COIN;
 
         /** Height or Time Based Activations **/
