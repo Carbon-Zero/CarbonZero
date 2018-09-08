@@ -145,7 +145,7 @@ protected:
     int64_t nTargetSpacing;
     int nLastPOWBlock;
     int nMasternodeCountDrift;
-    int nMasternodeColleteralLimxDev
+    int nMasternodeColleteralLimxDev;
     int nMaturity;
     int nModifierUpdateBlock;
     CAmount nMaxMoneyOut;
