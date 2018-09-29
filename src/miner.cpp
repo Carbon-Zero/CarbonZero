@@ -453,7 +453,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         pblock->nNonce = 0;
 //begin neg array code
         //Calculate the accumulator checkpoint only if the previous cached checkpoint need to be updated
-	/* uint256 nCheckpoint;
+	 uint256 nCheckpoint;
         uint256 hashBlockLastAccumulated = chainActive[nHeight - (nHeight % 10) - 10]->GetBlockHash();
            if (nHeight >= pCheckpointCache.first || pCheckpointCache.second.first != hashBlockLastAccumulated) {
             //For the period before v2 activation, zcarbon will be disabled and previous block's checkpoint is all that will be needed
@@ -472,7 +472,6 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                 }
             }
         }
-*/
         pblock->nAccumulatorCheckpoint = pCheckpointCache.second.second;
 //end of neg array code	
         pblocktemplate->vTxSigOps[0] = GetLegacySigOpCount(pblock->vtx[0]);
