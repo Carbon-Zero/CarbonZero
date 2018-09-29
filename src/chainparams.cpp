@@ -123,7 +123,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // CarbonZero: 1 day
         nTargetSpacing = 1 * 60;  // CarbonZero: 1 minute
-        nMaturity = 100;
+        nMaturity = 20;
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 10000; //Params().MasternodeColleteralLimxDev()
         nMaxMoneyOut = 28000000 * COIN;
@@ -131,15 +131,15 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 1500;
         nModifierUpdateBlock = 751;
-        nZerocoinStartHeight = 751;
+        nZerocoinStartHeight = 25;
         nZerocoinStartTime = 1636182255; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = 100000; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 1000; //Trigger a recalculation of accumulators
+        nBlockRecalculateAccumulators = 100; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 9999999; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 700; //Last valid accumulator checkpoint
+        nBlockLastGoodCheckpoint = 0; //Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = 100000; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 1*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = 775; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
+        nBlockZerocoinV2 = 50; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         nEnforceNewSporkKey = 1636182255; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1736182255; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
 
