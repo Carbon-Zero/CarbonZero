@@ -129,14 +129,14 @@ public:
         nMaxMoneyOut = 28000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 750;
+        nLastPOWBlock = 1500;
         nModifierUpdateBlock = 751;
         nZerocoinStartHeight = 751;
         nZerocoinStartTime = 1636182255; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = 100000; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 100000; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 1; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 1; //Last valid accumulator checkpoint
+        nBlockRecalculateAccumulators = 1000; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = 9999999; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = 700; //Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = 100000; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 1*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = 775; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
@@ -174,11 +174,14 @@ public:
         assert(hashGenesisBlock == uint256("0x000008ad312789ad5a6266232e27231fb6b443ec4be84e5c2e000e69defdaba7"));
         assert(genesis.hashMerkleRoot == uint256("0x6cf175a4188603b4ebcc0cce32ccf186e2e7a0dd146f534ce00ba630fe712399"));
 
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "carbonzero.seed.fuzzbawls.pw"));     // Primary DNS Seeder from Fuzzbawls
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "carbonzero.seed2.fuzzbawls.pw"));    // Secondary DNS Seeder from Fuzzbawls
-        vSeeds.push_back(CDNSSeedData("coin-server.com", "coin-server.com"));         // Single node address
-        vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
-        vSeeds.push_back(CDNSSeedData("178.254.23.111", "178.254.23.111"));           // Single node address
+        
+	vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
+        vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
+	//vSeeds.push_back(CDNSSeedData(""));     // Primary DNS Seeder from Fuzzbawls
+        //vSeeds.push_back(CDNSSeedData(""));    // Secondary DNS Seeder from Fuzzbawls
+        //vSeeds.push_back(CDNSSeedData("coin-server.com", "coin-server.com"));         // Single node address
+        //vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
+        //vSeeds.push_back(CDNSSeedData("178.254.23.111", "178.254.23.111"));           // Single node address
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 28);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 81);
@@ -191,7 +194,7 @@ public:
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fMiningRequiresPeers = true;
-        fAllowMinDifficultyBlocks = true;
+        fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
