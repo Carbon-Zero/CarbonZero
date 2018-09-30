@@ -2082,23 +2082,11 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
             return 0;
     }
 
-    if (nHeight <= 43200) {
-        ret = blockValue / 5;
-    } else if (nHeight < 86400 && nHeight > 43200) {
-        ret = blockValue / (100 / 30);
-    } else if (nHeight < (Params().NetworkID() == CBaseChainParams::TESTNET ? 145000 : 151200) && nHeight >= 86400) {
-        ret = 50 * COIN;
-    } else if (nHeight <= Params().LAST_POW_BLOCK() && nHeight >= 151200) {
-        ret = blockValue / 2;
-    } else if (nHeight < Params().Zerocoin_Block_V2_Start()) {
-        return GetSeeSaw(blockValue, nMasternodeCount, nHeight);
-    } else {
-        //When zcarbon is staked, masternode only gets 2 CO2
-        ret = 3 * COIN;
-        if (isZCO2Stake)
-            ret = 2 * COIN;
-    }
-
+    if (nHeight <= Params().LAST_POW_BLOCK()) {
+        ret = 0;
+    } else if (nHeight > Params().LAST_POW_BLOCK()) {
+        ret = blockValue * 0.9;
+    } 
     return ret;
 }
 
