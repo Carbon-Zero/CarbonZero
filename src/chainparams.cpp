@@ -131,7 +131,7 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
         nModifierUpdateBlock = 751;
-        nZerocoinStartHeight = 25;
+        nZerocoinStartHeight = 2000;
         nZerocoinStartTime = 1536182255; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 1; //Trigger a recalculation of accumulators
@@ -198,7 +198,7 @@ public:
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = false;
+        fSkipProofOfWorkCheck = true;
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
