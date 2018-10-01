@@ -980,7 +980,7 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
     } else {
         return ((nSubsidy / 100) * 10) * 1440 * 30;
     }
-}
+
 
         
 
