@@ -956,7 +956,7 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
         nSubsidy = 5 * COIN;
     } else
         nSubsidy = 2 * COIN;
-    }
+    } }
 
     // Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
     
