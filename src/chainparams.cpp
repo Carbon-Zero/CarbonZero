@@ -126,7 +126,7 @@ public:
         nMaturity = 20;
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 1000; //Params().MasternodeColleteralLimxDev()
-        nMaxMoneyOut = 17350000 * COIN;
+        nMaxMoneyOut = 26635000 * COIN; // ~15 years
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 1000;
@@ -134,7 +134,7 @@ public:
         nZerocoinStartHeight = 160;
         nZerocoinStartTime = 1536182255; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 99999999; //Trigger a recalculation of accumulators
+        nBlockRecalculateAccumulators = 20; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 1; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 1; //Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = 1; //Start enforcing the invalid UTXO's
@@ -153,26 +153,26 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "NBC News Sep 3 2018 Trump admin rejected report showing refugees did not pose major security threat";
+        const char* pszTimestamp = "BBC World News / 1 October, 2018 / Indonesia tsunami deaths pass 1,300";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 250 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04c10e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04aad4a5d8333039e9bd059191c464240cfb2ccd967aa93c64cb7503d43cf4714458f8e48a6f3a677ed875b2b2ed7931c7e819beea6ebb0130722af98382b9cf42") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1536182255;
+        genesis.nTime = 1538507900;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 561476;
+        genesis.nNonce = 2476852;
 
         hashGenesisBlock = genesis.GetHash();
         // printf("%s\n", hashGenesisBlock.ToString().c_str());
 	// printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0x000008ad312789ad5a6266232e27231fb6b443ec4be84e5c2e000e69defdaba7"));
-        assert(genesis.hashMerkleRoot == uint256("0x6cf175a4188603b4ebcc0cce32ccf186e2e7a0dd146f534ce00ba630fe712399"));
+        assert(hashGenesisBlock == uint256("0x000006bc13cfd098d79933031db59b4c9ea31b0a5e8f6ac4e6e506f927a2b51e"));
+        assert(genesis.hashMerkleRoot == uint256("0xc3278e8c1238b8f1896ce21808aee82fde4362d3eb8ebb3ce938bc66e3b64106"));
 
         
 	vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
@@ -273,11 +273,11 @@ public:
         nRejectOldSporkKey = 1536182255; //!> Reject old spork key after Saturday, March 31, 2018 12:00:00 AM GMT
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1536182255;
-        genesis.nNonce = 561476;
+        genesis.nTime = 1538507900;
+        genesis.nNonce = 2476852;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000008ad312789ad5a6266232e27231fb6b443ec4be84e5c2e000e69defdaba7"));
+        assert(hashGenesisBlock == uint256("0x000006bc13cfd098d79933031db59b4c9ea31b0a5e8f6ac4e6e506f927a2b51e"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -343,13 +343,13 @@ public:
         nTargetTimespan = 24 * 60 * 60; // CarbonZero: 1 day
         nTargetSpacing = 1 * 60;        // CarbonZero: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1536182255;
+        genesis.nTime = 1538507900;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 12346;
+        genesis.nNonce = 23457;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51216;
-        assert(hashGenesisBlock == uint256("0x5bf28462100b8e8cb93f1d56dd25469f985e8eb18abe792d98acac97e3c1f4c2"));
+        assert(hashGenesisBlock == uint256("0x5131b539a0e1a84a263e9698640bd37c18ae49f14d8bb1c82345c45b3cf7bdee"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
