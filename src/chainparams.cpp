@@ -345,7 +345,7 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1538507900;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 23457;
+        genesis.nNonce = 234567;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51216;
