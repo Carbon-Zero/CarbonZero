@@ -123,10 +123,10 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // CarbonZero: 1 day
         nTargetSpacing = 1 * 60;  // CarbonZero: 1 minute
-        nMaturity = 20;
+        nMaturity = 100;
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 1000; //Params().MasternodeColleteralLimxDev()
-        nMaxMoneyOut = 26635000 * COIN; // ~15 years
+        nMaxMoneyOut = 23975000 * COIN; // ~19 years
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 1000;
@@ -164,24 +164,25 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1538507900;
+        genesis.nTime = 1538524961;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2476852;
+        genesis.nNonce = 1349137;
 
         hashGenesisBlock = genesis.GetHash();
         // printf("%s\n", hashGenesisBlock.ToString().c_str());
 	// printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0x000006bc13cfd098d79933031db59b4c9ea31b0a5e8f6ac4e6e506f927a2b51e"));
+        assert(hashGenesisBlock == uint256("0x00000483c654b9533b0368aa4ab89256cc44c4155243c1526d08e0e78baa7777"));
         assert(genesis.hashMerkleRoot == uint256("0xc3278e8c1238b8f1896ce21808aee82fde4362d3eb8ebb3ce938bc66e3b64106"));
 
         
-	vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
-        vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
+	//vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
+        //vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
 	//vSeeds.push_back(CDNSSeedData(""));     // Primary DNS Seeder from Fuzzbawls
         //vSeeds.push_back(CDNSSeedData(""));    // Secondary DNS Seeder from Fuzzbawls
         //vSeeds.push_back(CDNSSeedData("coin-server.com", "coin-server.com"));         // Single node address
         //vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
-        //vSeeds.push_back(CDNSSeedData("178.254.23.111", "178.254.23.111"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("13.58.16.18", "13.58.16.18"));           // Single node address
+	vSeeds.push_back(CDNSSeedData("18.223.253.176", "18.223.253.176"));           // Single node address
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 28);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 81);
@@ -273,11 +274,11 @@ public:
         nRejectOldSporkKey = 1536182255; //!> Reject old spork key after Saturday, March 31, 2018 12:00:00 AM GMT
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1538507900;
-        genesis.nNonce = 2476852;
+        genesis.nTime = 1538524961;
+        genesis.nNonce = 1349137;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000006bc13cfd098d79933031db59b4c9ea31b0a5e8f6ac4e6e506f927a2b51e"));
+        assert(hashGenesisBlock == uint256("0x00000483c654b9533b0368aa4ab89256cc44c4155243c1526d08e0e78baa7777"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -343,13 +344,13 @@ public:
         nTargetTimespan = 24 * 60 * 60; // CarbonZero: 1 day
         nTargetSpacing = 1 * 60;        // CarbonZero: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1538507900;
+        genesis.nTime = 1538524961;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 234567;
+        genesis.nNonce = 234568;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51216;
-        assert(hashGenesisBlock == uint256("0x5131b539a0e1a84a263e9698640bd37c18ae49f14d8bb1c82345c45b3cf7bdee"));
+        assert(hashGenesisBlock == uint256("0x1e082746d6ef095f7e2fa642443befb49009fb6c0eb045f8969e2943ae84e619"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
