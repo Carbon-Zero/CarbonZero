@@ -11,7 +11,7 @@
 #include "accumulatormap.h"
 #include "addrman.h"
 #include "alert.h"
-#include "blocksignature.h"
+#include "blocksignature.h"nStakeMinAgeF
 #include "chainparams.h"
 #include "checkpoints.h"
 #include "checkqueue.h"
@@ -36,7 +36,7 @@
 #include "zcarbonchain.h"
 
 #include "primitives/zerocoin.h"
-#include "libzerocoin/Denominations.h"
+#include "libzerocoin/Denoations.h"
 #include "invalid.h"
 
 #include <sstream>
@@ -80,7 +80,7 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 60 * 60;
+unsigned int nStakeMinAge = 60 * 60 * 12;
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in upiv) are considered zero fee (for relaying and mining)
