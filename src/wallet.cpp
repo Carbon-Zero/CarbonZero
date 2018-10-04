@@ -1960,7 +1960,7 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
                     if (IsCollateralAmount(pcoin->vout[i].nValue)) continue; // do not use collateral amounts
                     found = !IsDenominatedAmount(pcoin->vout[i].nValue);
                     if (found && fMasterNode) found = pcoin->vout[i].nValue != Params().MasternodeColleteralLimxDev() * COIN; // do not use Hot MN funds
-                } else if (nCoinType == ONLY10000) {
+                } else if (nCoinType == ONLY_10000) {
                     found = pcoin->vout[i].nValue == Params().MasternodeColleteralLimxDev() * COIN;
                 } else {
                     found = true;
@@ -1984,7 +1984,7 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
                 if (mine == ISMINE_WATCH_ONLY && nWatchonlyConfig == 1)
                     continue;
 
-                if (IsLockedCoin((*it).first, i) && nCoinType != ONLY10000)
+                if (IsLockedCoin((*it).first, i) && nCoinType != ONLY_10000)
                     continue;
                 if (pcoin->vout[i].nValue <= 0 && !fIncludeZeroValue)
                     continue;
