@@ -125,7 +125,7 @@ public:
         nTargetSpacing = 1 * 60;  // CarbonZero: 1 minute
         nMaturity = 100;
         nMasternodeCountDrift = 20;
-	nMasternodeColleteralLimxDev = 1000; //Params().MasternodeColleteralLimxDev()
+	nMasternodeColleteralLimxDev = 10000; //Params().MasternodeColleteralLimxDev()
         nMaxMoneyOut = 10225000 * COIN; // ~10 years
 
         /** Height or Time Based Activations **/
@@ -194,8 +194,8 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = false;
-        fAllowMinDifficultyBlocks = false;
+        fMiningRequiresPeers = true;
+        fAllowMinDifficultyBlocks = true;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
