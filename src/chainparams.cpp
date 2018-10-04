@@ -123,7 +123,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // CarbonZero: 1 day
         nTargetSpacing = 1 * 60;  // CarbonZero: 1 minute
-        nMaturity = 10
+        nMaturity = 10;
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 1000; //Params().MasternodeColleteralLimxDev()
         nMaxMoneyOut = 10225000 * COIN; // ~10 years
