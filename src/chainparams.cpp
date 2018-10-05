@@ -156,7 +156,7 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1538719200; //October 5, 2018 @ 6:00:00 GMT
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 1349137;
+        genesis.nNonce = 2110968;
 
         hashGenesisBlock = genesis.GetHash();
         // printf("%s\n", hashGenesisBlock.ToString().c_str());
