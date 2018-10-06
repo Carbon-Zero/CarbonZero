@@ -30,6 +30,7 @@ cd ./CarbonZero/src
 
 ./autogen.sh
 ./configure
+
 make
 
 Once completed, you can edit the carbonzero.conf file to include the necessary configuration
