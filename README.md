@@ -39,3 +39,7 @@ To start, go back to the /home/CarbonZero/src directory and type
 
 More detailed instructions and human assistance can be found at our Discord Channel.
 You also have the option of using our one-click install script coming shortly.
+
+For the emission schedule and other statistics, please see the following document https://1drv.ms/x/s!Ak29tYPgxTFlhLsgwyhoSImOp2OMCw
+
+You can also find this information in a simplified format in our Discord.
