@@ -126,7 +126,7 @@ public:
         nMaturity = 60; // ~1 hour for mined/coinbase coins
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 1000; // Params().MasternodeColleteralLimxDev(). Added so collateral can be changed from one place
-        nMaxMoneyOut = 10225000 * COIN; // ~10 years with 3,400,000 in the ~ first 3 years
+        nMaxMoneyOut = 10225000 * COIN; // ~10 years / only 3,400,000 in the ~ first 3 years
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 1000;
