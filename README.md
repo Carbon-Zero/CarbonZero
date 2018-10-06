@@ -24,4 +24,18 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev
 sudo apt-get install libzmq3-dev
 sudo apt-get install libminiupnpc-dev
 
+git clone https://github.com/Carbon-Zero/CarbonZero.git
 
+cd ./CarbonZero/src
+
+./autogen.sh
+./configure
+make
+
+Once completed, you can edit the carbonzero.conf file to include the necessary configuration
+
+To start, go back to the /home/CarbonZero/src directory and type
+./carbonzerod
+
+More detailed instructions and human assistance can be found at our Discord Channel.
+You also have the option of using our one-click install script coming shortly.
