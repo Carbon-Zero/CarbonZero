@@ -57,9 +57,9 @@ public:
       @note Source: https://en.bitcoin.it/wiki/Units . Please add only sensible ones
      */
     enum Unit {
-        CO2,
-        mCO2,
-        uCO2
+        BTCZ,
+        mBTCZ,
+        uBTCZ
     };
 
     enum SeparatorStyle {

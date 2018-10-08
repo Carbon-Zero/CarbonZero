@@ -176,16 +176,16 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CO2s from being stolen by malware infecting your computer.</source>
-        <translation>CarbonZero zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw CO2's kunnen stelen.</translation>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BTCZs from being stolen by malware infecting your computer.</source>
+        <translation>CarbonZero zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw BTCZ's kunnen stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CO2&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW CO2 VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCZ&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW BTCZ VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1681,8 +1681,8 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Adres / Bedrag:</translation>
     </message>
     <message>
-        <source>Add destinations to send CO2 to</source>
-        <translation>Voeg bestemmingen toe om CO2 naar te verzenden</translation>
+        <source>Add destinations to send BTCZ to</source>
+        <translation>Voeg bestemmingen toe om BTCZ naar te verzenden</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1780,32 +1780,32 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Selecteer de privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CO2</source>
-        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 10000 CO2</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 BTCZ</source>
+        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 10000 BTCZ</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CO2</source>
-        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 10000 CO2</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 BTCZ</source>
+        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 10000 BTCZ</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Gebruik 16 aparte masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CO2 to anonymize 10000 CO2</source>
-        <translation>Deze optie is het snelst en kost ongeveer ~0,025 CO2 om 10000 CO2 te anonimiseren</translation>
+        <source>This option is the quickest and will cost about ~0.025 BTCZ to anonymize 10000 BTCZ</source>
+        <translation>Deze optie is het snelst en kost ongeveer ~0,025 BTCZ om 10000 BTCZ te anonimiseren</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CO2 to anonymize 10000 CO2</source>
-        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 CO2 om 10000 CO2 te anonimiseren</translation>
+        <source>This option is moderately fast and will cost about 0.05 BTCZ to anonymize 10000 BTCZ</source>
+        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 BTCZ om 10000 BTCZ te anonimiseren</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Dit is de langzaamste en veiligste optie. Het gebruik van maximale anonimiteit kost</translation>
     </message>
     <message>
-        <source>0.1 CO2 per 10000 CO2 you anonymize.</source>
-        <translation>je anonimiseert 0,1 CO2 per 10000 CO2.</translation>
+        <source>0.1 BTCZ per 10000 BTCZ you anonymize.</source>
+        <translation>je anonimiseert 0,1 BTCZ per 10000 BTCZ.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1948,24 +1948,24 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Map poort gebruikt &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of CO2 units to zcarbon</source>
-        <translation>Schakel automatisch slaan van CO2-eenheden in op zcarbon</translation>
+        <source>Enable automatic minting of BTCZ units to zcarbon</source>
+        <translation>Schakel automatisch slaan van BTCZ-eenheden in op zcarbon</translation>
     </message>
     <message>
         <source>Enable zcarbon Automint</source>
         <translation>Schakel zcarbon Automint in</translation>
     </message>
     <message>
-        <source>Percentage of incoming CO2 which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende CO2 die automatisch wordt omgezet naar zcarbon via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming BTCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende BTCZ die automatisch wordt omgezet naar zcarbon via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zcarbon</source>
         <translation>Percentage autominted zcarbon</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CO2 for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg CO2 voor deze denominatie beschikbaar is</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BTCZ for this denomination is available</source>
+        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg BTCZ voor deze denominatie beschikbaar is</translation>
     </message>
     <message>
         <source>Preferred Automint zcarbon Denomination</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Totaal saldo, inclusief alle niet-beschikbare munten.</translation>
     </message>
     <message>
-        <source>CO2 Balance</source>
-        <translation>CO2 Saldi</translation>
+        <source>BTCZ Balance</source>
+        <translation>BTCZ Saldi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2219,8 +2219,8 @@ Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat he
         <translation>Uitgeefbaar:</translation>
     </message>
     <message>
-        <source>Locked CO2 or Masternode collaterals. These are excluded from zcarbon minting.</source>
-        <translation>Vergrendelde CO2 of Masternode onderpanden. Deze zijn uitgesloten van de zcarbon muntage.</translation>
+        <source>Locked BTCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
+        <translation>Vergrendelde BTCZ of Masternode onderpanden. Deze zijn uitgesloten van de zcarbon muntage.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2402,8 +2402,8 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Beschikbaar voor minting:</translation>
     </message>
     <message>
-        <source>0.000 000 00 CO2</source>
-        <translation>0.000 000 00 CO2</translation>
+        <source>0.000 000 00 BTCZ</source>
+        <translation>0.000 000 00 BTCZ</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2443,7 +2443,7 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
     </message>
     <message>
         <source>Enter an amount of Piv to convert to zcarbon</source>
-        <translation>Vul het aantal CO2 in om te converteren naar zcarbon</translation>
+        <translation>Vul het aantal BTCZ in om te converteren naar zcarbon</translation>
     </message>
     <message>
         <source>zcarbon Control</source>
@@ -2988,7 +2988,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of CO2 to convert to zcarbon</comment>
+        <comment>Enter an amount of BTCZ to convert to zcarbon</comment>
         <translation><numerusform>PrivacyDialoog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3749,8 +3749,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>UTXO grootte:</translation>
     </message>
     <message>
-        <source>0 CO2</source>
-        <translation>0 CO2</translation>
+        <source>0 BTCZ</source>
+        <translation>0 BTCZ</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3805,12 +3805,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Munten automatisch geselecteerd</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCO2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCO2s in fee,&lt;br /&gt;while "at least" pays 1000 uCO2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uCO2s en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uCO2's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uCO2's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uBTCZs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uBTCZ's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uBTCZ's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCO2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCO2s in fee,&lt;br /&gt;while "total at least" pays 1000 uCO2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uCO2s en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uCO2's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uCO2's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "total at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uBTCZs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uBTCZ's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uBTCZ's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CarbonZero transactions than the network can process.</source>
@@ -3861,8 +3861,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Voeg &amp;ontvanger toe</translation>
     </message>
     <message>
-        <source>Anonymized CO2</source>
-        <translation>Geanonimiseerde CO2</translation>
+        <source>Anonymized BTCZ</source>
+        <translation>Geanonimiseerde BTCZ</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4525,8 +4525,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Verkregen via verduistering</translation>
     </message>
     <message>
-        <source>CO2 Stake</source>
-        <translation>CO2 Stake</translation>
+        <source>BTCZ Stake</source>
+        <translation>BTCZ Stake</translation>
     </message>
     <message>
         <source>zcarbon Stake</source>
@@ -4549,24 +4549,24 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Verduistering creëert denominaties</translation>
     </message>
     <message>
-        <source>Converted CO2 to zcarbon</source>
-        <translation>Geconverteerde CO2 naar zcarbon</translation>
+        <source>Converted BTCZ to zcarbon</source>
+        <translation>Geconverteerde BTCZ naar zcarbon</translation>
     </message>
     <message>
         <source>Spent zcarbon</source>
         <translation>Bestede zcarbon</translation>
     </message>
     <message>
-        <source>Received CO2 from zcarbon</source>
-        <translation>Ontvangen CO2 van zcarbon</translation>
+        <source>Received BTCZ from zcarbon</source>
+        <translation>Ontvangen BTCZ van zcarbon</translation>
     </message>
     <message>
         <source>Minted Change as zcarbon from zcarbon Spend</source>
         <translation>Gemint wisselgeld als zcarbon van bestede zcarbon</translation>
     </message>
     <message>
-        <source>Converted zcarbon to CO2</source>
-        <translation>Geconverteerde zcarbon naar CO2</translation>
+        <source>Converted zcarbon to BTCZ</source>
+        <translation>Geconverteerde zcarbon naar BTCZ</translation>
     </message>
     <message>
         <source>Anonymous (zcarbon Transaction)</source>
@@ -4784,8 +4784,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Exporteren succesvol</translation>
     </message>
     <message>
-        <source>Received CO2 from zcarbon</source>
-        <translation>Ontvangen CO2 van zcarbon</translation>
+        <source>Received BTCZ from zcarbon</source>
+        <translation>Ontvangen BTCZ van zcarbon</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zcarbon</source>
@@ -4825,8 +4825,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Verzend Munten</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CO2.</source>
-        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 CO2.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BTCZ.</source>
+        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 BTCZ.</translation>
     </message>
 </context>
 <context>
@@ -4942,8 +4942,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zcarbon (0-1, standaard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for CO2 inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor CO2 inputs (0-1, standaard: %u)</translation>
+        <source>Enable or disable staking functionality for BTCZ inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor BTCZ inputs (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zcarbon inputs (0-1, default: %u)</source>
@@ -4982,12 +4982,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Uitvoeren commando wanneer het beste blok verandert (%s in cmd is vervangen door block hash)</translation>
     </message>
     <message>
-        <source>Fees (in CO2/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Kosten (in CO2/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
+        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Kosten (in BTCZ/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CO2/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Kosten (in CO2/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
+        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Kosten (in BTCZ/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5094,12 +5094,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Kan niet genoeg verduistering gedenomineerde fondsen voor deze transactie vinden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CO2.</source>
-        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 CO2.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BTCZ.</source>
+        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 BTCZ.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CO2.</source>
-        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 CO2.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BTCZ.</source>
+        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 BTCZ.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5410,8 +5410,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Mislukt om block te lezen</translation>
     </message>
     <message>
-        <source>Fee (in CO2/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in CO2/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
+        <source>Fee (in BTCZ/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in BTCZ/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5542,8 +5542,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Percentage automatisch geminte Zerocoin (10-100, standaard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the CO2 and zcarbon money supply statistics</source>
-        <translation>Indexeer de CO2- en zcarbon-geldvoorraadstatistieken opnieuw</translation>
+        <source>Reindex the BTCZ and zcarbon money supply statistics</source>
+        <translation>Indexeer de BTCZ- en zcarbon-geldvoorraadstatistieken opnieuw</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>

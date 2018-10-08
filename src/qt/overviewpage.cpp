@@ -36,7 +36,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::CO2)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::BTCZ)
     {
     }
 
@@ -148,7 +148,7 @@ OverviewPage::~OverviewPage()
     delete ui;
 }
 
-void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sCO2Percentage, QString& szcarbonPercentage)
+void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sBTCZPercentage, QString& szcarbonPercentage)
 {
     int nPrecision = 2;
     double dzPercentage = 0.0;
@@ -168,7 +168,7 @@ void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBala
     double dPercentage = 100.0 - dzPercentage;
 
     szcarbonPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
-    sCO2Percentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
+    sBTCZPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
 
 }
 
@@ -193,12 +193,12 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
 
-    // CO2 Balance
+    // BTCZ Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount pivAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
 
-    // CO2 Watch-Only Balance
+    // BTCZ Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
     CAmount nAvailableWatchBalance = watchOnlyBalance - watchImmatureBalance - nWatchOnlyLockedBalance;
 
@@ -213,7 +213,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount availableTotalBalance = pivAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // CO2 labels
+    // BTCZ labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, pivAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -238,7 +238,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
 
     // Percentage labels
-    ui->labelCO2Percent->setText(sPercentage);
+    ui->labelBTCZPercent->setText(sPercentage);
     ui->labelzcarbonPercent->setText(szPercentage);
 
     // Adjust bubble-help according to AutoMint settings
@@ -263,33 +263,33 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     bool showWatchOnly = nTotalWatchBalance != 0;
 
-    // CO2 Available
-    bool showCO2Available = settingShowAllBalances || pivAvailableBalance != nTotalBalance;
-    bool showWatchOnlyCO2Available = showCO2Available || nAvailableWatchBalance != nTotalWatchBalance;
-    ui->labelBalanceText->setVisible(showCO2Available || showWatchOnlyCO2Available);
-    ui->labelBalance->setVisible(showCO2Available || showWatchOnlyCO2Available);
-    ui->labelWatchAvailable->setVisible(showWatchOnlyCO2Available && showWatchOnly);
+    // BTCZ Available
+    bool showBTCZAvailable = settingShowAllBalances || pivAvailableBalance != nTotalBalance;
+    bool showWatchOnlyBTCZAvailable = showBTCZAvailable || nAvailableWatchBalance != nTotalWatchBalance;
+    ui->labelBalanceText->setVisible(showBTCZAvailable || showWatchOnlyBTCZAvailable);
+    ui->labelBalance->setVisible(showBTCZAvailable || showWatchOnlyBTCZAvailable);
+    ui->labelWatchAvailable->setVisible(showWatchOnlyBTCZAvailable && showWatchOnly);
 
-    // CO2 Pending
-    bool showCO2Pending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlyCO2Pending = showCO2Pending || watchUnconfBalance != 0;
-    ui->labelPendingText->setVisible(showCO2Pending || showWatchOnlyCO2Pending);
-    ui->labelUnconfirmed->setVisible(showCO2Pending || showWatchOnlyCO2Pending);
-    ui->labelWatchPending->setVisible(showWatchOnlyCO2Pending && showWatchOnly);
+    // BTCZ Pending
+    bool showBTCZPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlyBTCZPending = showBTCZPending || watchUnconfBalance != 0;
+    ui->labelPendingText->setVisible(showBTCZPending || showWatchOnlyBTCZPending);
+    ui->labelUnconfirmed->setVisible(showBTCZPending || showWatchOnlyBTCZPending);
+    ui->labelWatchPending->setVisible(showWatchOnlyBTCZPending && showWatchOnly);
 
-    // CO2 Immature
-    bool showCO2Immature = settingShowAllBalances || immatureBalance != 0;
-    bool showWatchOnlyImmature = showCO2Immature || watchImmatureBalance != 0;
-    ui->labelImmatureText->setVisible(showCO2Immature || showWatchOnlyImmature);
-    ui->labelImmature->setVisible(showCO2Immature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
+    // BTCZ Immature
+    bool showBTCZImmature = settingShowAllBalances || immatureBalance != 0;
+    bool showWatchOnlyImmature = showBTCZImmature || watchImmatureBalance != 0;
+    ui->labelImmatureText->setVisible(showBTCZImmature || showWatchOnlyImmature);
+    ui->labelImmature->setVisible(showBTCZImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelWatchImmature->setVisible(showWatchOnlyImmature && showWatchOnly); // show watch-only immature balance
 
-    // CO2 Locked
-    bool showCO2Locked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlyCO2Locked = showCO2Locked || nWatchOnlyLockedBalance != 0;
-    ui->labelLockedBalanceText->setVisible(showCO2Locked || showWatchOnlyCO2Locked);
-    ui->labelLockedBalance->setVisible(showCO2Locked || showWatchOnlyCO2Locked);
-    ui->labelWatchLocked->setVisible(showWatchOnlyCO2Locked && showWatchOnly);
+    // BTCZ Locked
+    bool showBTCZLocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlyBTCZLocked = showBTCZLocked || nWatchOnlyLockedBalance != 0;
+    ui->labelLockedBalanceText->setVisible(showBTCZLocked || showWatchOnlyBTCZLocked);
+    ui->labelLockedBalance->setVisible(showBTCZLocked || showWatchOnlyBTCZLocked);
+    ui->labelWatchLocked->setVisible(showWatchOnlyBTCZLocked && showWatchOnly);
 
     // zcarbon
     bool showzcarbonAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
@@ -304,7 +304,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     // Percent split
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
-    ui->labelCO2Percent->setVisible(showPercentages);
+    ui->labelBTCZPercent->setVisible(showPercentages);
     ui->labelzcarbonPercent->setVisible(showPercentages);
 
     static int cachedTxLocks = 0;
@@ -376,7 +376,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("CO2")
+    // update the display unit, to not use the default ("BTCZ")
     updateDisplayUnit();
 }
 

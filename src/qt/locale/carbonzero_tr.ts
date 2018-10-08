@@ -176,15 +176,15 @@
         <translation>cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CO2s from being stolen by malware infecting your computer.</source>
-        <translation>CarbonZero şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, CO2'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BTCZs from being stolen by malware infecting your computer.</source>
+        <translation>CarbonZero şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, BTCZ'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CO2&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCZ&lt;/b&gt;!</source>
         <translation>Dikkat! Eğer cüzdanınızı şifrelerseniz ve şifrenizi unutursanız &lt;b&gt;Tüm Pıvlerinizi kaybedersiniz&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -1644,8 +1644,8 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Address /miktar:</translation>
     </message>
     <message>
-        <source>Add destinations to send CO2 to</source>
-        <translation>CO2 göndermek için varış yerleri ekleyin</translation>
+        <source>Add destinations to send BTCZ to</source>
+        <translation>BTCZ göndermek için varış yerleri ekleyin</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1743,32 +1743,32 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Lütfen bir gizlilik düzeyi seçin.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CO2</source>
-        <translation>10000 CO2'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 BTCZ</source>
+        <translation>10000 BTCZ'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CO2</source>
-        <translation>10000 CO2'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 BTCZ</source>
+        <translation>10000 BTCZ'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 ayrı matternod kullan</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CO2 to anonymize 10000 CO2</source>
-        <translation>Bu seçenek en hızlıdır ve 10000 CO2'yi anonimleştirmek için ~ 0.025 CO2'lik bir maliyeti olacaktır</translation>
+        <source>This option is the quickest and will cost about ~0.025 BTCZ to anonymize 10000 BTCZ</source>
+        <translation>Bu seçenek en hızlıdır ve 10000 BTCZ'yi anonimleştirmek için ~ 0.025 BTCZ'lik bir maliyeti olacaktır</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CO2 to anonymize 10000 CO2</source>
-        <translation>Bu seçenek orta derecede hızlıdır ve 10000 CO2'yi anonimleştirmek için yaklaşık 0.05 CO2'e mal olur</translation>
+        <source>This option is moderately fast and will cost about 0.05 BTCZ to anonymize 10000 BTCZ</source>
+        <translation>Bu seçenek orta derecede hızlıdır ve 10000 BTCZ'yi anonimleştirmek için yaklaşık 0.05 BTCZ'e mal olur</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Bu en yavaş ve en güvenli seçenektir. Maksimum anonimlik kullanmak maliyete gelecek</translation>
     </message>
     <message>
-        <source>0.1 CO2 per 10000 CO2 you anonymize.</source>
-        <translation>0.1 CO2 her 10000 CO2 anonimleştirmeye.</translation>
+        <source>0.1 BTCZ per 10000 BTCZ you anonymize.</source>
+        <translation>0.1 BTCZ her 10000 BTCZ anonimleştirmeye.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1915,16 +1915,16 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>zcarbon Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming CO2 which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zcarbon'ye dönüştürülen gelen CO2 yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming BTCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zcarbon'ye dönüştürülen gelen BTCZ yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zcarbon</source>
         <translation>Otomatikleştirilmiş zcarbon yüzdesi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CO2 for this denomination is available</source>
-        <translation>Bu mezhebi için yeterli CO2 bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BTCZ for this denomination is available</source>
+        <translation>Bu mezhebi için yeterli BTCZ bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
     </message>
     <message>
         <source>Preferred Automint zcarbon Denomination</source>
@@ -2078,8 +2078,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Toplam Bakiye, mevcut olmayan tüm paralar dahil.</translation>
     </message>
     <message>
-        <source>CO2 Balance</source>
-        <translation>CO2 Bakiyesi</translation>
+        <source>BTCZ Balance</source>
+        <translation>BTCZ Bakiyesi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2150,8 +2150,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Harcanabilir:</translation>
     </message>
     <message>
-        <source>Locked CO2 or Masternode collaterals. These are excluded from zcarbon minting.</source>
-        <translation>Kilitli CO2 veya Masternode teminatları. Bunlar zcarbon matlaştırmadan çıkarılır.</translation>
+        <source>Locked BTCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
+        <translation>Kilitli BTCZ veya Masternode teminatları. Bunlar zcarbon matlaştırmadan çıkarılır.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2333,8 +2333,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in carbonzero
         <translation>Mintinge hazır</translation>
     </message>
     <message>
-        <source>0.000 000 00 CO2</source>
-        <translation>0.000 000 00 CO2</translation>
+        <source>0.000 000 00 BTCZ</source>
+        <translation>0.000 000 00 BTCZ</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -3428,8 +3428,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>UTXO Boyutu:</translation>
     </message>
     <message>
-        <source>0 CO2</source>
-        <translation>0 CO2</translation>
+        <source>0 BTCZ</source>
+        <translation>0 BTCZ</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3484,12 +3484,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Koinler otomatik seçildi</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCO2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCO2s in fee,&lt;br /&gt;while "at least" pays 1000 uCO2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uCO2 olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uCO2 öder,&lt;br /&gt;"en az" ise 1000 uCO2 öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 uBTCZ olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uBTCZ öder,&lt;br /&gt;"en az" ise 1000 uBTCZ öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCO2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCO2s in fee,&lt;br /&gt;while "total at least" pays 1000 uCO2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uCO2 olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uCO2 ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uCO2 ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "total at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 uBTCZ olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uBTCZ ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uBTCZ ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CarbonZero transactions than the network can process.</source>
@@ -3540,8 +3540,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Alıcı ekle</translation>
     </message>
     <message>
-        <source>Anonymized CO2</source>
-        <translation>anonim edilmiş CO2</translation>
+        <source>Anonymized BTCZ</source>
+        <translation>anonim edilmiş BTCZ</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4436,8 +4436,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CO2.</source>
-        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 CO2 ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BTCZ.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 BTCZ ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -4565,12 +4565,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
     </message>
     <message>
-        <source>Fees (in CO2/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (CO2 / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (BTCZ / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CO2/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (CO2 / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (BTCZ / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

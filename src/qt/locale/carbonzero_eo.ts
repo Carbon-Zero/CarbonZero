@@ -176,15 +176,15 @@
         <translation>Konfirmi monerĉifrado</translation>
     </message>
     <message>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CO2s from being stolen by malware infecting your computer.</source>
-        <translation>CarbonZero fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn CO2s de esti ŝtelita per malware infektanta vian komputilon.</translation>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BTCZs from being stolen by malware infecting your computer.</source>
+        <translation>CarbonZero fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn BTCZs de esti ŝtelita per malware infektanta vian komputilon.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ĉu vi certas ke vi volas ĉifri vian monujon?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CO2&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCZ&lt;/b&gt;!</source>
         <translation>Averto: se vi ĉifras vian monujo kaj perdi vian pasfrazon, vi &lt;b&gt;PERDOS VIAN TUTAN MONON&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -1561,8 +1561,8 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Adreso / Kvanto:</translation>
     </message>
     <message>
-        <source>Add destinations to send CO2 to</source>
-        <translation>Aldonu destinoj por sendi CO2 al</translation>
+        <source>Add destinations to send BTCZ to</source>
+        <translation>Aldonu destinoj por sendi BTCZ al</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1628,12 +1628,12 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Bonvolu elekti privata nivelo.</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CO2 to anonymize 10000 CO2</source>
-        <translation>Tion opcion estas la plej rapida kaji kostos ~0.025 CO2 por anonimigi 10000 CO2</translation>
+        <source>This option is the quickest and will cost about ~0.025 BTCZ to anonymize 10000 BTCZ</source>
+        <translation>Tion opcion estas la plej rapida kaji kostos ~0.025 BTCZ por anonimigi 10000 BTCZ</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CO2 to anonymize 10000 CO2</source>
-        <translation>Tion opcion estas moderebla rapide kaj kostos ĉirkaŭ 0.05 CO2 por anonimigi 10000 CO2</translation>
+        <source>This option is moderately fast and will cost about 0.05 BTCZ to anonymize 10000 BTCZ</source>
+        <translation>Tion opcion estas moderebla rapide kaj kostos ĉirkaŭ 0.05 BTCZ por anonimigi 10000 BTCZ</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1787,8 +1787,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Via aktuala elspezebla saldo</translation>
     </message>
     <message>
-        <source>CO2 Balance</source>
-        <translation>CO2 kvanto</translation>
+        <source>BTCZ Balance</source>
+        <translation>BTCZ kvanto</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1874,8 +1874,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>zcarbon</translation>
     </message>
     <message>
-        <source>0.000 000 00 CO2</source>
-        <translation>0.000 000 00 CO2</translation>
+        <source>0.000 000 00 BTCZ</source>
+        <translation>0.000 000 00 BTCZ</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -2297,8 +2297,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Se estas aktiva sed ŝanĝo-adreso estas malpleniĝa au nevalida, ŝanĝo sendos al nova generita adreson.</translation>
     </message>
     <message>
-        <source>0 CO2</source>
-        <translation>0 CO2</translation>
+        <source>0 BTCZ</source>
+        <translation>0 BTCZ</translation>
     </message>
     <message>
         <source>Open Coin Control...</source>
@@ -2373,7 +2373,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>The CarbonZero address to send the payment to</source>
-        <translation>CO2C adreso por sendi la pago al</translation>
+        <translation>BTCZC adreso por sendi la pago al</translation>
     </message>
     <message>
         <source>Choose previously used address</source>

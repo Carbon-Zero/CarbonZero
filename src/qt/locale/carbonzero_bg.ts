@@ -176,7 +176,7 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CO2s from being stolen by malware infecting your computer.</source>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BTCZs from being stolen by malware infecting your computer.</source>
         <translation>CarbonZero сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия CarbonZero от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
@@ -184,8 +184,8 @@
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CO2&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ CO2&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCZ&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ BTCZ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -434,7 +434,7 @@
     </message>
     <message>
         <source>Privacy Actions for zcarbon</source>
-        <translation>Поверителни Действия за ZCO2</translation>
+        <translation>Поверителни Действия за ZBTCZ</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1677,8 +1677,8 @@ Please be patient after clicking import.</source>
         <translation>Адрес / Сума:</translation>
     </message>
     <message>
-        <source>Add destinations to send CO2 to</source>
-        <translation>Добави получател на CO2</translation>
+        <source>Add destinations to send BTCZ to</source>
+        <translation>Добави получател на BTCZ</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1776,32 +1776,32 @@ Please be patient after clicking import.</source>
         <translation>Изберете ниво на поверителност.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CO2</source>
-        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 CO2</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 BTCZ</source>
+        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 BTCZ</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CO2</source>
-        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 CO2</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 BTCZ</source>
+        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 BTCZ</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Използвай 16 различни мастърноуда</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CO2 to anonymize 10000 CO2</source>
-        <translation>Това е най-бързия метод и ще струва около 0.025 CO2 за да скриете 10000 CO2</translation>
+        <source>This option is the quickest and will cost about ~0.025 BTCZ to anonymize 10000 BTCZ</source>
+        <translation>Това е най-бързия метод и ще струва около 0.025 BTCZ за да скриете 10000 BTCZ</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CO2 to anonymize 10000 CO2</source>
-        <translation>Тази опция е сравнително бърза и ще струва около 0.05 CO2 за да скриете 10000 CO2</translation>
+        <source>This option is moderately fast and will cost about 0.05 BTCZ to anonymize 10000 BTCZ</source>
+        <translation>Тази опция е сравнително бърза и ще струва около 0.05 BTCZ за да скриете 10000 BTCZ</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Това е най-бавния и най-сигурен вариант за скриване на CO2. Използването й ще струва</translation>
+        <translation>Това е най-бавния и най-сигурен вариант за скриване на BTCZ. Използването й ще струва</translation>
     </message>
     <message>
-        <source>0.1 CO2 per 10000 CO2 you anonymize.</source>
-        <translation>0.1 CO2 за 10000 скрити CO2</translation>
+        <source>0.1 BTCZ per 10000 BTCZ you anonymize.</source>
+        <translation>0.1 BTCZ за 10000 скрити BTCZ</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1944,24 +1944,24 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Картографирай портовете използвайки &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of CO2 units to zcarbon</source>
-        <translation>Включи автоматичното емитиране на CO2 единици в zcarbon</translation>
+        <source>Enable automatic minting of BTCZ units to zcarbon</source>
+        <translation>Включи автоматичното емитиране на BTCZ единици в zcarbon</translation>
     </message>
     <message>
         <source>Enable zcarbon Automint</source>
         <translation>Включи Автоматично емитиране на zcarbon</translation>
     </message>
     <message>
-        <source>Percentage of incoming CO2 which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите CO2, който автоматично да се конвертира в zcarbon посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming BTCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите BTCZ, който автоматично да се конвертира в zcarbon посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zcarbon</source>
         <translation>Процент автоматично сечени zcarbon</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CO2 for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zcarbon докато не се съберат достатъчно CO2 за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BTCZ for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zcarbon докато не се съберат достатъчно BTCZ за тази деноминация</translation>
     </message>
     <message>
         <source>Preferred Automint zcarbon Denomination</source>
@@ -2127,8 +2127,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Обща Наличност, включително и неналичните монети.</translation>
     </message>
     <message>
-        <source>CO2 Balance</source>
-        <translation>CO2 Наличности</translation>
+        <source>BTCZ Balance</source>
+        <translation>BTCZ Наличности</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2215,8 +2215,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Налични за харчене:</translation>
     </message>
     <message>
-        <source>Locked CO2 or Masternode collaterals. These are excluded from zcarbon minting.</source>
-        <translation>Заключен CO2 или допълнителни гаранции в Главни Възли. Тези не са включени в zcarbon емитирането.</translation>
+        <source>Locked BTCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
+        <translation>Заключен BTCZ или допълнителни гаранции в Главни Възли. Тези не са включени в zcarbon емитирането.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2390,8 +2390,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in carbonzero
         <translation>Налични за сечене:</translation>
     </message>
     <message>
-        <source>0.000 000 00 CO2</source>
-        <translation>0.000 000 00 CO2</translation>
+        <source>0.000 000 00 BTCZ</source>
+        <translation>0.000 000 00 BTCZ</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2431,7 +2431,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in carbonzero
     </message>
     <message>
         <source>Enter an amount of Piv to convert to zcarbon</source>
-        <translation>Въведете колко CO2  да се конвертират в zcarbon</translation>
+        <translation>Въведете колко BTCZ  да се конвертират в zcarbon</translation>
     </message>
     <message>
         <source>zcarbon Control</source>
@@ -2976,7 +2976,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of CO2 to convert to zcarbon</comment>
+        <comment>Enter an amount of BTCZ to convert to zcarbon</comment>
         <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3737,8 +3737,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Размер на UTXO:</translation>
     </message>
     <message>
-        <source>0 CO2</source>
-        <translation>0 CO2</translation>
+        <source>0 BTCZ</source>
+        <translation>0 BTCZ</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3793,12 +3793,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Автоматично избрани монети</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCO2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCO2s in fee,&lt;br /&gt;while "at least" pays 1000 uCO2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uCO2 и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uCO2 входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uCO2. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uBTCZ и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uBTCZ входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uBTCZ. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCO2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCO2s in fee,&lt;br /&gt;while "total at least" pays 1000 uCO2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uCO2 и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uCO2 входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uCO2. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "total at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uBTCZ и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uBTCZ входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uBTCZ. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CarbonZero transactions than the network can process.</source>
@@ -3849,8 +3849,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Добави Получател</translation>
     </message>
     <message>
-        <source>Anonymized CO2</source>
-        <translation>Анонимизиран CO2</translation>
+        <source>Anonymized BTCZ</source>
+        <translation>Анонимизиран BTCZ</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3898,7 +3898,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Warning: Invalid CarbonZero address</source>
-        <translation>Предупреждение: Невалиден CO2 адрес</translation>
+        <translation>Предупреждение: Невалиден BTCZ адрес</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4513,8 +4513,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Получен посредством обфускация</translation>
     </message>
     <message>
-        <source>CO2 Stake</source>
-        <translation>CO2 Stake</translation>
+        <source>BTCZ Stake</source>
+        <translation>BTCZ Stake</translation>
     </message>
     <message>
         <source>zcarbon Stake</source>
@@ -4537,24 +4537,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Обфускация и направа на Деноминации</translation>
     </message>
     <message>
-        <source>Converted CO2 to zcarbon</source>
-        <translation>Конвертиран CO2 във zcarbon</translation>
+        <source>Converted BTCZ to zcarbon</source>
+        <translation>Конвертиран BTCZ във zcarbon</translation>
     </message>
     <message>
         <source>Spent zcarbon</source>
         <translation>Похарчени zcarbon</translation>
     </message>
     <message>
-        <source>Received CO2 from zcarbon</source>
-        <translation>Получен CO2 от zcarbon</translation>
+        <source>Received BTCZ from zcarbon</source>
+        <translation>Получен BTCZ от zcarbon</translation>
     </message>
     <message>
         <source>Minted Change as zcarbon from zcarbon Spend</source>
         <translation>Исечено ресто като zcarbon от похарчените zcarbon</translation>
     </message>
     <message>
-        <source>Converted zcarbon to CO2</source>
-        <translation>Конвертиран zcarbon във CO2</translation>
+        <source>Converted zcarbon to BTCZ</source>
+        <translation>Конвертиран zcarbon във BTCZ</translation>
     </message>
     <message>
         <source>Anonymous (zcarbon Transaction)</source>
@@ -4772,8 +4772,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Експортирането Успешно</translation>
     </message>
     <message>
-        <source>Received CO2 from zcarbon</source>
-        <translation>Получен CO2 от zcarbon</translation>
+        <source>Received BTCZ from zcarbon</source>
+        <translation>Получен BTCZ от zcarbon</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zcarbon</source>
@@ -4813,8 +4813,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CO2.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 CO2.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BTCZ.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 BTCZ.</translation>
     </message>
 </context>
 <context>
@@ -4926,8 +4926,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Разпространява се пот MIT софтуерен лиценз, виж съпровождащия файл от &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for CO2 inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за CO2 входове (0-1, по подразбиране: %u)</translation>
+        <source>Enable or disable staking functionality for BTCZ inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за BTCZ входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zcarbon inputs (0-1, default: %u)</source>
@@ -4966,12 +4966,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in CO2/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в CO2/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в BTCZ/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CO2/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в CO2/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в BTCZ/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5078,12 +5078,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Не намираме достатъчно Обфускационно деноминирани средства за този превод.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CO2.</source>
-        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 CO2.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BTCZ.</source>
+        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 BTCZ.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CO2.</source>
-        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 CO2.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BTCZ.</source>
+        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 BTCZ.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5394,8 +5394,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Неуспешно четене на блок</translation>
     </message>
     <message>
-        <source>Fee (in CO2/kB) to add to transactions you send (default: %s)</source>
-        <translation>Такса (в CO2/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
+        <source>Fee (in BTCZ/kB) to add to transactions you send (default: %s)</source>
+        <translation>Такса (в BTCZ/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5526,8 +5526,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Reindex the CO2 and zcarbon money supply statistics</source>
-        <translation>Индексирай наново CO2 и zcarbon данните по наличности</translation>
+        <source>Reindex the BTCZ and zcarbon money supply statistics</source>
+        <translation>Индексирай наново BTCZ и zcarbon данните по наличности</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
