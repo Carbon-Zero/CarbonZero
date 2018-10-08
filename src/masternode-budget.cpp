@@ -927,7 +927,7 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
       if (nHeight == 0) {
         nSubsidy = 500000 * COIN;
     } else if (nHeight > 0 && nHeight <= 10000) {
-        nSubsidy = 0.001 * COIN;
+        nSubsidy = 0.25 * COIN;
     } else if (nHeight > 10000 && nHeight <= 100000) {
         nSubsidy = 0.7 * COIN;
     } else if (nHeight > 100000 && nHeight <= 200000) {
