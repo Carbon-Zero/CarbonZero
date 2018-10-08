@@ -65,17 +65,23 @@ Users will now have the ability to search the blockchain for a specific serial #
 
 
 
+BTCZ/zcarbon Staking and Masternode Rewards
 --------------
 
+### BTCZ, zcarbon and Masternode Payment Schedule
 
 To encourage the use of zcarbon and increase the CarbonZero zerocoin anonymity set, the CarbonZero payment schedule has been changed to the following:
 
 If a user staking zcarbon wins the reward for their block, the following zcarbon reward will be: 
+- 3 zcarbon (3 x 1 denominations) rewarded to the staker, 2 BTCZ rewarded to the masternode owner and 1 BTCZ available for the budget. This is a total block reward of 6 BTCZ, up from 5.
 
+If a user staking BTCZ wins the reward, the following amounts will be rewarded: 
+- 2 BTCZ to the BTCZ staker, 3 BTCZ to the Masternode owner and 1 BTCZ available for the budget. This is a total block reward of 6 BTCZ, up from 5.
 
 
 ### Return change to sender when minting zcarbon
 
+Previously, zcarbon minting would send any change to a newly generated "change address". This has caused confusion among some users, and in some cases insufficient backups of the wallet. The wallet will now find the contributing address which contained the most BTCZ and return the change from a zcarbon mint to that address.
 
 
 User Experience
@@ -93,6 +99,7 @@ The overview tab has been simplified greatly to display only balances that are a
 There have been a number of changes to the tasks that you are able to perform from the wallet options. Users will now have the ability to do the following: 
 -	Enable and disable the auto zcarbon minting feature. This is enabled by default and the enablezeromint=0 setting in the carbonzero.conf file will overwrite the GUI option.
 -	The percentage of autominted zcarbon can now be set from 1 to 100, changed from 10 – 100.
+-	The stake split threshold can now be set VIA the wallet options. This setting is an advanced feature for those wishing to remain staking regular BTCZ.
 -	“Unlock for staking and anonymization only” is now selected by default when unlocking the wallet from the User Interface
 
 
@@ -199,9 +206,11 @@ Network Layer 2 Changes (Proposals / Budgets / SwiftX)
 
 ### Monthly Budget Increase
 
+As voted on by the CarbonZero masternodes, the monthly budget available to be utilised has been increased to 42,000 BTCZ / month. This BTCZ only has the opportunity to be raised once per month (paid to winning proposals) with any unused BTCZ not created by the blockchain.
 
 ### Budget Finalization Fee
 
+The CarbonZero finalization fee for successful proposals has now been reduced, this fee is now 5 BTCZ down from 50 BTCZ. The total fee outlay for a successful proposal is now a total of 55 BTCZ.
 
 
 ### SwiftX Raw Transactions
@@ -271,6 +280,7 @@ The serial troll situation is mitigated in version 2 by requiring that the seria
 Deterministic Zerocoin Generation
 --------------
 
+Zerocoins, or zcarbon, are now deterministically generated using a unique 256 bit seed. Each wallet will generate a new seed on its first run. The deterministic seed is used to generate a string of zcarbon that can be recalculated at any time using the seed. Deterministic zcarbon allows for users to backup all of their future zcarbon by simply recording their seed and keeping it in a safe place (similar to backing up a private key for BTCZ). The zcarbon seed needs to remain in the wallet in order to spend the zcarbon after it is generated, if the seed is changed then the coins will not be spendable because the wallet will not have the ability to regenerate all of the private zcarbon data from the seed. It is important that users record & backup their seed after their first run of the wallet. If the wallet is locked during the first run, then the seed will be generated the first time the wallet is unlocked.
 
 Zerocoin Modulus
 --------------

@@ -13,6 +13,7 @@ Please report bugs using the issue tracker at github:
 Mandatory Update
 ==============
 
+CarbonZero Core v3.0.5 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zcarbon protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI. Users are required to update before block `908000` which is when the accumulators will be refactored. Shortly after that block, zcarbon transactions will be enabled. **When zcarbon is enabled, autominting will also be enabled.** If you would like to disable automatic conversion of 10% of your BTCZ balance to zcarbon, then you will need to add `enablezeromint=0` to your `carbonzero.conf` file. For information about where to find your carbonzero.conf you can visit this link from [CarbonZero Support](https://carbonzero.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-).
 
 Users will have a grace period to update their clients before versions prior to this release are no longer allowed to connect to this (and future) version(s).
 
