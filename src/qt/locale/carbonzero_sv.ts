@@ -176,16 +176,16 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CO2s from being stolen by malware infecting your computer.</source>
-        <translation>CarbonZero kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina CO2s från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BTCZs from being stolen by malware infecting your computer.</source>
+        <translation>CarbonZero kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina BTCZs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CO2&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA CO2&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCZ&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA BTCZ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1680,8 +1680,8 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Adress / Mängd:</translation>
     </message>
     <message>
-        <source>Add destinations to send CO2 to</source>
-        <translation>Lägg till destination att skicka CO2 till</translation>
+        <source>Add destinations to send BTCZ to</source>
+        <translation>Lägg till destination att skicka BTCZ till</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1779,32 +1779,32 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Var vänlig och välj en sekretess nivå.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CO2</source>
-        <translation>Använd 2 separata huvudnoder för att blanda tillgångar upp till 10000 CO2</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 BTCZ</source>
+        <translation>Använd 2 separata huvudnoder för att blanda tillgångar upp till 10000 BTCZ</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CO2</source>
-        <translation>Använd 8 separata huvudnoderför att blanda tillgångar upp till 10000 CO2</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 BTCZ</source>
+        <translation>Använd 8 separata huvudnoderför att blanda tillgångar upp till 10000 BTCZ</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Använd 16 separata huvudnoder</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CO2 to anonymize 10000 CO2</source>
-        <translation>Det här alternativet är det snabbaste och kommer kostar ungefär ~0.025 CO2 för att anonymisera 10000 CO2</translation>
+        <source>This option is the quickest and will cost about ~0.025 BTCZ to anonymize 10000 BTCZ</source>
+        <translation>Det här alternativet är det snabbaste och kommer kostar ungefär ~0.025 BTCZ för att anonymisera 10000 BTCZ</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CO2 to anonymize 10000 CO2</source>
-        <translation>Det här alternativet är måttligt snabb och kommer kostar ungefär 0.05 CO2 för att anonymisera 10000 CO2</translation>
+        <source>This option is moderately fast and will cost about 0.05 BTCZ to anonymize 10000 BTCZ</source>
+        <translation>Det här alternativet är måttligt snabb och kommer kostar ungefär 0.05 BTCZ för att anonymisera 10000 BTCZ</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Det här är det långsammaste och säkraste alternativet. Använda maximal anonymitet kommer kosta</translation>
     </message>
     <message>
-        <source>0.1 CO2 per 10000 CO2 you anonymize.</source>
-        <translation>0.1 CO2 per 10000 CO2 du anonymiserar.</translation>
+        <source>0.1 BTCZ per 10000 BTCZ you anonymize.</source>
+        <translation>0.1 BTCZ per 10000 BTCZ du anonymiserar.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1935,24 +1935,24 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Kartlägg port med &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of CO2 units to zcarbon</source>
-        <translation>Tillåt automatisk prägling med CO2 enheter till zcarbon</translation>
+        <source>Enable automatic minting of BTCZ units to zcarbon</source>
+        <translation>Tillåt automatisk prägling med BTCZ enheter till zcarbon</translation>
     </message>
     <message>
         <source>Enable zcarbon Automint</source>
         <translation>Tillåt zcarbon Autoprägling</translation>
     </message>
     <message>
-        <source>Percentage of incoming CO2 which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent av inkommande CO2 som automatiskt konverteras till zcarbon via Zerocoin Protokollet (min: 10%)</translation>
+        <source>Percentage of incoming BTCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent av inkommande BTCZ som automatiskt konverteras till zcarbon via Zerocoin Protokollet (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zcarbon</source>
         <translation>Procent av autopräglade zcarbon</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CO2 for this denomination is available</source>
-        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många CO2 för denna valör är tillgängliga</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BTCZ for this denomination is available</source>
+        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många BTCZ för denna valör är tillgängliga</translation>
     </message>
     <message>
         <source>Preferred Automint zcarbon Denomination</source>
@@ -2106,8 +2106,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Totalt saldo, inkluderar alla otillgängliga mynt.</translation>
     </message>
     <message>
-        <source>CO2 Balance</source>
-        <translation>CO2 Saldo</translation>
+        <source>BTCZ Balance</source>
+        <translation>BTCZ Saldo</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2194,8 +2194,8 @@ Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad
         <translation>Spenderbar:</translation>
     </message>
     <message>
-        <source>Locked CO2 or Masternode collaterals. These are excluded from zcarbon minting.</source>
-        <translation>Låsta CO2 eller masternode som säkerhet. Dessa är uteslutna från zcarbon minting.</translation>
+        <source>Locked BTCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
+        <translation>Låsta BTCZ eller masternode som säkerhet. Dessa är uteslutna från zcarbon minting.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2377,8 +2377,8 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i c
         <translation>Tillgängligt att prägla:</translation>
     </message>
     <message>
-        <source>0.000 000 00 CO2</source>
-        <translation>0.000 000 00 CO2</translation>
+        <source>0.000 000 00 BTCZ</source>
+        <translation>0.000 000 00 BTCZ</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2418,7 +2418,7 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i c
     </message>
     <message>
         <source>Enter an amount of Piv to convert to zcarbon</source>
-        <translation>Mata in en mängd CO2 att konvertera till zcarbon</translation>
+        <translation>Mata in en mängd BTCZ att konvertera till zcarbon</translation>
     </message>
     <message>
         <source>zcarbon Control</source>
@@ -2964,7 +2964,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of CO2 to convert to zcarbon</comment>
+        <comment>Enter an amount of BTCZ to convert to zcarbon</comment>
         <translation><numerusform>SekretessRuta</numerusform><numerusform>SekretessDialog</numerusform></translation>
     </message>
     <message>
@@ -3677,8 +3677,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>UTXO Storlek:</translation>
     </message>
     <message>
-        <source>0 CO2</source>
-        <translation>0 CO2</translation>
+        <source>0 BTCZ</source>
+        <translation>0 BTCZ</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3729,12 +3729,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Mynt automatiskt valda</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCO2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCO2s in fee,&lt;br /&gt;while "at least" pays 1000 uCO2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Om 1000 uCO2s är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uCO2s i avgift,&lt;br /&gt;medans "minst" betalar 1000 uCO2s. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Om 1000 uBTCZs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uBTCZs i avgift,&lt;br /&gt;medans "minst" betalar 1000 uBTCZs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCO2s and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCO2s in fee,&lt;br /&gt;while "total at least" pays 1000 uCO2s. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Om 1000 uCO2s är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uCO2s i avgift,&lt;br /&gt;medans "minst totalt" betalar 1000 uCO2s. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "total at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Om 1000 uBTCZs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uBTCZs i avgift,&lt;br /&gt;medans "minst totalt" betalar 1000 uBTCZs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CarbonZero transactions than the network can process.</source>
@@ -3777,8 +3777,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Skicka till flera mottagare på en gång</translation>
     </message>
     <message>
-        <source>Anonymized CO2</source>
-        <translation>Anonymiserade CO2</translation>
+        <source>Anonymized BTCZ</source>
+        <translation>Anonymiserade BTCZ</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4441,8 +4441,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Mottaget via Fördunkling</translation>
     </message>
     <message>
-        <source>CO2 Stake</source>
-        <translation>CO2 staking</translation>
+        <source>BTCZ Stake</source>
+        <translation>BTCZ staking</translation>
     </message>
     <message>
         <source>zcarbon Stake</source>
@@ -4465,24 +4465,24 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Obfuscation Skapa tecken</translation>
     </message>
     <message>
-        <source>Converted CO2 to zcarbon</source>
-        <translation>Konvertera CO2 till zcarbon</translation>
+        <source>Converted BTCZ to zcarbon</source>
+        <translation>Konvertera BTCZ till zcarbon</translation>
     </message>
     <message>
         <source>Spent zcarbon</source>
         <translation>Spendera zcarbon</translation>
     </message>
     <message>
-        <source>Received CO2 from zcarbon</source>
-        <translation>Mottog CO2 från zcarbon</translation>
+        <source>Received BTCZ from zcarbon</source>
+        <translation>Mottog BTCZ från zcarbon</translation>
     </message>
     <message>
         <source>Minted Change as zcarbon from zcarbon Spend</source>
         <translation>Myntad Växel som zcarbon från zcarbon Spendering</translation>
     </message>
     <message>
-        <source>Converted zcarbon to CO2</source>
-        <translation>Konverterad zcarbon till CO2</translation>
+        <source>Converted zcarbon to BTCZ</source>
+        <translation>Konverterad zcarbon till BTCZ</translation>
     </message>
     <message>
         <source>Anonymous (zcarbon Transaction)</source>
@@ -4700,8 +4700,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Exportering Lyckat</translation>
     </message>
     <message>
-        <source>Received CO2 from zcarbon</source>
-        <translation>Mottog CO2 från zcarbon</translation>
+        <source>Received BTCZ from zcarbon</source>
+        <translation>Mottog BTCZ från zcarbon</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zcarbon</source>
@@ -4741,8 +4741,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Skicka Mynt</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CO2.</source>
-        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 CO2.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BTCZ.</source>
+        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 BTCZ.</translation>
     </message>
 </context>
 <context>
@@ -4858,8 +4858,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Aktivera automatisk plånboksbackup efter varje zcarbon minting (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for CO2 inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för CO2 inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for BTCZ inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för BTCZ inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zcarbon inputs (0-1, default: %u)</source>
@@ -4898,12 +4898,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Exekvera kommando när den bästa block ändras (%s i cmd är utbytt mot block hash)</translation>
     </message>
     <message>
-        <source>Fees (in CO2/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Avgifter (i CO2/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
+        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Avgifter (i BTCZ/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CO2/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Avgifter (i CO2/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
+        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Avgifter (i BTCZ/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5010,12 +5010,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Kan ej lokalisera tillräckligt Fördunklingsdenominationerade pengar för denna transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CO2.</source>
-        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 CO2.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BTCZ.</source>
+        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 BTCZ.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CO2.</source>
-        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 CO2.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BTCZ.</source>
+        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 BTCZ.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5326,8 +5326,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Misslyckades läsa block</translation>
     </message>
     <message>
-        <source>Fee (in CO2/kB) to add to transactions you send (default: %s)</source>
-        <translation>Avgift (i CO2/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
+        <source>Fee (in BTCZ/kB) to add to transactions you send (default: %s)</source>
+        <translation>Avgift (i BTCZ/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5458,8 +5458,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Procent automatiskt mintad Zerocoin (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the CO2 and zcarbon money supply statistics</source>
-        <translation>Indexera CO2 och zcarbon pengarna tillgång statistik på nytt</translation>
+        <source>Reindex the BTCZ and zcarbon money supply statistics</source>
+        <translation>Indexera BTCZ och zcarbon pengarna tillgång statistik på nytt</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>

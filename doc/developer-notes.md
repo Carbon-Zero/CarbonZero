@@ -118,7 +118,7 @@ to see it.
 
 **testnet mode**
 
-Run with the -testnet option to run with "play CO2s (tCO2)" on the test network, if you
+Run with the -testnet option to run with "play BTCZs (tBTCZ)" on the test network, if you
 are testing multi-machine code that needs to operate across the internet.
 
 **DEBUG_LOCKORDER**

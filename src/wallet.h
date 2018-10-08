@@ -86,30 +86,30 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT10000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 CO2 at the same time
+    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 BTCZ at the same time
     ONLY_10000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
 // Possible states for zcarbon send
 enum ZerocoinSpendStatus {
-    ZCO2_SPEND_OKAY = 0,                            // No error
-    ZCO2_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZCO2_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZCO2_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZCO2_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZCO2_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZCO2_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZCO2_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZCO2_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZCO2_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZCO2_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZCO2_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZCO2_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZCO2_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZCO2_SPENT_USED_ZCO2 = 14,                      // Coin has already been spend
-    ZCO2_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
-    ZCO2_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
+    ZBTCZ_SPEND_OKAY = 0,                            // No error
+    ZBTCZ_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZBTCZ_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZBTCZ_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZBTCZ_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZBTCZ_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZBTCZ_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZBTCZ_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZBTCZ_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZBTCZ_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    ZBTCZ_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZBTCZ_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZBTCZ_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZBTCZ_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZBTCZ_SPENT_USED_ZBTCZ = 14,                      // Coin has already been spend
+    ZBTCZ_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
+    ZBTCZ_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
 };
 
 struct CompactTallyItem {
@@ -217,7 +217,7 @@ public:
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored, std::list<CDeterministicMint>& listDMintsRestored);
     void ZPivBackupWallet();
     bool GetZerocoinKey(const CBigNum& bnSerial, CKey& key);
-    bool CreateZCO2OutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
+    bool CreateZBTCZOutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
     bool GetMint(const uint256& hashSerial, CZerocoinMint& mint);
     bool GetMintFromStakeHash(const uint256& hashStake, CZerocoinMint& mint);
     bool DatabaseMint(CDeterministicMint& dMint);
