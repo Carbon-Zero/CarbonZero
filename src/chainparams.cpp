@@ -132,15 +132,15 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 500;
         nModifierUpdateBlock = 160; // No need to wait for this.
-        nZerocoinStartHeight = 99999998; // Future
-        nZerocoinStartTime = 938719200; // Needs testing before start
+        nZerocoinStartHeight = 200; // Future
+        nZerocoinStartTime = 1539100800; // Needs testing before start
         nBlockEnforceSerialRange = 1; // Serial Range Enforcements start immediately
         nBlockRecalculateAccumulators = 9999999; // Recalculation not needed. Will be correct from start.
 	nBlockFirstFraudulent = 1; // No bad serials.
         nBlockLastGoodCheckpoint = 1; // Accumulators will be valid from launch
         nBlockEnforceInvalidUTXO = 1; // Enforce valid UTXOs from launch
         nInvalidAmountFiltered = 0*COIN; // No coins were filtered through exchanges that should be considered valid. This was specific to PIVX
-        nBlockZerocoinV2 = 99999999; //!> ZeroCoin 2 needs extensive testing - TBD
+        nBlockZerocoinV2 = 250; //!> ZeroCoin 2 needs extensive testing - TBD
         nEnforceNewSporkKey = 1538719200; //!> Spork Keys signed after launch will be valid.
         nRejectOldSporkKey = 1538719200; //!> From Launch. We've used a dummy sporkkey as the old one since we are launching with the only one
 
