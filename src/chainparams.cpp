@@ -130,7 +130,7 @@ public:
         nMaxMoneyOut = 10225000 * COIN; // ~10 years / only 3,400,000 in the ~ first 3 years
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 500;
+        nLastPOWBlock = 1000;
         nModifierUpdateBlock = 160; // No need to wait for this.
         nZerocoinStartHeight = 200; // Future
         nZerocoinStartTime = 1539100800; // Needs testing before start
