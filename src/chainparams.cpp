@@ -113,7 +113,7 @@ public:
         pchMessageStart[1] = 0xc5;
         pchMessageStart[2] = 0xed;
         pchMessageStart[3] = 0xef;
-        vAlertPubKey = ParseHex("0000098d3ba6ba6e7423fa5cbd6a89e0a9a5348f88d332b44a5cb1a8b7ed2c1eaa335fc8dc4f012cb8241cc0bdafd6ca70c5f5448916e4e6f511bcd746ed57dc50");
+        vAlertPubKey = ParseHex("048df206156009c6158f2eeb6f5cb15579dc94fd2cb6e34994b5f648f667e24642736736899689cc495a2d911295b38bea2883fae3ef8ab4befc4bda30beeeaa57");
         nDefaultPort = 51212;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // CarbonZero starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 9999999; // No subsidy halving interval
