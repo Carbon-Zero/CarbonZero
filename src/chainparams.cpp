@@ -130,10 +130,10 @@ public:
         nMaxMoneyOut = 10225000 * COIN; // ~10 years / only 3,400,000 in the ~ first 3 years
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 1000;
+        nLastPOWBlock = 500;
         nModifierUpdateBlock = 160; // No need to wait for this.
-        nZerocoinStartHeight = 1; // Zerocoin Starts Immediately
-        nZerocoinStartTime = 1538719200; // October 8, 2018 @ 6:00:00 GMT - Launch
+        nZerocoinStartHeight = 99999998; // Future
+        nZerocoinStartTime = 938719200; // Needs testing before start
         nBlockEnforceSerialRange = 1; // Serial Range Enforcements start immediately
         nBlockRecalculateAccumulators = 9999999; // Recalculation not needed. Will be correct from start.
 	nBlockFirstFraudulent = 1; // No bad serials.
