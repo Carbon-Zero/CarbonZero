@@ -155,14 +155,14 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1538719200; //October 5, 2018 @ 6:00:00 GMT
+        genesis.nTime = 1539100800; //October 9, 2018 @ 16:00:00 GMT
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2110968;
+        genesis.nNonce = 1737040;
 
         hashGenesisBlock = genesis.GetHash();
         // printf("%s\n", hashGenesisBlock.ToString().c_str());
 	// printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0x00000088511da3a39ecde57e59ca96832a28a6f79bcb469fd981c934f6d3022a"));
+        assert(hashGenesisBlock == uint256("0x00000c335b9d469350dc908e76700f1f9b1fe1bd086aa203dff1edca5776bd56"));
         assert(genesis.hashMerkleRoot == uint256("0xa98e6ddc8f9083716cfea8dd40e66345ac1c96acb489a59e30fb645b3ef10400"));
 
         
@@ -265,11 +265,11 @@ public:
         nRejectOldSporkKey = 1536182255; //!> Reject old spork key after Saturday, March 31, 2018 12:00:00 AM GMT
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1538719200;
-        genesis.nNonce = 2110968;
+        genesis.nTime = 1539100800;
+        genesis.nNonce = 1737040;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000088511da3a39ecde57e59ca96832a28a6f79bcb469fd981c934f6d3022a"));
+        assert(hashGenesisBlock == uint256("0x00000c335b9d469350dc908e76700f1f9b1fe1bd086aa203dff1edca5776bd56"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -335,13 +335,13 @@ public:
         nTargetTimespan = 24 * 60 * 60; // CarbonZero: 1 day
         nTargetSpacing = 1 * 60;        // CarbonZero: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1538719200;
+        genesis.nTime = 1539100800;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 234568;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51216;
-        assert(hashGenesisBlock == uint256("0x5158f062f394cf2701256061b1adad11991015d855da534f8a812c480bcf9315"));
+        assert(hashGenesisBlock == uint256("0x0a1f8eff60bb53ca186bacd1196077c6d78910b5b2a7d8177a780eb67b00bb6f"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
