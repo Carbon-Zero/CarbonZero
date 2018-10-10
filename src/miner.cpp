@@ -582,7 +582,7 @@ int nMintableLastCheck = 0;
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("CarbonZeroMiner started\n");
+    LogPrintf("CarbonZeroMiner started (POS=%s)\n",(fProofOfStake ? "true" : "false"));
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("carbonzero-miner");
 
@@ -628,6 +628,8 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 }
             }
         }
+
+	MilliSleep(1000);
 
         //
         // Create new block
