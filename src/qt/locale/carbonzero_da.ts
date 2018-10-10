@@ -176,7 +176,7 @@
         <translation>Bekræft, og tegnebogen krypteres.</translation>
     </message>
     <message>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BTCZs from being stolen by malware infecting your computer.</source>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BCZs from being stolen by malware infecting your computer.</source>
         <translation>CarbonZero vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
@@ -184,8 +184,8 @@
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCZ&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE BTCZ&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BCZ&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE BCZ&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1681,8 +1681,8 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Adresse / Beløb:</translation>
     </message>
     <message>
-        <source>Add destinations to send BTCZ to</source>
-        <translation>Tilføj destinationer for at sende BTCZ til</translation>
+        <source>Add destinations to send BCZ to</source>
+        <translation>Tilføj destinationer for at sende BCZ til</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1780,32 +1780,32 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Vælg tilsløringsniveau</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BTCZ</source>
-        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 BTCZ</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 BCZ</source>
+        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 BCZ</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BTCZ</source>
-        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 BTCZ</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 BCZ</source>
+        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 BCZ</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Brug 16 separate masternoder</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 BTCZ to anonymize 10000 BTCZ</source>
-        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 BTCZ for at anonymiser 10000 BTCZ</translation>
+        <source>This option is the quickest and will cost about ~0.025 BCZ to anonymize 10000 BCZ</source>
+        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 BCZ for at anonymiser 10000 BCZ</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 BTCZ to anonymize 10000 BTCZ</source>
-        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 BTCZ for at anonymiser 10000 BTCZ</translation>
+        <source>This option is moderately fast and will cost about 0.05 BCZ to anonymize 10000 BCZ</source>
+        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 BCZ for at anonymiser 10000 BCZ</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Denne mulighed er den langsomste og det mest sikre valg. Valg af maksimal tilsløring vil koste</translation>
     </message>
     <message>
-        <source>0.1 BTCZ per 10000 BTCZ you anonymize.</source>
-        <translation>0.1 pr 10000 BTCZ for at tilsløre.</translation>
+        <source>0.1 BCZ per 10000 BCZ you anonymize.</source>
+        <translation>0.1 pr 10000 BCZ for at tilsløre.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1948,24 +1948,24 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of BTCZ units to zcarbon</source>
-        <translation>Aktivér automatisk mintning af BTCZ-enheder til zcarbon</translation>
+        <source>Enable automatic minting of BCZ units to zcarbon</source>
+        <translation>Aktivér automatisk mintning af BCZ-enheder til zcarbon</translation>
     </message>
     <message>
         <source>Enable zcarbon Automint</source>
         <translation>Aktivér zcarbon Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming BTCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentdelen af indkommende BTCZ, som automatisk konverteres til zcarbon via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming BCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentdelen af indkommende BCZ, som automatisk konverteres til zcarbon via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zcarbon</source>
         <translation>Procentdel af automatiseret zcarbon</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough BTCZ for this denomination is available</source>
-        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok BTCZ til denne betegnelse er tilgængelig</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BCZ for this denomination is available</source>
+        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok BCZ til denne betegnelse er tilgængelig</translation>
     </message>
     <message>
         <source>Preferred Automint zcarbon Denomination</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Samlet saldo, inklusive alle utilgængelige mønter.</translation>
     </message>
     <message>
-        <source>BTCZ Balance</source>
-        <translation>BTCZ Balance</translation>
+        <source>BCZ Balance</source>
+        <translation>BCZ Balance</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2219,8 +2219,8 @@ Uplettet: bekræftet, men mindre end 1 minutter med samme betegnelse, efter at d
         <translation>Brugbare:</translation>
     </message>
     <message>
-        <source>Locked BTCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
-        <translation>Låste BTCZ eller Masternode collaterals. Disse er udelukket fra zcarbon-mintning.</translation>
+        <source>Locked BCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
+        <translation>Låste BCZ eller Masternode collaterals. Disse er udelukket fra zcarbon-mintning.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2401,8 +2401,8 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
         <translation>Til rådighed til Minting:</translation>
     </message>
     <message>
-        <source>0.000 000 00 BTCZ</source>
-        <translation>0.000 000 00 BTCZ</translation>
+        <source>0.000 000 00 BCZ</source>
+        <translation>0.000 000 00 BCZ</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2987,7 +2987,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of BTCZ to convert to zcarbon</comment>
+        <comment>Enter an amount of BCZ to convert to zcarbon</comment>
         <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3748,8 +3748,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>UTXO størrelse:</translation>
     </message>
     <message>
-        <source>0 BTCZ</source>
-        <translation>0 BTCZ</translation>
+        <source>0 BCZ</source>
+        <translation>0 BCZ</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3804,12 +3804,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Mønter vælges automatisk</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uBTCZs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uBTCZ i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uBTCZs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uBCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBCZs in fee,&lt;br /&gt;while "at least" pays 1000 uBCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uBCZs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uBCZ i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uBCZs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "total at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uBTCZs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uBTCZ i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uBTCZs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uBCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBCZs in fee,&lt;br /&gt;while "total at least" pays 1000 uBCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uBCZs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uBCZ i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uBCZs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CarbonZero transactions than the network can process.</source>
@@ -3860,8 +3860,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Tilføj &amp;Modtager</translation>
     </message>
     <message>
-        <source>Anonymized BTCZ</source>
-        <translation>Tilsløret BTCZ</translation>
+        <source>Anonymized BCZ</source>
+        <translation>Tilsløret BCZ</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4524,8 +4524,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Modtaget via tilsløring</translation>
     </message>
     <message>
-        <source>BTCZ Stake</source>
-        <translation>BTCZ Stake</translation>
+        <source>BCZ Stake</source>
+        <translation>BCZ Stake</translation>
     </message>
     <message>
         <source>zcarbon Stake</source>
@@ -4548,15 +4548,15 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Opret tilsløret designering</translation>
     </message>
     <message>
-        <source>Converted BTCZ to zcarbon</source>
-        <translation>Konverteret BTCZ til zcarbon</translation>
+        <source>Converted BCZ to zcarbon</source>
+        <translation>Konverteret BCZ til zcarbon</translation>
     </message>
     <message>
         <source>Spent zcarbon</source>
         <translation>Brugt zPiv</translation>
     </message>
     <message>
-        <source>Received BTCZ from zcarbon</source>
+        <source>Received BCZ from zcarbon</source>
         <translation>Modtaget Piv fra zPiv</translation>
     </message>
     <message>
@@ -4564,8 +4564,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Minted Change som zcarbon fra zcarbon Spend</translation>
     </message>
     <message>
-        <source>Converted zcarbon to BTCZ</source>
-        <translation>Konverteret BTCZ til zcarbon</translation>
+        <source>Converted zcarbon to BCZ</source>
+        <translation>Konverteret BCZ til zcarbon</translation>
     </message>
     <message>
         <source>Anonymous (zcarbon Transaction)</source>
@@ -4783,7 +4783,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Eksporteret!</translation>
     </message>
     <message>
-        <source>Received BTCZ from zcarbon</source>
+        <source>Received BCZ from zcarbon</source>
         <translation>Modtaget Piv fra zPiv</translation>
     </message>
     <message>
@@ -4824,8 +4824,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BTCZ.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1BTCZ.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BCZ.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1BCZ.</translation>
     </message>
 </context>
 <context>
@@ -4942,8 +4942,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zPiv-mintning (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for BTCZ inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for BTCZ-indgange (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for BCZ inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for BCZ-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zcarbon inputs (0-1, default: %u)</source>
@@ -4982,12 +4982,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in BTCZ/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in BCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in BCZ/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in BTCZ/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in BCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in BCZ/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5094,12 +5094,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BTCZ.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 BTCZ.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BCZ.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 BCZ.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BTCZ.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 BTCZ.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BCZ.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 BCZ.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5410,8 +5410,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in BTCZ/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i BTCZ/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+        <source>Fee (in BCZ/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i BCZ/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5542,8 +5542,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the BTCZ and zcarbon money supply statistics</source>
-        <translation>Reindex BTCZ og zcarbon pengemængde statistikker</translation>
+        <source>Reindex the BCZ and zcarbon money supply statistics</source>
+        <translation>Reindex BCZ og zcarbon pengemængde statistikker</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>

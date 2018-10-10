@@ -176,16 +176,16 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BTCZs from being stolen by malware infecting your computer.</source>
-        <translation>CarbonZero va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos BTCZs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BCZs from being stolen by malware infecting your computer.</source>
+        <translation>CarbonZero va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos BCZs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Êtes-vous sûr de vouloir crypter votre portefeuille?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCZ&lt;/b&gt;!</source>
-        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS BTCZ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BCZ&lt;/b&gt;!</source>
+        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS BCZ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1640,8 +1640,8 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Adresse / Montant:</translation>
     </message>
     <message>
-        <source>Add destinations to send BTCZ to</source>
-        <translation>Ajouter des destinations pour envoyer BTCZ</translation>
+        <source>Add destinations to send BCZ to</source>
+        <translation>Ajouter des destinations pour envoyer BCZ</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1727,32 +1727,32 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Veuillez sélectionner un niveau de confidentialité.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BTCZ</source>
-        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 BTCZ</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 BCZ</source>
+        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 BCZ</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BTCZ</source>
-        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 BTCZ</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 BCZ</source>
+        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 BCZ</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utiliser 16 masternodes différents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 BTCZ to anonymize 10000 BTCZ</source>
-        <translation>Cette option est la plus rapide, et coutera ~0.025 BTCZ pour anonymiser 10000 BTCZ</translation>
+        <source>This option is the quickest and will cost about ~0.025 BCZ to anonymize 10000 BCZ</source>
+        <translation>Cette option est la plus rapide, et coutera ~0.025 BCZ pour anonymiser 10000 BCZ</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 BTCZ to anonymize 10000 BTCZ</source>
-        <translation>Cette option est moyennement rapide, et coutera 0.05 BTCZ pour anonymiser 10000 BTCZ</translation>
+        <source>This option is moderately fast and will cost about 0.05 BCZ to anonymize 10000 BCZ</source>
+        <translation>Cette option est moyennement rapide, et coutera 0.05 BCZ pour anonymiser 10000 BCZ</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Il s'agit de l'option la plus lente est la plus sécurisé. Utiliser l'anonymat maximum coutera</translation>
     </message>
     <message>
-        <source>0.1 BTCZ per 10000 BTCZ you anonymize.</source>
-        <translation>0.1 BTCZ par 10000 BTCZ vous anonymisez.</translation>
+        <source>0.1 BCZ per 10000 BCZ you anonymize.</source>
+        <translation>0.1 BCZ par 10000 BCZ vous anonymisez.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1887,16 +1887,16 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Répertorier les port utilisant UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of BTCZ units to zcarbon</source>
-        <translation>Activé l'auto-monnayage de BTCZ unités en zcarbon</translation>
+        <source>Enable automatic minting of BCZ units to zcarbon</source>
+        <translation>Activé l'auto-monnayage de BCZ unités en zcarbon</translation>
     </message>
     <message>
         <source>Enable zcarbon Automint</source>
-        <translation>Activé ZBTCZ Auto-monnayage</translation>
+        <translation>Activé ZBCZ Auto-monnayage</translation>
     </message>
     <message>
-        <source>Percentage of incoming BTCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
-        <translation>Pourcentage des BTCZ entrants qui seront automatiquement convertis en zcarbon via le protocole Zerocoin (min. 10%)</translation>
+        <source>Percentage of incoming BCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
+        <translation>Pourcentage des BCZ entrants qui seront automatiquement convertis en zcarbon via le protocole Zerocoin (min. 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zcarbon</source>
@@ -2066,8 +2066,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Solde total, incluant les pièces indisponibles.</translation>
     </message>
     <message>
-        <source>BTCZ Balance</source>
-        <translation>Solde de BTCZ</translation>
+        <source>BCZ Balance</source>
+        <translation>Solde de BCZ</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2154,8 +2154,8 @@ Immature: confirmé, mais moins de 1 monnayer de la même dénomination après s
         <translation>Dépensable:</translation>
     </message>
     <message>
-        <source>Locked BTCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
-        <translation>BTCZ Verrouillé ou Masternode collatéraux. Ceux-ci sont exclus de la monnayage zcarbon.</translation>
+        <source>Locked BCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
+        <translation>BCZ Verrouillé ou Masternode collatéraux. Ceux-ci sont exclus de la monnayage zcarbon.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2336,8 +2336,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Disponible pour Monnayage:</translation>
     </message>
     <message>
-        <source>0.000 000 00 BTCZ</source>
-        <translation>0.000 000 00 BTCZ</translation>
+        <source>0.000 000 00 BCZ</source>
+        <translation>0.000 000 00 BCZ</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2377,7 +2377,7 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
     </message>
     <message>
         <source>Enter an amount of Piv to convert to zcarbon</source>
-        <translation>Entrez un montant de BTCZ à convertir en zcarbon</translation>
+        <translation>Entrez un montant de BCZ à convertir en zcarbon</translation>
     </message>
     <message>
         <source>zcarbon Control</source>
@@ -2411,7 +2411,7 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <source>Available (mature and spendable) zcarbon for spending
 
 zcarbon are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>ZBTCZ disponible (mature et utilisable) pour les dépenses
+        <translation>ZBCZ disponible (mature et utilisable) pour les dépenses
 
 Les zcarbon sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 monnayent de même dénomination après ils était monnayer</translation>
     </message>
@@ -3676,8 +3676,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Taille UTXO:</translation>
     </message>
     <message>
-        <source>0 BTCZ</source>
-        <translation>0 BTCZ</translation>
+        <source>0 BCZ</source>
+        <translation>0 BCZ</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3776,8 +3776,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Ajouter un destinataire</translation>
     </message>
     <message>
-        <source>Anonymized BTCZ</source>
-        <translation>BTCZ anonymisé</translation>
+        <source>Anonymized BCZ</source>
+        <translation>BCZ anonymisé</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4152,32 +4152,32 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Reçu via Obfuscation</translation>
     </message>
     <message>
-        <source>BTCZ Stake</source>
-        <translation>BTCZ Stake</translation>
+        <source>BCZ Stake</source>
+        <translation>BCZ Stake</translation>
     </message>
     <message>
         <source>zcarbon Stake</source>
         <translation>zcarbon Stake</translation>
     </message>
     <message>
-        <source>Converted BTCZ to zcarbon</source>
-        <translation>BTCZ converti en zcarbon</translation>
+        <source>Converted BCZ to zcarbon</source>
+        <translation>BCZ converti en zcarbon</translation>
     </message>
     <message>
         <source>Spent zcarbon</source>
         <translation>zcarbon dépensés</translation>
     </message>
     <message>
-        <source>Received BTCZ from zcarbon</source>
-        <translation>BTCZ reçu depuis zcarbon</translation>
+        <source>Received BCZ from zcarbon</source>
+        <translation>BCZ reçu depuis zcarbon</translation>
     </message>
     <message>
         <source>Minted Change as zcarbon from zcarbon Spend</source>
         <translation>Monnaie rendue à partir d'une dépense zcarbon frappée comme zcarbon </translation>
     </message>
     <message>
-        <source>Converted zcarbon to BTCZ</source>
-        <translation>zcarbon converti en BTCZ</translation>
+        <source>Converted zcarbon to BCZ</source>
+        <translation>zcarbon converti en BCZ</translation>
     </message>
     <message>
         <source>Anonymous (zcarbon Transaction)</source>
@@ -4343,8 +4343,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Une erreur est survenue lors de la tentative de sauvegarde de l'historique de transaction vers %1.</translation>
     </message>
     <message>
-        <source>Received BTCZ from zcarbon</source>
-        <translation>BTCZ reçu depuis zcarbon</translation>
+        <source>Received BCZ from zcarbon</source>
+        <translation>BCZ reçu depuis zcarbon</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zcarbon</source>
@@ -4405,8 +4405,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
 <context>
     <name>carbonzero-core</name>
     <message>
-        <source>Enable or disable staking functionality for BTCZ inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées BTCZ (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for BCZ inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées BCZ (0-1, par défaut: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zcarbon inputs (0-1, default: %u)</source>

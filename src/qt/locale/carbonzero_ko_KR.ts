@@ -176,16 +176,16 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BTCZs from being stolen by malware infecting your computer.</source>
-        <translation>CarbonZero는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 BTCZs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BCZs from being stolen by malware infecting your computer.</source>
+        <translation>CarbonZero는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 BCZs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCZ&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 BTCZ를 잃게 됩니다&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BCZ&lt;/b&gt;!</source>
+        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 BCZ를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1681,8 +1681,8 @@ Please be patient after clicking import.</source>
         <translation>주소 / 금액:</translation>
     </message>
     <message>
-        <source>Add destinations to send BTCZ to</source>
-        <translation>BTCZ를 보낼 목적지 추가</translation>
+        <source>Add destinations to send BCZ to</source>
+        <translation>BCZ를 보낼 목적지 추가</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1780,32 +1780,32 @@ Please be patient after clicking import.</source>
         <translation>익명화 레벨을 선택해주세요.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BTCZ</source>
-        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 BTCZ 를 섞을 수 있습니다.</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 BCZ</source>
+        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 BCZ 를 섞을 수 있습니다.</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BTCZ</source>
-        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 BTCZ 를 섞을 수 있습니다.</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 BCZ</source>
+        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 BCZ 를 섞을 수 있습니다.</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16개의 개별 마스터노드를 사용</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 BTCZ to anonymize 10000 BTCZ</source>
-        <translation>이 옵션은 가장 빠르게 전송되며 10000 BTCZ 익명화에 약 ~0.025 BTCZ의 비용이 들어갑니다.</translation>
+        <source>This option is the quickest and will cost about ~0.025 BCZ to anonymize 10000 BCZ</source>
+        <translation>이 옵션은 가장 빠르게 전송되며 10000 BCZ 익명화에 약 ~0.025 BCZ의 비용이 들어갑니다.</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 BTCZ to anonymize 10000 BTCZ</source>
-        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 BTCZ 익명화에 약 0.05 BTCZ의 비용이 들어갑니다.</translation>
+        <source>This option is moderately fast and will cost about 0.05 BCZ to anonymize 10000 BCZ</source>
+        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 BCZ 익명화에 약 0.05 BCZ의 비용이 들어갑니다.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>이것은 가장 느리고 안전한 옵션입니다. 최고 익명성을 사용하면 비용이 발생합니다.</translation>
     </message>
     <message>
-        <source>0.1 BTCZ per 10000 BTCZ you anonymize.</source>
-        <translation>10000 BTCZ 익명화에 0.1 BTCZ 가 듭니다.</translation>
+        <source>0.1 BCZ per 10000 BCZ you anonymize.</source>
+        <translation>10000 BCZ 익명화에 0.1 BCZ 가 듭니다.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1948,24 +1948,24 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Enable automatic minting of BTCZ units to zcarbon</source>
-        <translation>보상받은 BTCZ를 zcarbon로 자동변환 활성화</translation>
+        <source>Enable automatic minting of BCZ units to zcarbon</source>
+        <translation>보상받은 BCZ를 zcarbon로 자동변환 활성화</translation>
     </message>
     <message>
         <source>Enable zcarbon Automint</source>
         <translation>zcarbon 자동생성 활성화</translation>
     </message>
     <message>
-        <source>Percentage of incoming BTCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
-        <translation>BTCZ수신시 자동변환 zcarbon 비율 (최소값:10%)</translation>
+        <source>Percentage of incoming BCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
+        <translation>BCZ수신시 자동변환 zcarbon 비율 (최소값:10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zcarbon</source>
         <translation>자동 변환되는 zcarbon 비율</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough BTCZ for this denomination is available</source>
-        <translation>이 디노미네이션의 BTCZ가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BCZ for this denomination is available</source>
+        <translation>이 디노미네이션의 BCZ가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
         <source>Preferred Automint zcarbon Denomination</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>전체 잔액, (현재 전송이 불가능한 코인 포함)</translation>
     </message>
     <message>
-        <source>BTCZ Balance</source>
-        <translation>BTCZ 잔액</translation>
+        <source>BCZ Balance</source>
+        <translation>BCZ 잔액</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2219,8 +2219,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>출금 가능 액수:</translation>
     </message>
     <message>
-        <source>Locked BTCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
-        <translation>잠금 BTCZ 또는 Masternode collaterals. 이들은 zcarbon minting에서 제외됩니다.</translation>
+        <source>Locked BCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
+        <translation>잠금 BCZ 또는 Masternode collaterals. 이들은 zcarbon minting에서 제외됩니다.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2401,8 +2401,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in carbonzero
         <translation>생성 가능한 수량:</translation>
     </message>
     <message>
-        <source>0.000 000 00 BTCZ</source>
-        <translation>0.000 000 00 BTCZ</translation>
+        <source>0.000 000 00 BCZ</source>
+        <translation>0.000 000 00 BCZ</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2442,7 +2442,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in carbonzero
     </message>
     <message>
         <source>Enter an amount of Piv to convert to zcarbon</source>
-        <translation>zcarbon로 변환할 BTCZ 수량을 입력하세요.</translation>
+        <translation>zcarbon로 변환할 BCZ 수량을 입력하세요.</translation>
     </message>
     <message>
         <source>zcarbon Control</source>
@@ -2502,7 +2502,7 @@ zcarbon는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개
     </message>
     <message>
         <source>The CarbonZero address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>BTCZ를 전송할 CarbonZero 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
+        <translation>BCZ를 전송할 CarbonZero 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2987,7 +2987,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of BTCZ to convert to zcarbon</comment>
+        <comment>Enter an amount of BCZ to convert to zcarbon</comment>
         <translation><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3749,8 +3749,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>UTXO 크기:</translation>
     </message>
     <message>
-        <source>0 BTCZ</source>
-        <translation>0 BTCZ</translation>
+        <source>0 BCZ</source>
+        <translation>0 BCZ</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3805,12 +3805,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>자동으로 선택됩니다.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uBTCZs로 설정되고,&lt;br /&gt;1000 uBTCZs 안에는 최소 "킬로바이트당" 250 uBTCZs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uBCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBCZs in fee,&lt;br /&gt;while "at least" pays 1000 uBCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uBCZs로 설정되고,&lt;br /&gt;1000 uBCZs 안에는 최소 "킬로바이트당" 250 uBCZs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "total at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uBTCZs로 설정되고,&lt;br /&gt;1000 uBTCZs 안에는 전체에서 최소 "킬로바이트당" 250 uBTCZs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uBCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBCZs in fee,&lt;br /&gt;while "total at least" pays 1000 uBCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uBCZs로 설정되고,&lt;br /&gt;1000 uBCZs 안에는 전체에서 최소 "킬로바이트당" 250 uBCZs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CarbonZero transactions than the network can process.</source>
@@ -3861,8 +3861,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>&amp;받는 사람 추가</translation>
     </message>
     <message>
-        <source>Anonymized BTCZ</source>
-        <translation>익명화된 BTCZ</translation>
+        <source>Anonymized BCZ</source>
+        <translation>익명화된 BCZ</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4526,8 +4526,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화를 통해 수신 됨</translation>
     </message>
     <message>
-        <source>BTCZ Stake</source>
-        <translation>BTCZ stake</translation>
+        <source>BCZ Stake</source>
+        <translation>BCZ stake</translation>
     </message>
     <message>
         <source>zcarbon Stake</source>
@@ -4550,24 +4550,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화 표시 만들기</translation>
     </message>
     <message>
-        <source>Converted BTCZ to zcarbon</source>
-        <translation>BTCZ를 zcarbon로 변환</translation>
+        <source>Converted BCZ to zcarbon</source>
+        <translation>BCZ를 zcarbon로 변환</translation>
     </message>
     <message>
         <source>Spent zcarbon</source>
         <translation>zcarbon 사용</translation>
     </message>
     <message>
-        <source>Received BTCZ from zcarbon</source>
-        <translation>zcarbon를 BTCZ로 받음</translation>
+        <source>Received BCZ from zcarbon</source>
+        <translation>zcarbon를 BCZ로 받음</translation>
     </message>
     <message>
         <source>Minted Change as zcarbon from zcarbon Spend</source>
         <translation>zcarbon 전송후 남은 zcarbon로 잔돈 생성</translation>
     </message>
     <message>
-        <source>Converted zcarbon to BTCZ</source>
-        <translation>zcarbon를 BTCZ로 변환</translation>
+        <source>Converted zcarbon to BCZ</source>
+        <translation>zcarbon를 BCZ로 변환</translation>
     </message>
     <message>
         <source>Anonymous (zcarbon Transaction)</source>
@@ -4785,8 +4785,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>내보내기 성공</translation>
     </message>
     <message>
-        <source>Received BTCZ from zcarbon</source>
-        <translation>zcarbon를 BTCZ로 받음</translation>
+        <source>Received BCZ from zcarbon</source>
+        <translation>zcarbon를 BCZ로 받음</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zcarbon</source>
@@ -4826,8 +4826,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>코인 전송 </translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BTCZ.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 BTCZ로 제한됩니다.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BCZ.</source>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 BCZ로 제한됩니다.</translation>
     </message>
 </context>
 <context>
@@ -4943,8 +4943,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Enable automatic wallet backups triggered after each zcarbon minting (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for BTCZ inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for BTCZ inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for BCZ inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for BCZ inputs (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zcarbon inputs (0-1, default: %u)</source>
@@ -4983,12 +4983,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (BTCZ/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in BCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (BCZ/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (BTCZ/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in BCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (BCZ/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5095,12 +5095,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BTCZ.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 BTCZ과 일치하지 않음.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BCZ.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 BCZ과 일치하지 않음.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BTCZ.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 BTCZ와 같지 않음</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BCZ.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 BCZ와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5411,8 +5411,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>블록을 받아오는데 실패했습니다.</translation>
     </message>
     <message>
-        <source>Fee (in BTCZ/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (BTCZ/kB) (기본값: %s)</translation>
+        <source>Fee (in BCZ/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (BCZ/kB) (기본값: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5543,8 +5543,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>자동생성 zcarbon 비율  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the BTCZ and zcarbon money supply statistics</source>
-        <translation>BTCZ 및 zcarbon 공급량 다시 색인</translation>
+        <source>Reindex the BCZ and zcarbon money supply statistics</source>
+        <translation>BCZ 및 zcarbon 공급량 다시 색인</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>

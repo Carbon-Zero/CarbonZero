@@ -344,8 +344,8 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::SendToSelf:
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
-        return tr("BTCZ Stake");
-    case TransactionRecord::StakeZBTCZ:
+        return tr("BCZ Stake");
+    case TransactionRecord::StakeZBCZ:
         return tr("zcarbon Stake");
     case TransactionRecord::Generated:
         return tr("Mined");
@@ -360,15 +360,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Obfuscated:
         return tr("Obfuscated");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted BTCZ to zcarbon");
+        return tr("Converted BCZ to zcarbon");
     case TransactionRecord::ZerocoinSpend:
         return tr("Spent zcarbon");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received BTCZ from zcarbon");
+        return tr("Received BCZ from zcarbon");
     case TransactionRecord::ZerocoinSpend_Change_zPiv:
         return tr("Minted Change as zcarbon from zcarbon Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zcarbon to BTCZ");
+        return tr("Converted zcarbon to BCZ");
 
     default:
         return QString();
@@ -380,7 +380,7 @@ QVariant TransactionTableModel::txAddressDecoration(const TransactionRecord* wtx
     switch (wtx->type) {
     case TransactionRecord::Generated:
     case TransactionRecord::StakeMint:
-    case TransactionRecord::StakeZBTCZ:
+    case TransactionRecord::StakeZBCZ:
     case TransactionRecord::MNReward:
         return QIcon(":/icons/tx_mined");
     case TransactionRecord::RecvWithObfuscation:
@@ -425,7 +425,7 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
     case TransactionRecord::ZerocoinMint:
     case TransactionRecord::ZerocoinSpend_Change_zPiv:
         return tr("Anonymous (zcarbon Transaction)");
-    case TransactionRecord::StakeZBTCZ:
+    case TransactionRecord::StakeZBCZ:
         return tr("Anonymous (zcarbon Stake)");
     case TransactionRecord::SendToSelf:
     default:
@@ -575,7 +575,7 @@ QVariant TransactionTableModel::data(const QModelIndex& index, int role) const
     case Qt::ForegroundRole:
         // Minted
         if (rec->type == TransactionRecord::Generated || rec->type == TransactionRecord::StakeMint ||
-                rec->type == TransactionRecord::StakeZBTCZ || rec->type == TransactionRecord::MNReward) {
+                rec->type == TransactionRecord::StakeZBCZ || rec->type == TransactionRecord::MNReward) {
             if (rec->status.status == TransactionStatus::Conflicted || rec->status.status == TransactionStatus::NotAccepted)
                 return COLOR_ORPHAN;
             else

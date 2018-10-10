@@ -2092,7 +2092,7 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
     return ret;
 }
 
-int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZBTCZStake)
+int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZBCZStake)
 {
     int64_t ret = 0;
 
@@ -2622,7 +2622,7 @@ void ThreadScriptCheck()
     scriptcheckqueue.Thread();
 }
 
-void RecalculateZBTCZMinted()
+void RecalculateZBCZMinted()
 {
     CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
     int nHeightEnd = chainActive.Height();
@@ -2649,7 +2649,7 @@ void RecalculateZBTCZMinted()
     }
 }
 
-void RecalculateZBTCZSpent()
+void RecalculateZBCZSpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
     while (true) {
@@ -2685,7 +2685,7 @@ void RecalculateZBTCZSpent()
     }
 }
 
-bool RecalculateBTCZSupply(int nHeightStart)
+bool RecalculateBCZSupply(int nHeightStart)
 {
     if (nHeightStart > chainActive.Height())
         return false;
@@ -2805,7 +2805,7 @@ bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError
     return true;
 }
 
-bool UpdateZBTCZSupply(const CBlock& block, CBlockIndex* pindex)
+bool UpdateZBCZSupply(const CBlock& block, CBlockIndex* pindex)
 {
     std::list<CZerocoinMint> listMints;
     bool fFilterInvalid = pindex->nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
@@ -3061,13 +3061,13 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     //A one-time event where money supply counts were off and recalculated on a certain block.
     if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
-        RecalculateZBTCZMinted();
-        RecalculateZBTCZSpent();
-        RecalculateBTCZSupply(Params().Zerocoin_StartHeight());
+        RecalculateZBCZMinted();
+        RecalculateZBCZSpent();
+        RecalculateBCZSupply(Params().Zerocoin_StartHeight());
     }
 
     //Track zcarbon money supply in the block index
-    if (!UpdateZBTCZSupply(block, pindex))
+    if (!UpdateZBCZSupply(block, pindex))
         return state.DoS(100, error("%s: Failed to calculate new zcarbon supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
 
@@ -3271,7 +3271,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
 {
     chainActive.SetTip(pindexNew);
 
-    // If turned on AutoZeromint will automatically convert BTCZ to zcarbon
+    // If turned on AutoZeromint will automatically convert BCZ to zcarbon
     if (pwalletMain->isZeromintEnabled ())
         pwalletMain->AutoZeromint ();
 
@@ -4414,7 +4414,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         if (!stake)
             return error("%s: null stake ptr", __func__);
 
-        if (stake->IsZBTCZ() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
+        if (stake->IsZBCZ() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
             return state.DoS(100, error("%s: staked zcarbon fails context checks", __func__));
 
         uint256 hash = block.GetHash();

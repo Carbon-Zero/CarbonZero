@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BTCZs from being stolen by malware infecting your computer.</source>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BCZs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCZ&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BCZ&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2125,7 +2125,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send BTCZ to</source>
+        <source>Add destinations to send BCZ to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2248,12 +2248,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BTCZ</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 BCZ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BTCZ</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 BCZ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2263,12 +2263,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 BTCZ to anonymize 10000 BTCZ</source>
+        <source>This option is the quickest and will cost about ~0.025 BCZ to anonymize 10000 BCZ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 BTCZ to anonymize 10000 BTCZ</source>
+        <source>This option is moderately fast and will cost about 0.05 BCZ to anonymize 10000 BCZ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2278,7 +2278,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 BTCZ per 10000 BTCZ you anonymize.</source>
+        <source>0.1 BCZ per 10000 BCZ you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2457,7 +2457,7 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</so
     </message>
     <message>
         <location line="-169"/>
-        <source>Enable automatic minting of BTCZ units to zcarbon</source>
+        <source>Enable automatic minting of BCZ units to zcarbon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2467,7 +2467,7 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</so
     </message>
     <message>
         <location line="+9"/>
-        <source>Percentage of incoming BTCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming BCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2478,7 +2478,7 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</so
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough BTCZ for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough BCZ for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2692,7 +2692,7 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</so
     </message>
     <message>
         <location line="+71"/>
-        <source>BTCZ Balance</source>
+        <source>BCZ Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2809,7 +2809,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+191"/>
         <location line="+19"/>
-        <source>Locked BTCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
+        <source>Locked BCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3047,7 +3047,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+19"/>
-        <source>0.000 000 00 BTCZ</source>
+        <source>0.000 000 00 BCZ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3801,7 +3801,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message numerus="yes">
         <location line="+336"/>
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of BTCZ to convert to zcarbon</comment>
+        <comment>Enter an amount of BCZ to convert to zcarbon</comment>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -4794,7 +4794,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>0 BTCZ</source>
+        <source>0 BCZ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4864,12 +4864,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+907"/>
-        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uBTCZs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uBCZs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uBCZs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uBCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uBTCZs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uBCZs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uBCZs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uBCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4935,7 +4935,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+35"/>
-        <source>Anonymized BTCZ</source>
+        <source>Anonymized BCZ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5810,7 +5810,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>BTCZ Stake</source>
+        <source>BCZ Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5840,7 +5840,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted BTCZ to zcarbon</source>
+        <source>Converted BCZ to zcarbon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5850,7 +5850,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Received BTCZ from zcarbon</source>
+        <source>Received BCZ from zcarbon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5860,7 +5860,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zcarbon to BTCZ</source>
+        <source>Converted zcarbon to BCZ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6134,7 +6134,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-280"/>
-        <source>Received BTCZ from zcarbon</source>
+        <source>Received BCZ from zcarbon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6186,7 +6186,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 BTCZ.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 BCZ.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6331,7 +6331,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>Enable or disable staking functionality for BTCZ inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for BCZ inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6381,12 +6381,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+8"/>
-        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in BCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in BCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6521,12 +6521,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BTCZ.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BCZ.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BTCZ.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BCZ.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6926,7 +6926,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Fee (in BTCZ/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in BCZ/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7091,7 +7091,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+9"/>
-        <source>Reindex the BTCZ and zcarbon money supply statistics</source>
+        <source>Reindex the BCZ and zcarbon money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

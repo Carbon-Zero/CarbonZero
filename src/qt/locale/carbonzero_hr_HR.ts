@@ -176,16 +176,16 @@
         <translation>Potvrdi šifriranje novčanika</translation>
     </message>
     <message>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BTCZs from being stolen by malware infecting your computer.</source>
-        <translation>CarbonZero se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše BTCZ od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BCZs from being stolen by malware infecting your computer.</source>
+        <translation>CarbonZero se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše BCZ od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BTCZ&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše BTCZove 1 !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BCZ&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše BCZove 1 !</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -734,7 +734,7 @@
     </message>
     <message>
         <source>CarbonZero Core client</source>
-        <translation>BTCZIX Core Klijent</translation>
+        <translation>BCZIX Core Klijent</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to CarbonZero network</source>
@@ -1679,8 +1679,8 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Adresa / iznos:</translation>
     </message>
     <message>
-        <source>Add destinations to send BTCZ to</source>
-        <translation>Dodajte odredišta za slanje BTCZ
+        <source>Add destinations to send BCZ to</source>
+        <translation>Dodajte odredišta za slanje BCZ
 </translation>
     </message>
     <message>
@@ -1779,32 +1779,32 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Odaberi razinu privatnosti.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BTCZ</source>
-        <translation>Koristite 2 odvojene masternode za miješanje sredstava do 10000 BTCZ</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 BCZ</source>
+        <translation>Koristite 2 odvojene masternode za miješanje sredstava do 10000 BCZ</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BTCZ</source>
-        <translation>Koristite 8 zasebnih masternoda za miješanje sredstava do 10000 BTCZ</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 BCZ</source>
+        <translation>Koristite 8 zasebnih masternoda za miješanje sredstava do 10000 BCZ</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Koristite 16 zasebnih masternodova</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 BTCZ to anonymize 10000 BTCZ</source>
-        <translation>Ova je opcija najbrža i košta oko 0,025 BTCZ da anonimizira 10000 BTCZ</translation>
+        <source>This option is the quickest and will cost about ~0.025 BCZ to anonymize 10000 BCZ</source>
+        <translation>Ova je opcija najbrža i košta oko 0,025 BCZ da anonimizira 10000 BCZ</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 BTCZ to anonymize 10000 BTCZ</source>
-        <translation>Ova je opcija umjereno brza i košta oko 0,05 BTCZ da anonimizira 10000 BTCZ</translation>
+        <source>This option is moderately fast and will cost about 0.05 BCZ to anonymize 10000 BCZ</source>
+        <translation>Ova je opcija umjereno brza i košta oko 0,05 BCZ da anonimizira 10000 BCZ</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Ovo je najsporiji i najsigurniji izbor. Korištenje maksimalne anonimnosti košta</translation>
     </message>
     <message>
-        <source>0.1 BTCZ per 10000 BTCZ you anonymize.</source>
-        <translation>0,1 BTCZ po 10000 BTCZ za anonimizaciju.</translation>
+        <source>0.1 BCZ per 10000 BCZ you anonymize.</source>
+        <translation>0,1 BCZ po 10000 BCZ za anonimizaciju.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1948,24 +1948,24 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
 </translation>
     </message>
     <message>
-        <source>Enable automatic minting of BTCZ units to zcarbon</source>
-        <translation>Omogućite automint BTCZ jedinica na zcarbon</translation>
+        <source>Enable automatic minting of BCZ units to zcarbon</source>
+        <translation>Omogućite automint BCZ jedinica na zcarbon</translation>
     </message>
     <message>
         <source>Enable zcarbon Automint</source>
         <translation>Omogući zcarbon Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming BTCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
-        <translation>Postotak dolaznih BTCZ koji se automatski pretvara u zcarbon putem protokola Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming BCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
+        <translation>Postotak dolaznih BCZ koji se automatski pretvara u zcarbon putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zcarbon</source>
         <translation>Postotak automatiziranog zcarbon</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough BTCZ for this denomination is available</source>
-        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno BTCZ za apoen</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BCZ for this denomination is available</source>
+        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno BCZ za apoen</translation>
     </message>
     <message>
         <source>Preferred Automint zcarbon Denomination</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Ukupni saldo, uključujući sve nedostupne kovanice.</translation>
     </message>
     <message>
-        <source>BTCZ Balance</source>
-        <translation>BTCZ Saldo</translation>
+        <source>BCZ Balance</source>
+        <translation>BCZ Saldo</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2219,8 +2219,8 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>Po potrošiti:</translation>
     </message>
     <message>
-        <source>Locked BTCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
-        <translation>Zaključani BTCZ ili Masternode kolateral. Oni su isključeni iz zcarbon kovanja.</translation>
+        <source>Locked BCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
+        <translation>Zaključani BCZ ili Masternode kolateral. Oni su isključeni iz zcarbon kovanja.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2402,8 +2402,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Dostupno za Minting:</translation>
     </message>
     <message>
-        <source>0.000 000 00 BTCZ</source>
-        <translation>0.000 000 00 BTCZ</translation>
+        <source>0.000 000 00 BCZ</source>
+        <translation>0.000 000 00 BCZ</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2984,7 +2984,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of BTCZ to convert to zcarbon</comment>
+        <comment>Enter an amount of BCZ to convert to zcarbon</comment>
         <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3747,8 +3747,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Veličina UTXO:</translation>
     </message>
     <message>
-        <source>0 BTCZ</source>
-        <translation>0 BTCZ</translation>
+        <source>0 BCZ</source>
+        <translation>0 BCZ</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3805,12 +3805,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Kovanice se automatski odabiru</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ako je prilagođena naknada postavljena na 1000 uBTCZ-ova, a transakcija je samo 250 bajta, tada "po kilobajtu" se plaća samo 250 uBTCZ-a, dok se "barem" plaća 1000 uBTCZ-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
+        <source>If the custom fee is set to 1000 uBCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBCZs in fee,&lt;br /&gt;while "at least" pays 1000 uBCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ako je prilagođena naknada postavljena na 1000 uBCZ-ova, a transakcija je samo 250 bajta, tada "po kilobajtu" se plaća samo 250 uBCZ-a, dok se "barem" plaća 1000 uBCZ-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBTCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBTCZs in fee,&lt;br /&gt;while "total at least" pays 1000 uBTCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ako je prilagođena naknada postavljena na 1000 uBTCZ, a transakcija je samo 250 bajta, tada "po kilobajtu" plaća se samo 250 uBTCZ-ova, a "ukupno barem" plaća 1000 uBTCZ-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
+        <source>If the custom fee is set to 1000 uBCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBCZs in fee,&lt;br /&gt;while "total at least" pays 1000 uBCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ako je prilagođena naknada postavljena na 1000 uBCZ, a transakcija je samo 250 bajta, tada "po kilobajtu" plaća se samo 250 uBCZ-ova, a "ukupno barem" plaća 1000 uBCZ-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CarbonZero transactions than the network can process.</source>
@@ -3861,8 +3861,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dodaj primatelja</translation>
     </message>
     <message>
-        <source>Anonymized BTCZ</source>
-        <translation>Anonimiziran BTCZ</translation>
+        <source>Anonymized BCZ</source>
+        <translation>Anonimiziran BCZ</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4526,8 +4526,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Zaprimljeno preko Zametanja</translation>
     </message>
     <message>
-        <source>BTCZ Stake</source>
-        <translation>BTCZ Stake</translation>
+        <source>BCZ Stake</source>
+        <translation>BCZ Stake</translation>
     </message>
     <message>
         <source>zcarbon Stake</source>
@@ -4550,24 +4550,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
-        <source>Converted BTCZ to zcarbon</source>
-        <translation>Pretvoreni BTCZ u zcarbon</translation>
+        <source>Converted BCZ to zcarbon</source>
+        <translation>Pretvoreni BCZ u zcarbon</translation>
     </message>
     <message>
         <source>Spent zcarbon</source>
         <translation>Utrošeni zcarbon</translation>
     </message>
     <message>
-        <source>Received BTCZ from zcarbon</source>
-        <translation>Primljeni BTCZ od zcarbon</translation>
+        <source>Received BCZ from zcarbon</source>
+        <translation>Primljeni BCZ od zcarbon</translation>
     </message>
     <message>
         <source>Minted Change as zcarbon from zcarbon Spend</source>
         <translation>Mintana razlika zcarbon od zcarbon Utroška</translation>
     </message>
     <message>
-        <source>Converted zcarbon to BTCZ</source>
-        <translation>Pretvoreni zcarbon u BTCZ</translation>
+        <source>Converted zcarbon to BCZ</source>
+        <translation>Pretvoreni zcarbon u BCZ</translation>
     </message>
     <message>
         <source>Anonymous (zcarbon Transaction)</source>
@@ -4785,8 +4785,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvoz uspješan</translation>
     </message>
     <message>
-        <source>Received BTCZ from zcarbon</source>
-        <translation>Primljeni BTCZ od zcarbon</translation>
+        <source>Received BCZ from zcarbon</source>
+        <translation>Primljeni BCZ od zcarbon</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zcarbon</source>
@@ -4826,8 +4826,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Salji novac</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BTCZ.</source>
-        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 BTCZ.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BCZ.</source>
+        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 BCZ.</translation>
     </message>
 </context>
 <context>
@@ -4943,8 +4943,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zcarbon mintanja (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for BTCZ inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za BTCZ unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for BCZ inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za BCZ unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zcarbon inputs (0-1, default: %u)</source>
@@ -4983,12 +4983,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvrši naredbu kada se promijeni najbolji blok (%s u cmd zamjenjuje se blokovskim raspršivanjem)</translation>
     </message>
     <message>
-        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Naknade (u BTCZ / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
+        <source>Fees (in BCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Naknade (u BCZ / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BTCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Naknade (u BTCZ / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
+        <source>Fees (in BCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Naknade (u BCZ / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5095,12 +5095,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Nije moguće locirati dovoljno sredstava s domenom Prikrivanja za tu transakciju.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BTCZ.</source>
-        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 BTCZ.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BCZ.</source>
+        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 BCZ.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BTCZ.</source>
-        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 BTCZ.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BCZ.</source>
+        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 BCZ.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5412,8 +5412,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Greška čitanja bloka</translation>
     </message>
     <message>
-        <source>Fee (in BTCZ/kB) to add to transactions you send (default: %s)</source>
-        <translation>Naknada (u BTCZ / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
+        <source>Fee (in BCZ/kB) to add to transactions you send (default: %s)</source>
+        <translation>Naknada (u BCZ / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5544,8 +5544,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
-        <source>Reindex the BTCZ and zcarbon money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku BTCZ i zcarbon ponude novca</translation>
+        <source>Reindex the BCZ and zcarbon money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku BCZ i zcarbon ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
