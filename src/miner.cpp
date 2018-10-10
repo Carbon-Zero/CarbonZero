@@ -627,7 +627,12 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                     continue;
                 }
             }
-        }
+        } else {
+            if (chainActive.Tip()->nHeight >= Params().LAST_POW_BLOCK()) {
+                LogPrintf("POW Ended\n");
+                break;
+            }
+	} 
 
 	MilliSleep(1000);
 
