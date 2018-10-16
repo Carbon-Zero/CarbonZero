@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CarbonZero_ZBCZTRACKER_H
-#define CarbonZero_ZBCZTRACKER_H
+#ifndef CarbonZero_ZCZETRACKER_H
+#define CarbonZero_ZCZETRACKER_H
 
 #include "primitives/zerocoin.h"
 #include <list>
@@ -48,4 +48,4 @@ public:
     void Clear();
 };
 
-#endif //CarbonZero_ZBCZTRACKER_H
+#endif //CarbonZero_ZCZETRACKER_H

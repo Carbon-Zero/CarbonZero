@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BCZs from being stolen by malware infecting your computer.</source>
-        <translation>CarbonZero verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi BCZ dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CZEs from being stolen by malware infecting your computer.</source>
+        <translation>CarbonZero verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi CZE dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BCZ&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI BCZ&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CZE&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI CZE&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -738,7 +738,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to CarbonZero network</source>
-        <translation><numerusform>%n connessione attiva alla rete BCZIX</numerusform><numerusform>%n connessioni attive alla rete BCZIX</numerusform></translation>
+        <translation><numerusform>%n connessione attiva alla rete CZEIX</numerusform><numerusform>%n connessioni attive alla rete CZEIX</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1127,7 +1127,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Può variare di +/- %1 uBCZ per input.</translation>
+        <translation>Può variare di +/- %1 uCZE per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1275,7 +1275,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Welcome to CarbonZero Core.</source>
-        <translation>Benvenuto in BCZIX Core.</translation>
+        <translation>Benvenuto in CZEIX Core.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where CarbonZero Core will store its data.</source>
@@ -1671,12 +1671,12 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Configura Offuscamento</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BCZ</source>
-        <translation>Usa 2 masternodi diversi per mescolare fino a 10000 BCZ</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 CZE</source>
+        <translation>Usa 2 masternodi diversi per mescolare fino a 10000 CZE</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BCZ</source>
-        <translation>Usa 8 masternodi diversi per mixare fino a 10000 BCZ</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 CZE</source>
+        <translation>Usa 8 masternodi diversi per mixare fino a 10000 CZE</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
@@ -1713,16 +1713,16 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of BCZ units to zcarbon</source>
-        <translation>Attiva il conio automatico di unità BCZ in zcarbon</translation>
+        <source>Enable automatic minting of CZE units to zcarbon</source>
+        <translation>Attiva il conio automatico di unità CZE in zcarbon</translation>
     </message>
     <message>
         <source>Enable zcarbon Automint</source>
         <translation>Attiva Conio automatico zcarbon</translation>
     </message>
     <message>
-        <source>Percentage of incoming BCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di BCZ in entrata che viene automaticamente convertita in zcarbon attraverso il protocollo Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming CZE which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentuale di CZE in entrata che viene automaticamente convertita in zcarbon attraverso il protocollo Zerocoin (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zcarbon</source>
@@ -1792,8 +1792,8 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Saldo totale, inclusi tutte le monete non disponibili.</translation>
     </message>
     <message>
-        <source>BCZ Balance</source>
-        <translation>Bilancio BCZ</translation>
+        <source>CZE Balance</source>
+        <translation>Bilancio CZE</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1846,8 +1846,8 @@ Questi zcarbon sono spendibili.</translation>
         <translation>Spendibili:</translation>
     </message>
     <message>
-        <source>Locked BCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
-        <translation>BCZ bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zcarbon.</translation>
+        <source>Locked CZE or Masternode collaterals. These are excluded from zcarbon minting.</source>
+        <translation>CZE bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zcarbon.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -1937,8 +1937,8 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>zcarbon</translation>
     </message>
     <message>
-        <source>0.000 000 00 BCZ</source>
-        <translation>0.000 000 00 BCZ</translation>
+        <source>0.000 000 00 CZE</source>
+        <translation>0.000 000 00 CZE</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1962,7 +1962,7 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
     </message>
     <message>
         <source>Enter an amount of Piv to convert to zcarbon</source>
-        <translation>Immetti un importo di BCZ da convertire in zcarbon</translation>
+        <translation>Immetti un importo di CZE da convertire in zcarbon</translation>
     </message>
     <message>
         <source>zcarbon Control</source>

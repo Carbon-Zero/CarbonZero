@@ -58,7 +58,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
         if (wtx.IsZerocoinSpend() && (fZSpendFromMe || wallet->zcarbonTracker->HasMintTx(hash))) {
             //zcarbon stake reward
             sub.involvesWatchAddress = false;
-            sub.type = TransactionRecord::StakeZBCZ;
+            sub.type = TransactionRecord::StakeZCZE;
             sub.address = mapValue["zerocoinmint"];
             sub.credit = 0;
             for (const CTxOut& out : wtx.vout) {
@@ -67,7 +67,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             }
             sub.debit -= wtx.vin[0].nSequence * COIN;
         } else if (isminetype mine = wallet->IsMine(wtx.vout[1])) {
-            // BCZ stake reward
+            // CZE stake reward
             sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
             sub.type = TransactionRecord::StakeMint;
             sub.address = CBitcoinAddress(address).ToString();
@@ -309,10 +309,10 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
     return parts;
 }
 
-bool IsZBCZType(TransactionRecord::Type type)
+bool IsZCZEType(TransactionRecord::Type type)
 {
     switch (type) {
-        case TransactionRecord::StakeZBCZ:
+        case TransactionRecord::StakeZCZE:
         case TransactionRecord::ZerocoinMint:
         case TransactionRecord::ZerocoinSpend:
         case TransactionRecord::RecvFromZerocoinSpend:
@@ -361,7 +361,7 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
         }
     }
     // For generated transactions, determine maturity
-    else if (type == TransactionRecord::Generated || type == TransactionRecord::StakeMint || type == TransactionRecord::StakeZBCZ || type == TransactionRecord::MNReward) {
+    else if (type == TransactionRecord::Generated || type == TransactionRecord::StakeMint || type == TransactionRecord::StakeZCZE || type == TransactionRecord::MNReward) {
         if (nBlocksToMaturity > 0) {
             status.status = TransactionStatus::Immature;
             status.matures_in = nBlocksToMaturity;

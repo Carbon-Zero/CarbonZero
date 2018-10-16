@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CarbonZero_ZBCZWALLET_H
-#define CarbonZero_ZBCZWALLET_H
+#ifndef CarbonZero_ZCZEWALLET_H
+#define CarbonZero_ZCZEWALLET_H
 
 #include <map>
 #include "libzerocoin/Coin.h"
@@ -28,7 +28,7 @@ public:
     bool SetMasterSeed(const uint256& seedMaster, bool fResetCount = false);
     uint256 GetMasterSeed() { return seedMaster; }
     void SyncWithChain(bool fGenerateMintPool = true);
-    void GenerateDeterministicZBCZ(libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly = false);
+    void GenerateDeterministicZCZE(libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly = false);
     void GenerateMint(const uint32_t& nCount, const libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint);
     void GetState(int& nCount, int& nLastGenerated);
     bool RegenerateMint(const CDeterministicMint& dMint, CZerocoinMint& mint);
@@ -39,10 +39,10 @@ public:
     bool IsInMintPool(const CBigNum& bnValue) { return mintPool.Has(bnValue); }
     void UpdateCount();
     void Lock();
-    void SeedToZBCZ(const uint512& seed, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key);
+    void SeedToZCZE(const uint512& seed, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key);
 
 private:
     uint512 GetZerocoinSeed(uint32_t n);
 };
 
-#endif //CarbonZero_ZBCZWALLET_H
+#endif //CarbonZero_ZCZEWALLET_H

@@ -176,16 +176,16 @@
         <translation>Confirme el cifrado del monedero</translation>
     </message>
     <message>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BCZs from being stolen by malware infecting your computer.</source>
-        <translation>CarbonZero se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus BCZs no sean robados mediante malware de su ordenador.</translation>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CZEs from being stolen by malware infecting your computer.</source>
+        <translation>CarbonZero se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus CZEs no sean robados mediante malware de su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>¿Está seguro de que desea cifrar su monedero?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BCZ&lt;/b&gt;!</source>
-        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS BCZ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CZE&lt;/b&gt;!</source>
+        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS CZE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1681,8 +1681,8 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Dirección / Cantidad:</translation>
     </message>
     <message>
-        <source>Add destinations to send BCZ to</source>
-        <translation>Agregue los destinos para enviar BCZ</translation>
+        <source>Add destinations to send CZE to</source>
+        <translation>Agregue los destinos para enviar CZE</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1780,32 +1780,32 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Por favor seleccione un nivel de privacidad.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BCZ</source>
-        <translation>Use 2 masterdodes diferentes para mezclar los fondos hasta los 10000 BCZ</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 CZE</source>
+        <translation>Use 2 masterdodes diferentes para mezclar los fondos hasta los 10000 CZE</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BCZ</source>
-        <translation>Use 8 masternodes diferentes para mezclar fondos hasta los 10000 BCZ</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 CZE</source>
+        <translation>Use 8 masternodes diferentes para mezclar fondos hasta los 10000 CZE</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 masternodes diferentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 BCZ to anonymize 10000 BCZ</source>
-        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 BCZ para anonimizar 10000 BCZ</translation>
+        <source>This option is the quickest and will cost about ~0.025 CZE to anonymize 10000 CZE</source>
+        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 CZE para anonimizar 10000 CZE</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 BCZ to anonymize 10000 BCZ</source>
-        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 BCZ para anonimizar 10000 BCZ</translation>
+        <source>This option is moderately fast and will cost about 0.05 CZE to anonymize 10000 CZE</source>
+        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 CZE para anonimizar 10000 CZE</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta es la opción más lenta pero más segura. Usar el máximo anonimato costará</translation>
     </message>
     <message>
-        <source>0.1 BCZ per 10000 BCZ you anonymize.</source>
-        <translation>0.1 BCZ por 10000 BCZ que anonimizas.</translation>
+        <source>0.1 CZE per 10000 CZE you anonymize.</source>
+        <translation>0.1 CZE por 10000 CZE que anonimizas.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1948,24 +1948,24 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Mapear un puerto utilizando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of BCZ units to zcarbon</source>
-        <translation>Activar el minting automática de unidades BCZ a zcarbon</translation>
+        <source>Enable automatic minting of CZE units to zcarbon</source>
+        <translation>Activar el minting automática de unidades CZE a zcarbon</translation>
     </message>
     <message>
         <source>Enable zcarbon Automint</source>
         <translation>Activar zcarbon Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming BCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
-        <translation>Porcentaje de BCZ entrantes que serán automáticamente convertidos a zcarbon a través del Protocolo Zerocoin (mín: 10%)</translation>
+        <source>Percentage of incoming CZE which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
+        <translation>Porcentaje de CZE entrantes que serán automáticamente convertidos a zcarbon a través del Protocolo Zerocoin (mín: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zcarbon</source>
         <translation>Porcentaje de zcarbon autogenerados</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough BCZ for this denomination is available</source>
-        <translation>Esperar con la conversión automática a Zerocoin hasta que hayan suficientes BCZ disponibles para este tamaño de billete</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CZE for this denomination is available</source>
+        <translation>Esperar con la conversión automática a Zerocoin hasta que hayan suficientes CZE disponibles para este tamaño de billete</translation>
     </message>
     <message>
         <source>Preferred Automint zcarbon Denomination</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Balance Total, incluidas todas las monedas no disponibles.</translation>
     </message>
     <message>
-        <source>BCZ Balance</source>
-        <translation>Balance BCZ</translation>
+        <source>CZE Balance</source>
+        <translation>Balance CZE</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2219,8 +2219,8 @@ Inmaduro: confirmado, pero menos de 1 acuñación de la misma denominación desp
         <translation>Disponible:</translation>
     </message>
     <message>
-        <source>Locked BCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
-        <translation>BCZ bloqueado o Masternode colaterales. Estos están excluidos de minting zcarbon.</translation>
+        <source>Locked CZE or Masternode collaterals. These are excluded from zcarbon minting.</source>
+        <translation>CZE bloqueado o Masternode colaterales. Estos están excluidos de minting zcarbon.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2402,8 +2402,8 @@ Para habilitar AutoMint cambie 'enablezeromint = 0' a 'enablezeromint = 1' en ca
         <translation>Disponible para minting:</translation>
     </message>
     <message>
-        <source>0.000 000 00 BCZ</source>
-        <translation>0.000 000 00 BCZ</translation>
+        <source>0.000 000 00 CZE</source>
+        <translation>0.000 000 00 CZE</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2443,7 +2443,7 @@ Para habilitar AutoMint cambie 'enablezeromint = 0' a 'enablezeromint = 1' en ca
     </message>
     <message>
         <source>Enter an amount of Piv to convert to zcarbon</source>
-        <translation>Introduzca la cantidad de BCZ que desea convertir a zPiv</translation>
+        <translation>Introduzca la cantidad de CZE que desea convertir a zPiv</translation>
     </message>
     <message>
         <source>zcarbon Control</source>
@@ -2988,7 +2988,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of BCZ to convert to zcarbon</comment>
+        <comment>Enter an amount of CZE to convert to zcarbon</comment>
         <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3749,8 +3749,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Tamaño de UTXO:</translation>
     </message>
     <message>
-        <source>0 BCZ</source>
-        <translation>0 BCZ</translation>
+        <source>0 CZE</source>
+        <translation>0 CZE</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3805,12 +3805,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Monedas seleccionadas automáticamente</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBCZs in fee,&lt;br /&gt;while "at least" pays 1000 uBCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uBCZs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uBCZs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uBCZs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uCZEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCZEs in fee,&lt;br /&gt;while "at least" pays 1000 uCZEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uCZEs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uCZEs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uCZEs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBCZs in fee,&lt;br /&gt;while "total at least" pays 1000 uBCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uBCZs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uBCZs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uBCZs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uCZEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCZEs in fee,&lt;br /&gt;while "total at least" pays 1000 uCZEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uCZEs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uCZEs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uCZEs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CarbonZero transactions than the network can process.</source>
@@ -3861,8 +3861,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Añadir Destinatario</translation>
     </message>
     <message>
-        <source>Anonymized BCZ</source>
-        <translation>BCZ anonimizados</translation>
+        <source>Anonymized CZE</source>
+        <translation>CZE anonimizados</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4525,8 +4525,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Recibido por medio de Ofuscación</translation>
     </message>
     <message>
-        <source>BCZ Stake</source>
-        <translation>Stake BCZ</translation>
+        <source>CZE Stake</source>
+        <translation>Stake CZE</translation>
     </message>
     <message>
         <source>zcarbon Stake</source>
@@ -4549,24 +4549,24 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Ofuscación Crea Billetes</translation>
     </message>
     <message>
-        <source>Converted BCZ to zcarbon</source>
-        <translation>BCZ convertidos a zcarbon</translation>
+        <source>Converted CZE to zcarbon</source>
+        <translation>CZE convertidos a zcarbon</translation>
     </message>
     <message>
         <source>Spent zcarbon</source>
         <translation>Gastar zcarbon</translation>
     </message>
     <message>
-        <source>Received BCZ from zcarbon</source>
-        <translation>BCZ recibidos desde zcarbon </translation>
+        <source>Received CZE from zcarbon</source>
+        <translation>CZE recibidos desde zcarbon </translation>
     </message>
     <message>
         <source>Minted Change as zcarbon from zcarbon Spend</source>
         <translation>Cambio de acuñación en zcarbon al Gastar zcarbon</translation>
     </message>
     <message>
-        <source>Converted zcarbon to BCZ</source>
-        <translation>zcarbon convertidos a BCZ</translation>
+        <source>Converted zcarbon to CZE</source>
+        <translation>zcarbon convertidos a CZE</translation>
     </message>
     <message>
         <source>Anonymous (zcarbon Transaction)</source>
@@ -4784,8 +4784,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Exportación Correcta</translation>
     </message>
     <message>
-        <source>Received BCZ from zcarbon</source>
-        <translation>BCZ recibidos desde zcarbon</translation>
+        <source>Received CZE from zcarbon</source>
+        <translation>CZE recibidos desde zcarbon</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zcarbon</source>
@@ -4825,8 +4825,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Enviar Monedas</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BCZ.</source>
-        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 BCZ.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CZE.</source>
+        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 CZE.</translation>
     </message>
 </context>
 <context>
@@ -4942,8 +4942,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Habilite copias de seguridad automáticas del monedero que se activan después de cada acuñación zcarbon (0-1, predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for BCZ inputs (0-1, default: %u)</source>
-        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas BCZ (0-1, predeterminado: %u)</translation>
+        <source>Enable or disable staking functionality for CZE inputs (0-1, default: %u)</source>
+        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas CZE (0-1, predeterminado: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zcarbon inputs (0-1, default: %u)</source>
@@ -4982,12 +4982,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Ejecutar comando cuando el mejor bloque cambie (%s en cmd es reemplazado por el block hash)</translation>
     </message>
     <message>
-        <source>Fees (in BCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Comisiones (en BCZ/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
+        <source>Fees (in CZE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Comisiones (en CZE/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Comisiones (en BCZ/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
+        <source>Fees (in CZE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Comisiones (en CZE/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5094,12 +5094,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Imposible localizar suficientes fondos denominados de Ofuscación para esta transacción.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BCZ.</source>
-        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 BCZ.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CZE.</source>
+        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 CZE.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BCZ.</source>
-        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 BCZ.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CZE.</source>
+        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 CZE.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5410,8 +5410,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Falló al leer el bloque</translation>
     </message>
     <message>
-        <source>Fee (in BCZ/kB) to add to transactions you send (default: %s)</source>
-        <translation>Comisión (en BCZ/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
+        <source>Fee (in CZE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Comisión (en CZE/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5542,8 +5542,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Porcentaje de Zerocoin creadas automáticamente (10-100, por defecto: %u)</translation>
     </message>
     <message>
-        <source>Reindex the BCZ and zcarbon money supply statistics</source>
-        <translation>Reindexar as estatísticas de fornecimento de dinheiro BCZ e zcarbon</translation>
+        <source>Reindex the CZE and zcarbon money supply statistics</source>
+        <translation>Reindexar as estatísticas de fornecimento de dinheiro CZE e zcarbon</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>

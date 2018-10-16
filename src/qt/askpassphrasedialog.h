@@ -38,7 +38,7 @@ public:
         Encrypt,        /** Encrypt unencrypted wallet */
         ToggleLock,     /** Toggle wallet lock state */
         ChangePass,     /** Change passphrase */
-        Send_BCZ,       /** Send BCZ */
+        Send_CZE,       /** Send CZE */
         Send_zcarbon,      /** Send zcarbon */
         Mint_zcarbon,      /** Mint zcarbon */
         BIP_38,         /** BIP38 menu */

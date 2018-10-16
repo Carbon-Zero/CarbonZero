@@ -176,15 +176,15 @@
         <translation>cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
-        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BCZs from being stolen by malware infecting your computer.</source>
-        <translation>CarbonZero şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, BCZ'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>CarbonZero will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CZEs from being stolen by malware infecting your computer.</source>
+        <translation>CarbonZero şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, CZE'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BCZ&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CZE&lt;/b&gt;!</source>
         <translation>Dikkat! Eğer cüzdanınızı şifrelerseniz ve şifrenizi unutursanız &lt;b&gt;Tüm Pıvlerinizi kaybedersiniz&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -1644,8 +1644,8 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Address /miktar:</translation>
     </message>
     <message>
-        <source>Add destinations to send BCZ to</source>
-        <translation>BCZ göndermek için varış yerleri ekleyin</translation>
+        <source>Add destinations to send CZE to</source>
+        <translation>CZE göndermek için varış yerleri ekleyin</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1743,32 +1743,32 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Lütfen bir gizlilik düzeyi seçin.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BCZ</source>
-        <translation>10000 BCZ'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 CZE</source>
+        <translation>10000 CZE'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BCZ</source>
-        <translation>10000 BCZ'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 CZE</source>
+        <translation>10000 CZE'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 ayrı matternod kullan</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 BCZ to anonymize 10000 BCZ</source>
-        <translation>Bu seçenek en hızlıdır ve 10000 BCZ'yi anonimleştirmek için ~ 0.025 BCZ'lik bir maliyeti olacaktır</translation>
+        <source>This option is the quickest and will cost about ~0.025 CZE to anonymize 10000 CZE</source>
+        <translation>Bu seçenek en hızlıdır ve 10000 CZE'yi anonimleştirmek için ~ 0.025 CZE'lik bir maliyeti olacaktır</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 BCZ to anonymize 10000 BCZ</source>
-        <translation>Bu seçenek orta derecede hızlıdır ve 10000 BCZ'yi anonimleştirmek için yaklaşık 0.05 BCZ'e mal olur</translation>
+        <source>This option is moderately fast and will cost about 0.05 CZE to anonymize 10000 CZE</source>
+        <translation>Bu seçenek orta derecede hızlıdır ve 10000 CZE'yi anonimleştirmek için yaklaşık 0.05 CZE'e mal olur</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Bu en yavaş ve en güvenli seçenektir. Maksimum anonimlik kullanmak maliyete gelecek</translation>
     </message>
     <message>
-        <source>0.1 BCZ per 10000 BCZ you anonymize.</source>
-        <translation>0.1 BCZ her 10000 BCZ anonimleştirmeye.</translation>
+        <source>0.1 CZE per 10000 CZE you anonymize.</source>
+        <translation>0.1 CZE her 10000 CZE anonimleştirmeye.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1915,16 +1915,16 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>zcarbon Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming BCZ which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zcarbon'ye dönüştürülen gelen BCZ yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming CZE which get automatically converted to zcarbon via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zcarbon'ye dönüştürülen gelen CZE yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zcarbon</source>
         <translation>Otomatikleştirilmiş zcarbon yüzdesi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough BCZ for this denomination is available</source>
-        <translation>Bu mezhebi için yeterli BCZ bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CZE for this denomination is available</source>
+        <translation>Bu mezhebi için yeterli CZE bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
     </message>
     <message>
         <source>Preferred Automint zcarbon Denomination</source>
@@ -2078,8 +2078,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Toplam Bakiye, mevcut olmayan tüm paralar dahil.</translation>
     </message>
     <message>
-        <source>BCZ Balance</source>
-        <translation>BCZ Bakiyesi</translation>
+        <source>CZE Balance</source>
+        <translation>CZE Bakiyesi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2150,8 +2150,8 @@ https://www.transifex.com/carbonzero-project/carbonzero-project-translations</tr
         <translation>Harcanabilir:</translation>
     </message>
     <message>
-        <source>Locked BCZ or Masternode collaterals. These are excluded from zcarbon minting.</source>
-        <translation>Kilitli BCZ veya Masternode teminatları. Bunlar zcarbon matlaştırmadan çıkarılır.</translation>
+        <source>Locked CZE or Masternode collaterals. These are excluded from zcarbon minting.</source>
+        <translation>Kilitli CZE veya Masternode teminatları. Bunlar zcarbon matlaştırmadan çıkarılır.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2333,8 +2333,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in carbonzero
         <translation>Mintinge hazır</translation>
     </message>
     <message>
-        <source>0.000 000 00 BCZ</source>
-        <translation>0.000 000 00 BCZ</translation>
+        <source>0.000 000 00 CZE</source>
+        <translation>0.000 000 00 CZE</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -3428,8 +3428,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>UTXO Boyutu:</translation>
     </message>
     <message>
-        <source>0 BCZ</source>
-        <translation>0 BCZ</translation>
+        <source>0 CZE</source>
+        <translation>0 CZE</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3484,12 +3484,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Koinler otomatik seçildi</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBCZs in fee,&lt;br /&gt;while "at least" pays 1000 uBCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uBCZ olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uBCZ öder,&lt;br /&gt;"en az" ise 1000 uBCZ öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uCZEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCZEs in fee,&lt;br /&gt;while "at least" pays 1000 uCZEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 uCZE olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uCZE öder,&lt;br /&gt;"en az" ise 1000 uCZE öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBCZs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBCZs in fee,&lt;br /&gt;while "total at least" pays 1000 uBCZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uBCZ olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uBCZ ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uBCZ ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uCZEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCZEs in fee,&lt;br /&gt;while "total at least" pays 1000 uCZEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 uCZE olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uCZE ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uCZE ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CarbonZero transactions than the network can process.</source>
@@ -3540,8 +3540,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Alıcı ekle</translation>
     </message>
     <message>
-        <source>Anonymized BCZ</source>
-        <translation>anonim edilmiş BCZ</translation>
+        <source>Anonymized CZE</source>
+        <translation>anonim edilmiş CZE</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4436,8 +4436,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BCZ.</source>
-        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 BCZ ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CZE.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 CZE ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -4565,12 +4565,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
     </message>
     <message>
-        <source>Fees (in BCZ/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (BCZ / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in CZE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (CZE / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BCZ/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (BCZ / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in CZE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (CZE / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

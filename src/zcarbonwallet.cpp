@@ -24,12 +24,12 @@ CzcarbonWallet::CzcarbonWallet(std::string strWalletFile)
     //Check for old db version of storing zcarbon seed
     if (fFirstRun) {
         uint256 seed;
-        if (walletdb.ReadZBCZSeed_deprecated(seed)) {
+        if (walletdb.ReadZCZESeed_deprecated(seed)) {
             //Update to new format, erase old
             seedMaster = seed;
             hashSeed = Hash(seed.begin(), seed.end());
             if (pwalletMain->AddDeterministicSeed(seed)) {
-                if (walletdb.EraseZBCZSeed_deprecated()) {
+                if (walletdb.EraseZCZESeed_deprecated()) {
                     LogPrintf("%s: Updated zcarbon seed databasing\n", __func__);
                     fFirstRun = false;
                 } else {
@@ -84,8 +84,8 @@ bool CzcarbonWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
     nCountLastUsed = 0;
 
     if (fResetCount)
-        walletdb.WriteZBCZCount(nCountLastUsed);
-    else if (!walletdb.ReadZBCZCount(nCountLastUsed))
+        walletdb.WriteZCZECount(nCountLastUsed);
+    else if (!walletdb.ReadZCZECount(nCountLastUsed))
         nCountLastUsed = 0;
 
     mintPool.Reset();
@@ -146,7 +146,7 @@ void CzcarbonWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
         CBigNum bnSerial;
         CBigNum bnRandomness;
         CKey key;
-        SeedToZBCZ(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
+        SeedToZCZE(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
 
         mintPool.Add(bnValue, i);
         CWalletDB(strWalletFile).WriteMintPoolPair(hashSeed, GetPubCoinHash(bnValue), i);
@@ -292,7 +292,7 @@ bool CzcarbonWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, con
     CBigNum bnSerial;
     CBigNum bnRandomness;
     CKey key;
-    SeedToZBCZ(seedZerocoin, bnValueGen, bnSerial, bnRandomness, key);
+    SeedToZCZE(seedZerocoin, bnValueGen, bnSerial, bnRandomness, key);
 
     //Sanity check
     if (bnValueGen != bnValue)
@@ -333,7 +333,7 @@ bool CzcarbonWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, con
     if (nCountLastUsed < pMint.second) {
         CWalletDB walletdb(strWalletFile);
         nCountLastUsed = pMint.second;
-        walletdb.WriteZBCZCount(nCountLastUsed);
+        walletdb.WriteZCZECount(nCountLastUsed);
     }
 
     //remove from the pool
@@ -350,7 +350,7 @@ bool IsValidCoinValue(const CBigNum& bnValue)
     bnValue.isPrime();
 }
 
-void CzcarbonWallet::SeedToZBCZ(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
+void CzcarbonWallet::SeedToZCZE(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
 {
     ZerocoinParams* params = Params().Zerocoin_Params(false);
 
@@ -411,10 +411,10 @@ void CzcarbonWallet::UpdateCount()
 {
     nCountLastUsed++;
     CWalletDB walletdb(strWalletFile);
-    walletdb.WriteZBCZCount(nCountLastUsed);
+    walletdb.WriteZCZECount(nCountLastUsed);
 }
 
-void CzcarbonWallet::GenerateDeterministicZBCZ(CoinDenomination denom, PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly)
+void CzcarbonWallet::GenerateDeterministicZCZE(CoinDenomination denom, PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly)
 {
     GenerateMint(nCountLastUsed + 1, denom, coin, dMint);
     if (fGenerateOnly)
@@ -431,7 +431,7 @@ void CzcarbonWallet::GenerateMint(const uint32_t& nCount, const CoinDenomination
     CBigNum bnSerial;
     CBigNum bnRandomness;
     CKey key;
-    SeedToZBCZ(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
+    SeedToZCZE(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
     coin = PrivateCoin(Params().Zerocoin_Params(false), denom, bnSerial, bnRandomness);
     coin.setPrivKey(key.GetPrivKey());
     coin.setVersion(PrivateCoin::CURRENT_VERSION);

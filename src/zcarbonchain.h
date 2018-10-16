@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CarbonZero_ZBCZCHAIN_H
-#define CarbonZero_ZBCZCHAIN_H
+#ifndef CarbonZero_ZCZECHAIN_H
+#define CarbonZero_ZCZECHAIN_H
 
 #include "libzerocoin/Coin.h"
 #include "libzerocoin/Denominations.h"
@@ -39,4 +39,4 @@ bool TxOutToPublicCoin(const CTxOut& txout, libzerocoin::PublicCoin& pubCoin, CV
 std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock& block, bool fFilterInvalid);
 
 
-#endif //CarbonZero_ZBCZCHAIN_H
+#endif //CarbonZero_ZCZECHAIN_H

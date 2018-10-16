@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="BCZSupply">
+    <widget class="QLabel" name="CZESupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="BCZDemand">
+    <widget class="QLabel" name="CZEDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyBCZ">
+    <widget class="QPushButton" name="BuyCZE">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,7 +442,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy BCZ</string>
+      <string>Buy CZE</string>
      </property>
      <property name="icon">
       <iconset resource="../carbonzero.qrc">
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>BCZ</string>
+      <string>CZE</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,10 +1704,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>BCZ</string>
+      <string>CZE</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputBCZ">
+    <widget class="QLineEdit" name="UnitsInputCZE">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellBCZBTN">
+    <widget class="QPushButton" name="SellCZEBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1751,7 +1751,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell BCZ</string>
+      <string>Sell CZE</string>
      </property>
      <property name="icon">
       <iconset resource="../carbonzero">
@@ -1777,12 +1777,12 @@
          </font>
         </property>
         <property name="text">
-         <string>BCZ Available:</string>
+         <string>CZE Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="BCZAvailableLabel">
+       <widget class="QLabel" name="CZEAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelBCZ">
+       <widget class="QLabel" name="labelCZE">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>BCZ</string>
+         <string>CZE</string>
         </property>
        </widget>
       </item>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="BCZBalanceLabel">
+    <widget class="QLabel" name="CZEBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>BCZ Balance:</string>
+      <string>CZE Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="BCZAvailableLabel_2">
+    <widget class="QLabel" name="CZEAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>BCZ Available:</string>
+      <string>CZE Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,10 +2832,10 @@
       </font>
      </property>
      <property name="text">
-      <string>BCZ Pending:</string>
+      <string>CZE Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="BCZPendingLabel">
+    <widget class="QLabel" name="CZEPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex BCZ Deposit Address:</string>
+      <string>Bittrex CZE Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">

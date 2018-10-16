@@ -367,7 +367,7 @@ void PrivacyDialog::sendzcarbon()
 
     if(!fWholeNumber && fMintChange){
         QString strFeeWarning = "You've entered an amount with fractional digits and want the change to be converted to Zerocoin.<br /><br /><b>";
-        strFeeWarning += QString::number(dzFee, 'f', 8) + " BCZ </b>will be added to the standard transaction fees!<br />";
+        strFeeWarning += QString::number(dzFee, 'f', 8) + " CZE </b>will be added to the standard transaction fees!<br />";
         QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm additional Fees"),
             strFeeWarning,
             QMessageBox::Yes | QMessageBox::Cancel,
@@ -461,7 +461,7 @@ void PrivacyDialog::sendzcarbon()
 
     // Display errors during spend
     if (!fSuccess) {
-        if (receipt.GetStatus() == ZBCZ_SPEND_V1_SEC_LEVEL) {
+        if (receipt.GetStatus() == ZCZE_SPEND_V1_SEC_LEVEL) {
             QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zcarbon require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
             ui->TEMintStatus->setPlainText(tr("Failed to spend zcarbon"));
             ui->TEMintStatus->repaint();
@@ -840,7 +840,7 @@ void PrivacyDialog::updateSPORK16Status()
     } else if (!fMaintenanceMode && !fButtonsEnabled) {
         // Mint zcarbon
         ui->pushButtonMintzcarbon->setEnabled(true);
-        ui->pushButtonMintzcarbon->setToolTip(tr("PrivacyDialog", "Enter an amount of BCZ to convert to zcarbon", 0));
+        ui->pushButtonMintzcarbon->setToolTip(tr("PrivacyDialog", "Enter an amount of CZE to convert to zcarbon", 0));
 
         // Spend zcarbon
         ui->pushButtonSpendzcarbon->setEnabled(true);
