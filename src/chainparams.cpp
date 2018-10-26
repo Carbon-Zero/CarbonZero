@@ -112,7 +112,7 @@ public:
         pchMessageStart[0] = 0x88;
         pchMessageStart[1] = 0xc5;
         pchMessageStart[2] = 0xed;
-        pchMessageStart[3] = 0xef;
+        pchMessageStart[3] = 0xee;
         vAlertPubKey = ParseHex("048df206156009c6158f2eeb6f5cb15579dc94fd2cb6e34994b5f648f667e24642736736899689cc495a2d911295b38bea2883fae3ef8ab4befc4bda30beeeaa57");
         nDefaultPort = 51212;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // CarbonZero starting difficulty is 1 / 2^12
@@ -132,7 +132,7 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 1000;
         nModifierUpdateBlock = 160; // No need to wait for this.
-        nZerocoinStartHeight = 200; // Future
+        nZerocoinStartHeight = 9999999; // Future
         nZerocoinStartTime = 1539100800; // Needs testing before start
         nBlockEnforceSerialRange = 1; // Serial Range Enforcements start immediately
         nBlockRecalculateAccumulators = 9999999; // Recalculation not needed. Will be correct from start.
@@ -144,7 +144,7 @@ public:
         nEnforceNewSporkKey = 1538719200; //!> Spork Keys signed after launch will be valid.
         nRejectOldSporkKey = 1538719200; //!> From Launch. We've used a dummy sporkkey as the old one since we are launching with the only one
 
-        const char* pszTimestamp = "FOX News / 2018 / October 5 / Judge Kavanaugh's fate hangs in balance with 3 swing-vote senators, not showing cards";
+        const char* pszTimestamp = "FOX News / 2018 / October 26 / Trump calls for unity, calls out media in wake of bomb scare";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -155,15 +155,15 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1539100800; //October 9, 2018 @ 16:00:00 GMT
+        genesis.nTime = 1540529475; //October 9, 2018 @ 16:00:00 GMT
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 1737040;
+        genesis.nNonce = 779137;
 
         hashGenesisBlock = genesis.GetHash();
         // printf("%s\n", hashGenesisBlock.ToString().c_str());
 	// printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0x00000c335b9d469350dc908e76700f1f9b1fe1bd086aa203dff1edca5776bd56"));
-        assert(genesis.hashMerkleRoot == uint256("0xa98e6ddc8f9083716cfea8dd40e66345ac1c96acb489a59e30fb645b3ef10400"));
+        assert(hashGenesisBlock == uint256("0x0000042a0b819d21acd7605d964025b5ceca173631b1bac2523b54e690257e2b"));
+        assert(genesis.hashMerkleRoot == uint256("0xd69bd71023c7bc0274f9c1fe33251139cad6b5031bc9732003d601d0eabfe632"));
 
         
 	//vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
@@ -265,8 +265,8 @@ public:
         nRejectOldSporkKey = 1536182255; //!> Reject old spork key after Saturday, March 31, 2018 12:00:00 AM GMT
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1539100800;
-        genesis.nNonce = 1737040;
+        genesis.nTime = 1540529475;
+        genesis.nNonce = 779137;
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000c335b9d469350dc908e76700f1f9b1fe1bd086aa203dff1edca5776bd56"));
@@ -337,11 +337,11 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1539100800;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 234568;
+        genesis.nNonce = 23457;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51216;
-        assert(hashGenesisBlock == uint256("0x0a1f8eff60bb53ca186bacd1196077c6d78910b5b2a7d8177a780eb67b00bb6f"));
+        assert(hashGenesisBlock == uint256("0x3416cdb9fe77ec3e412c7e99140a3486a9f8c32b8a7d1d0ac128849a6e0f0011"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
