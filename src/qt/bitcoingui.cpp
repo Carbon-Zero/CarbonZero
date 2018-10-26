@@ -600,9 +600,6 @@ void BitcoinGUI::setClientModel(ClientModel* clientModel)
 
         setNumBlocks(clientModel->getNumBlocks());
         connect(clientModel, SIGNAL(numBlocksChanged(int)), this, SLOT(setNumBlocks(int)));
-      
-        setNumCarbons(clientModel->getNumBlocks());
-        connect(clientModel, SIGNAL(numBlocksChanged(int)), this, SLOT(setNumBlocks(int)));
 
         // Receive and report messages from client model
         connect(clientModel, SIGNAL(message(QString, QString, unsigned int)), this, SLOT(message(QString, QString, unsigned int)));
