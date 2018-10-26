@@ -402,7 +402,7 @@ void RPCConsole::setClientModel(ClientModel* model)
         connect(model, SIGNAL(numBlocksChanged(int)), this, SLOT(setNumBlocks(int)));
         
         setNumCarbons(model->getNumBlocks()*0.45);
-        connect(model, SIGNAL(numBlocksChanged(int)), this, SLOT(setNumCarbons(int)));
+        connect(model, SIGNAL(numBlocksChanged(int)), this, SLOT(setNumBlocks(int)));
 
         setMasternodeCount(model->getMasternodeCountString());
         connect(model, SIGNAL(strMasternodesChanged(QString)), this, SLOT(setMasternodeCount(QString)));
