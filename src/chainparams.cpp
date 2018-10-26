@@ -53,7 +53,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //    timestamp before)
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of(0, uint256("0x00000c335b9d469350dc908e76700f1f9b1fe1bd086aa203dff1edca5776bd56"));
+    boost::assign::map_list_of(0, uint256("0x0000042a0b819d21acd7605d964025b5ceca173631b1bac2523b54e690257e2b"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -155,7 +155,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1540529475; //October 9, 2018 @ 16:00:00 GMT
+        genesis.nTime = 1540529475; //October 25, 2018 @ 16:00:00 GMT
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 779137;
 
@@ -335,7 +335,7 @@ public:
         nTargetTimespan = 24 * 60 * 60; // CarbonZero: 1 day
         nTargetSpacing = 1 * 60;        // CarbonZero: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1539100800;
+        genesis.nTime = 1540529475;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 23457;
 
