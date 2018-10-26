@@ -340,16 +340,16 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 #endif
     tabGroup->addAction(historyAction);
 
-    privacyAction = new QAction(QIcon(":/icons/privacy"), tr("&Privacy"), this);
-    privacyAction->setStatusTip(tr("Privacy Actions for zcarbon"));
-    privacyAction->setToolTip(privacyAction->statusTip());
-    privacyAction->setCheckable(true);
-#ifdef Q_OS_MAC
-    privacyAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_5));
-#else
-    privacyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
-#endif
-    tabGroup->addAction(privacyAction);
+//    privacyAction = new QAction(QIcon(":/icons/privacy"), tr("&Privacy"), this);
+//    privacyAction->setStatusTip(tr("Privacy Actions for zcarbon"));
+//    privacyAction->setToolTip(privacyAction->statusTip());
+//    privacyAction->setCheckable(true);
+//#ifdef Q_OS_MAC
+//    privacyAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_5));
+//#else
+//    privacyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
+//#endif
+//    tabGroup->addAction(privacyAction);
 
 #ifdef ENABLE_WALLET
 
@@ -559,9 +559,9 @@ void BitcoinGUI::createToolBars()
         toolbar->addAction(overviewAction);
         toolbar->addAction(sendCoinsAction);
         toolbar->addAction(receiveCoinsAction);
-        toolbar->addAction(privacyAction);
+//        toolbar->addAction(privacyAction);
         toolbar->addAction(historyAction);
-        toolbar->addAction(privacyAction);
+//        toolbar->addAction(privacyAction);
         QSettings settings;
         if (settings.value("fShowMasternodesTab").toBool()) {
             toolbar->addAction(masternodeAction);
@@ -664,7 +664,7 @@ void BitcoinGUI::setWalletActionsEnabled(bool enabled)
     overviewAction->setEnabled(enabled);
     sendCoinsAction->setEnabled(enabled);
     receiveCoinsAction->setEnabled(enabled);
-    privacyAction->setEnabled(enabled);
+//    privacyAction->setEnabled(enabled);
     historyAction->setEnabled(enabled);
     QSettings settings;
     if (settings.value("fShowMasternodesTab").toBool()) {
@@ -817,11 +817,11 @@ void BitcoinGUI::gotoReceiveCoinsPage()
     if (walletFrame) walletFrame->gotoReceiveCoinsPage();
 }
 
-void BitcoinGUI::gotoPrivacyPage()
-{
-    privacyAction->setChecked(true);
-    if (walletFrame) walletFrame->gotoPrivacyPage();
-}
+//void BitcoinGUI::gotoPrivacyPage()
+//{
+//    privacyAction->setChecked(true);
+//    if (walletFrame) walletFrame->gotoPrivacyPage();
+//}
 
 void BitcoinGUI::gotoSendCoinsPage(QString addr)
 {
