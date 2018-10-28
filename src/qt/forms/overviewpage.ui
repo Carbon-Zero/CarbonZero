@@ -977,7 +977,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                          </property>
                          <property name="text">
-                          <string>Carbon Credits Produced</string>
+                          <string>Carbon Credit Tokens Produced</string>
                          </property>
                         </widget>
                        </item>
