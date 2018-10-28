@@ -377,6 +377,8 @@ void OverviewPage::setWalletModel(WalletModel* model)
 
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
         connect(model->getOptionsModel(), SIGNAL(hideZeroBalancesChanged(bool)), this, SLOT(updateDisplayUnit()));
+        setNumBlocks(model->getNumBlocks());
+        connect(model, SIGNAL(numBlocksChanged(int)), this, SLOT(setNumBlocks(int)));
 
         updateWatchOnlyLabels(model->haveWatchOnly());
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
