@@ -295,12 +295,18 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     bool showzcarbonAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
     bool showzcarbonUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
     bool showzcarbonImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
-    ui->labelzBalanceMature->setVisible(showzcarbonAvailable);
+ //   ui->labelzBalanceMature->setVisible(showzcarbonAvailable);
     ui->labelzBalanceMatureText->setVisible(showzcarbonAvailable);
     ui->labelzBalanceUnconfirmed->setVisible(showzcarbonUnconfirmed);
     ui->labelzBalanceUnconfirmedText->setVisible(showzcarbonUnconfirmed);
     ui->labelzBalanceImmature->setVisible(showzcarbonImmature);
     ui->labelzBalanceImmatureText->setVisible(showzcarbonImmature);
+    void RPCConsole::setNumBlocks(int count)
+{
+    ui->labelzBalanceMature->setText(QString::number(count));
+    if (clientModel)
+        ui->lastBlockTime->setText(clientModel->getLastBlockDate().toString());
+}
 
     // Percent split
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
