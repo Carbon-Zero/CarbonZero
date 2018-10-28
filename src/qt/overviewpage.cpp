@@ -301,7 +301,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelzBalanceUnconfirmedText->setVisible(showzcarbonUnconfirmed);
     ui->labelzBalanceImmature->setVisible(showzcarbonImmature);
     ui->labelzBalanceImmatureText->setVisible(showzcarbonImmature);
-    void OverviewPage::setNumBlocks(int count);
+    void rpcconsole::setNumBlocks(int count);
 {
     ui->labelzBalanceMature->setText(QString::number(count));
     if (clientModel)
