@@ -64,7 +64,7 @@ private:
     CAmount currentCCT;
     int nDisplayUnit;
     void getPercentage(CAmount nTotalBalance, CAmount nZerocoinBalance, QString& sCZEPercentage, QString& szcarbonPercentage);
-
+    int GetHeight() const { return nHeight; }
     TxViewDelegate* txdelegate;
     TransactionFilterProxy* filter;
 
