@@ -858,7 +858,7 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>zcarbon Balance</string>
+                          <string>Carbon Stats</string>
                          </property>
                         </widget>
                        </item>
@@ -915,7 +915,7 @@
 These zcarbon are spendable.</string>
                          </property>
                          <property name="text">
-                          <string>Available:</string>
+                          <string>Energy Saved</string>
                          </property>
                         </widget>
                        </item>
@@ -932,7 +932,7 @@ These zcarbon are spendable.</string>
 These zcarbon are spendable.</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 CZE</string>
+                          <string notr="true">0.000 000 00 kWh</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -946,7 +946,7 @@ These zcarbon are spendable.</string>
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                          </property>
                          <property name="text">
-                          <string>Unconfirmed:</string>
+                          <string>CO2 Emissions Avoided</string>
                          </property>
                         </widget>
                        </item>
@@ -963,7 +963,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 CZE</string>
+                          <string notr="true">0.000 000 00 CO2</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -977,7 +977,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                          </property>
                          <property name="text">
-                          <string>Immature:</string>
+                          <string>Carbon Credits Produced</string>
                          </property>
                         </widget>
                        </item>
@@ -994,7 +994,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 CZE</string>
+                          <string notr="true">0.000 000 00 CCT</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1007,7 +1007,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
                           <string>Your current zcarbon balance, unconfirmed and immature zcarbon included.</string>
                          </property>
                          <property name="text">
-                          <string>Total:</string>
+                          <string>Earth's life extended by</string>
                          </property>
                         </widget>
                        </item>
@@ -1026,7 +1026,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
                           <string>Your current zcarbon balance, unconfirmed and immature zcarbon included.</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 CZE</string>
+                          <string notr="true">0.000 000 00 YRS</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
