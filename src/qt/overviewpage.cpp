@@ -230,7 +230,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     // zcarbon labels
     // ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
-    ui->labelzBalanceUnconfirmed->setText("COMING SOON!"& nHeight);
+    ui->labelzBalanceUnconfirmed->setText(nHeight);
     ui->labelzBalanceMature->setText("COMING SOON!");
     ui->labelzBalanceImmature->setText("COMING SOON!");
 
