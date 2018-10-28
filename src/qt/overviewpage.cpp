@@ -300,13 +300,13 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelzBalanceUnconfirmed->setVisible(showzcarbonUnconfirmed);
     ui->labelzBalanceUnconfirmedText->setVisible(showzcarbonUnconfirmed);
     ui->labelzBalanceImmature->setVisible(showzcarbonImmature);
-    ui->labelzBalanceImmatureText->setVisible(showzcarbonImmature);
-    void rpcconsole::setNumBlocks(int count);
-{
-    ui->labelzBalanceMature->setText(QString::number(count));
-    if (clientModel)
-        ui->lastBlockTime->setText(clientModel->getLastBlockDate().toString());
-}
+ //   ui->labelzBalanceImmatureText->setVisible(showzcarbonImmature);
+ //   void OverviewPage::setNumBlocks(int count);
+//{
+ //   ui->labelzBalanceMature->setText(QString::number(count));
+  //  if (clientModel)
+  //      ui->lastBlockTime->setText(clientModel->getLastBlockDate().toString());
+//}
 
     // Percent split
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
@@ -377,8 +377,8 @@ void OverviewPage::setWalletModel(WalletModel* model)
 
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
         connect(model->getOptionsModel(), SIGNAL(hideZeroBalancesChanged(bool)), this, SLOT(updateDisplayUnit()));
-        setNumBlocks(model->getNumBlocks());
-        connect(model, SIGNAL(numBlocksChanged(int)), this, SLOT(setNumBlocks(int)));
+        //setNumBlocks(model->getNumBlocks());
+        //connect(model, SIGNAL(numBlocksChanged(int)), this, SLOT(setNumBlocks(int)));
 
         updateWatchOnlyLabels(model->haveWatchOnly());
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
