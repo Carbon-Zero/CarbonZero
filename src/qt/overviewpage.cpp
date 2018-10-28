@@ -115,6 +115,9 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
                                               currentWatchOnlyBalance(-1),
                                               currentWatchUnconfBalance(-1),
                                               currentWatchImmatureBalance(-1),
+                                              currentkWh(-1),
+                                              currentCO2(-1),
+                                              currentCCT(-1),
                                               txdelegate(new TxViewDelegate()),
                                               filter(0)
 {
