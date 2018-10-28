@@ -1,14 +1,14 @@
 /****************************************************************************************/
 /* Global color codes:                                                                  */
-/* dark-purple:        #382f44                                                          */
-/* transparent-purple: #e9e7ef (for inactive backgrounds)                               */
+/* dark-purple:        #382f44  0c0f11                                                  */
+/* transparent-purple: #e9e7ef (for inactive backgrounds) edeff0                        */
 /*                                                                                      */
-/* light-purple1:      #b396f6 (main purple for white backgrounds)                      */
-/* light-purple2:      #9179c7 (sligtly darker for gradients)                           */
+/* light-purple1:      #b396f6 (main purple for white backgrounds)  848f96              */
+/* light-purple2:      #9179c7 (sligtly darker for gradients)      727f87               */
 /*                                                                                      */
-/* medium-purple1:     #6f5ca3 (on hover)                                               */
-/* medium-purple1:     #5c4c7c (main purple for dark backgrounds)                       */
-/* medium-purple2:     #5b4c86 (sligtly darker for gradients)                           */
+/* medium-purple1:     #6f5ca3 (on hover)           394953                              */
+/* medium-purple1:     #5c4c7c (main purple for dark backgrounds)     28333a            */
+/* medium-purple2:     #5b4c86 (sligtly darker for gradients)           222c32          */
 /*                                                                                      */
 /* fuchsia:            #df1cca                                                          */
 /* background:         #f8f6f6                                                          */
