@@ -74,7 +74,7 @@ private slots:
     void updateAlerts(const QString& warnings);
     void updateWatchOnlyLabels(bool showWatchOnly);
     /** Set number of blocks shown in the UI */
-    void setNumBlocks(int count);
+    //void setNumBlocks(int count);
 };
 
 #endif // BITCOIN_QT_OVERVIEWPAGE_H
