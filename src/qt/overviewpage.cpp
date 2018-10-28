@@ -20,6 +20,7 @@
 #include "transactionrecord.h"
 #include "transactiontablemodel.h"
 #include "walletmodel.h"
+#include "chainparams.h"
 
 #include <QAbstractItemDelegate>
 #include <QPainter>
@@ -229,7 +230,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     // zcarbon labels
     // ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
-    ui->labelzBalanceUnconfirmed->setText("COMING SOON!");
+    ui->labelzBalanceUnconfirmed->setText("COMING SOON!"& nHeight);
     ui->labelzBalanceMature->setText("COMING SOON!");
     ui->labelzBalanceImmature->setText("COMING SOON!");
 
