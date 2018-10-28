@@ -239,7 +239,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     // Percentage labels
     ui->labelCZEPercent->setText(sPercentage);
-    ui->labelzcarbonPercent->setText(szPercentage);
+    // ui->labelzcarbonPercent->setText(szPercentage);
 
     // Adjust bubble-help according to AutoMint settings
     QString automintHelp = tr("Current percentage of zcarbon.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
@@ -305,7 +305,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     // Percent split
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
     ui->labelCZEPercent->setVisible(showPercentages);
-    ui->labelzcarbonPercent->setVisible(showPercentages);
+    // ui->labelzcarbonPercent->setVisible(showPercentages);
 
     static int cachedTxLocks = 0;
 
