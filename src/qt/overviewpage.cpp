@@ -146,7 +146,7 @@ void OverviewPage::handleTransactionClicked(const QModelIndex& index)
         emit transactionClicked(filter->mapToSource(index));
 }
 
-int OverViewPage::getNumBlocks() const
+void OverViewPage::getNumBlocks() const
 {
     LOCK(cs_main);
     return chainActive.Height();
