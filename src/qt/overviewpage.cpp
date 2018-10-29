@@ -232,7 +232,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     // zcarbon labels
     // ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
-    ui->labelzBalanceUnconfirmed->setText(cachednumblocks);
+    ui->labelzBalanceUnconfirmed->setText("COMING SOON!");
     ui->labelzBalanceMature->setText("COMING SOON!");
     ui->labelzBalanceImmature->setText("COMING SOON!");
 
@@ -381,7 +381,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
 
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
         connect(model->getOptionsModel(), SIGNAL(hideZeroBalancesChanged(bool)), this, SLOT(updateDisplayUnit()));
-        //setNumBlocks(model->getNumBlocks());
+        setNumBlocks(model->cachedNumBlocks());
         //connect(model, SIGNAL(numBlocksChanged(int)), this, SLOT(setNumBlocks(int)));
 
         updateWatchOnlyLabels(model->haveWatchOnly());
