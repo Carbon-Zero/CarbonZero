@@ -115,9 +115,9 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
                                               currentWatchOnlyBalance(-1),
                                               currentWatchUnconfBalance(-1),
                                               currentWatchImmatureBalance(-1),
-                                              currentkWh(-1),
-                                              currentCO2(-1),
-                                              currentCCT(-1),
+                                              currentkWh(0),
+                                              currentCO2(0),
+                                              currentCCT(0),
                                               txdelegate(new TxViewDelegate()),
                                               filter(0)
 {
@@ -230,12 +230,6 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // zcarbon labels
-    // ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
-    ui->labelzBalanceUnconfirmed->setText("COMING SOON!");
-    ui->labelzBalanceMature->setText("COMING SOON!");
-    ui->labelzBalanceImmature->setText("COMING SOON!");
-
     // Combined labels
     ui->labelBalancez->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, availableTotalBalance, false, BitcoinUnits::separatorAlways));
     ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
@@ -295,17 +289,16 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setVisible(showWatchOnlyCZELocked && showWatchOnly);
 
     // zcarbon
-    bool showzcarbonAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
-    bool showzcarbonUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
-    bool showzcarbonImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
- //   ui->labelzBalanceMature->setVisible(showzcarbonAvailable);
-    ui->labelzBalanceMatureText->setVisible(showzcarbonAvailable);
-    ui->labelzBalanceUnconfirmed->setVisible(showzcarbonUnconfirmed);
-    ui->labelzBalanceUnconfirmedText->setVisible(showzcarbonUnconfirmed);
-    ui->labelzBalanceImmature->setVisible(showzcarbonImmature);
- //   ui->labelzBalanceImmatureText->setVisible(showzcarbonImmature);
- //   void OverviewPage::setNumBlocks(int count);
-
+    //bool showzcarbonAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
+    //bool showzcarbonUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
+    //bool showzcarbonImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
+    //ui->labelzBalanceMature->setVisible(showzcarbonAvailable);
+    //ui->labelzBalanceMatureText->setVisible(showzcarbonAvailable);
+    //ui->labelzBalanceUnconfirmed->setVisible(showzcarbonUnconfirmed);
+    //ui->labelzBalanceUnconfirmedText->setVisible(showzcarbonUnconfirmed);
+    //ui->labelzBalanceImmature->setVisible(showzcarbonImmature);
+    //ui->labelzBalanceImmatureText->setVisible(showzcarbonImmature);
+    //void OverviewPage::setNumBlocks(int count);
 
     // Percent split
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
@@ -318,6 +311,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         cachedTxLocks = nCompleteTXLocks;
         ui->listTransactions->update();
     }
+
 }
 
 // show/hide watch-only labels
@@ -347,8 +341,12 @@ void OverviewPage::setClientModel(ClientModel* model)
     if (model) {
         // Show warning if this is a prerelease version
         connect(model, SIGNAL(alertsChanged(QString)), this, SLOT(updateAlerts(QString)));
+        connect(model, SIGNAL(numBlocksChanged(int)), this, SLOT(updateCarbonStats()));
+
         updateAlerts(model->getStatusBarWarnings());
 
+        // update the Carbon Statistics Panel
+        updateCarbonStats();
     }
 }
 
@@ -412,4 +410,33 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
     ui->labelWalletStatus->setVisible(fShow);
     ui->labelTransactionsStatus->setVisible(fShow);
+}
+
+void OverviewPage::updateCarbonStats()
+{
+  if(clientModel)
+  {
+    QString _kWh;
+    QString _CO2;
+    QString _CCT;
+
+    double _nblcks = clientModel->getNumBlocks();
+    double _ntxs = clientModel->getNumTXs();
+
+    currentkWh = 898 * (_ntxs - _nblcks);
+    currentCO2 = 439.89 * (_ntxs - _nblcks);
+    currentCCT = currentCO2 / 1000.0;
+
+    _kWh.sprintf("%12.4f kWh",currentkWh);
+    _CO2.sprintf("%12.4f CO2",currentCO2);
+    _CCT.sprintf("%12.4f CCT",currentCCT);
+
+    //chainActive.Height()
+    //chainActive.Tip()->nChainTx
+
+    // CarbonStats labels
+    ui->labelEnergySaved->setText(_kWh);
+    ui->labelCO2->setText(_CO2);
+    ui->labelCarbonCredit->setText(_CCT);
+  }
 }

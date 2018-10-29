@@ -39,7 +39,7 @@ public:
     void showOutOfSyncWarning(bool fShow);
 
 public slots:
-    void setBalance(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance, 
+    void setBalance(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance,
                     const CAmount& zerocoinBalance, const CAmount& unconfirmedZerocoinBalance, const CAmount& immatureZerocoinBalance,
                     const CAmount& watchOnlyBalance, const CAmount& watchUnconfBalance, const CAmount& watchImmatureBalance);
 
@@ -60,9 +60,9 @@ private:
     CAmount currentWatchOnlyBalance;
     CAmount currentWatchUnconfBalance;
     CAmount currentWatchImmatureBalance;
-    CAmount currentkWh;
-    CAmount currentCO2;
-    CAmount currentCCT;
+    double currentkWh;
+    double currentCO2;
+    double currentCCT;
     int nDisplayUnit;
     void getPercentage(CAmount nTotalBalance, CAmount nZerocoinBalance, QString& sCZEPercentage, QString& szcarbonPercentage);
     int nHeight;
@@ -75,7 +75,7 @@ private slots:
     void handleTransactionClicked(const QModelIndex& index);
     void updateAlerts(const QString& warnings);
     void updateWatchOnlyLabels(bool showWatchOnly);
-
+    void updateCarbonStats();
 };
 
 #endif // BITCOIN_QT_OVERVIEWPAGE_H

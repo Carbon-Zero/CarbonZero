@@ -56,6 +56,7 @@ public:
     QString getMasternodeCountString() const;
     int getNumBlocks() const;
     int getNumBlocksAtStartup();
+    unsigned long getNumTXs() const;
 
     quint64 getTotalBytesRecv() const;
     quint64 getTotalBytesSent() const;

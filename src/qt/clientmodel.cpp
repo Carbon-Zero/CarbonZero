@@ -88,6 +88,12 @@ int ClientModel::getNumBlocks() const
     return chainActive.Height();
 }
 
+unsigned long ClientModel::getNumTXs() const
+{
+    LOCK(cs_main);
+    return (unsigned long)chainActive.Tip()->nChainTx;
+}
+
 int ClientModel::getNumBlocksAtStartup()
 {
     if (numBlocksAtStartup == -1) numBlocksAtStartup = getNumBlocks();
