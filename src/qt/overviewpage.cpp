@@ -306,7 +306,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
  //   ui->labelzBalanceImmatureText->setVisible(showzcarbonImmature);
  //   void OverviewPage::setNumBlocks(int count);
 //{
-    ui->labelzBalanceMature->setText(CBlock);
+  //  ui->labelzBalanceMature->setText(CBlock);
   //  if (clientModel)
   //      ui->lastBlockTime->setText(clientModel->getLastBlockDate().toString());
 //}
