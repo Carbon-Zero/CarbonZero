@@ -14,6 +14,7 @@ class ClientModel;
 class TransactionFilterProxy;
 class TxViewDelegate;
 class WalletModel;
+class CBlockIndex;
 
 namespace Ui
 {
