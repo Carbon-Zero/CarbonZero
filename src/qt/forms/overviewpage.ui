@@ -436,6 +436,7 @@
                            <pointsize>12</pointsize>
                            <weight>75</weight>
                            <bold>true</bold>
+                           <kerning>true</kerning>
                           </font>
                          </property>
                          <property name="text">
@@ -858,7 +859,7 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>Carbon Stats</string>
+                          <string>Project Stats</string>
                          </property>
                         </widget>
                        </item>
