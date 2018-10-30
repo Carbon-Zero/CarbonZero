@@ -901,7 +901,7 @@
                       </widget>
                      </item>
                      <item>
-                      <layout class="QGridLayout" name="gridLayout_5" rowstretch="0,0,0,0,0,0,0" rowminimumheight="0,0,0,0,0,0,0">
+                      <layout class="QGridLayout" name="gridLayout_5" rowstretch="0,0,0,0,0" rowminimumheight="0,0,0,0,0">
                        <property name="spacing">
                         <number>12</number>
                        </property>
@@ -912,16 +912,6 @@
                          </property>
                          <property name="text">
                           <string>Energy Saved</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="3" column="0">
-                        <widget class="QLabel" name="labelCarbonCreditText">
-                         <property name="toolTip">
-                          <string>Carbon Credit ERC-20 Tokens produced by the Carbon Zero Project to date.</string>
-                         </property>
-                         <property name="text">
-                          <string>Carbon Credit Tokens Produced</string>
                          </property>
                         </widget>
                        </item>
@@ -973,7 +963,36 @@
                          </property>
                         </widget>
                        </item>
-                       <item row="6" column="2">
+                       <item row="3" column="0">
+                        <widget class="QLabel" name="labelCarbonCreditText">
+                         <property name="toolTip">
+                          <string>Carbon Credit ERC-20 Tokens produced by the Carbon Zero Project to date.</string>
+                         </property>
+                         <property name="text">
+                          <string>Carbon Credit Tokens Produced</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QLabel" name="labelCarbonCredit">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="toolTip">
+                          <string>Carbon Credit ERC-20 Tokens produced by the Carbon Zero Project to date.</string>
+                         </property>
+                         <property name="text">
+                          <string notr="true">0.000 000 00 CCT</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="2">
                         <spacer name="horizontalSpacer_4">
                          <property name="orientation">
                           <enum>Qt::Horizontal</enum>
@@ -985,9 +1004,6 @@
                           </size>
                          </property>
                         </spacer>
-                       </item>
-                       <item row="3" column="1">
-                        <widget class="QLCDNumber" name="labelCCT"/>
                        </item>
                       </layout>
                      </item>
