@@ -417,7 +417,7 @@ void OverviewPage::updateCarbonStats()
     currentCO2 = 439.89 * ((_ntxs - (2*_nblcks))+1000);
     //Adjust for 2.2% block overhead
     currentCCT = currentCO2 / 1022.0;
-    currentMCap = currentCCT *9.5
+    currentMCap = currentCCT *9.5;
 
     //setlocale(LC_NUMERIC, "");
 
