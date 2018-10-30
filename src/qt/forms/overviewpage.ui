@@ -901,7 +901,7 @@
                       </widget>
                      </item>
                      <item>
-                      <layout class="QGridLayout" name="gridLayout_5" rowstretch="0,0,0,0,0">
+                      <layout class="QGridLayout" name="gridLayout_5" rowstretch="0,0,0,0,0,0">
                        <property name="spacing">
                         <number>12</number>
                        </property>
@@ -915,12 +915,6 @@
                          </property>
                          <property name="text">
                           <string>0,000,000,000</string>
-                         </property>
-                         <property name="textFormat">
-                          <enum>Qt::AutoText</enum>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                          </property>
                         </widget>
                        </item>
@@ -943,8 +937,8 @@
                          </property>
                         </widget>
                        </item>
-                       <item row="4" column="2">
-                        <widget class="QLabel" name="labelMarketCapUnitText">
+                       <item row="4" column="0">
+                        <widget class="QLabel" name="labelMarketCapText">
                          <property name="font">
                           <font>
                            <weight>75</weight>
@@ -952,7 +946,7 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>USD</string>
+                          <string>Token Market Cap</string>
                          </property>
                         </widget>
                        </item>
@@ -1081,8 +1075,8 @@
                          </property>
                         </widget>
                        </item>
-                       <item row="4" column="0">
-                        <widget class="QLabel" name="labelMarketCapText">
+                       <item row="4" column="2">
+                        <widget class="QLabel" name="labelMarketCapUnitText">
                          <property name="font">
                           <font>
                            <weight>75</weight>
@@ -1090,11 +1084,11 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>Token Market Cap</string>
+                          <string>USD</string>
                          </property>
                         </widget>
                        </item>
-                       <item row="4" column="3">
+                       <item row="5" column="3">
                         <spacer name="horizontalSpacer_5">
                          <property name="orientation">
                           <enum>Qt::Horizontal</enum>
