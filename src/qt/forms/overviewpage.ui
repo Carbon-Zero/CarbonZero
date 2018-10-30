@@ -907,16 +907,6 @@
                        </property>
                        <item row="1" column="0">
                         <widget class="QLabel" name="labelEnergySavedText">
-                         <property name="toolTip">
-                          <string>The amount of energy saved using Carbon Zero vs Bitcoin</string>
-                         </property>
-                         <property name="text">
-                          <string>Energy Saved</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="1" column="1">
-                        <widget class="QLabel" name="labelEnergySaved">
                          <property name="font">
                           <font>
                            <weight>75</weight>
@@ -927,15 +917,18 @@
                           <string>The amount of energy saved using Carbon Zero vs Bitcoin</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 kWh</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          <string>Energy Saved</string>
                          </property>
                         </widget>
                        </item>
                        <item row="2" column="0">
                         <widget class="QLabel" name="labelCO2Text">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
                          <property name="toolTip">
                           <string>The amount of greenhouse gasses avoided by using Carbon Zero vs Bitcoin</string>
                          </property>
@@ -965,6 +958,12 @@
                        </item>
                        <item row="3" column="0">
                         <widget class="QLabel" name="labelCarbonCreditText">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
                          <property name="toolTip">
                           <string>Carbon Credit ERC-20 Tokens produced by the Carbon Zero Project to date.</string>
                          </property>
@@ -1004,6 +1003,25 @@
                           </size>
                          </property>
                         </spacer>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QLabel" name="labelEnergySaved">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="toolTip">
+                          <string>The amount of energy saved using Carbon Zero vs Bitcoin</string>
+                         </property>
+                         <property name="text">
+                          <string notr="true">0.000 000 00 kWh</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
                        </item>
                       </layout>
                      </item>
