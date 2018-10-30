@@ -987,7 +987,7 @@
                         </spacer>
                        </item>
                        <item row="3" column="1">
-                        <widget class="QLCDNumber" name="labelCCT"/>
+                        <widget class="QLCDNumber" name="labelCarbonCredit"/>
                        </item>
                       </layout>
                      </item>
