@@ -63,6 +63,7 @@ private:
     double currentkWh;
     double currentCO2;
     double currentCCT;
+    double currentMCap;
     int nDisplayUnit;
     void getPercentage(CAmount nTotalBalance, CAmount nZerocoinBalance, QString& sCZEPercentage, QString& szcarbonPercentage);
     int nHeight;

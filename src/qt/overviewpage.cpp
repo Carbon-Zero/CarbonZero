@@ -118,6 +118,7 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
                                               currentkWh(0),
                                               currentCO2(0),
                                               currentCCT(0),
+                                              currentMCap(0),
                                               txdelegate(new TxViewDelegate()),
                                               filter(0)
 {
@@ -288,18 +289,6 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelLockedBalance->setVisible(showCZELocked || showWatchOnlyCZELocked);
     ui->labelWatchLocked->setVisible(showWatchOnlyCZELocked && showWatchOnly);
 
-    // zcarbon
-    //bool showzcarbonAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
-    //bool showzcarbonUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
-    //bool showzcarbonImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
-    //ui->labelzBalanceMature->setVisible(showzcarbonAvailable);
-    //ui->labelzBalanceMatureText->setVisible(showzcarbonAvailable);
-    //ui->labelzBalanceUnconfirmed->setVisible(showzcarbonUnconfirmed);
-    //ui->labelzBalanceUnconfirmedText->setVisible(showzcarbonUnconfirmed);
-    //ui->labelzBalanceImmature->setVisible(showzcarbonImmature);
-    //ui->labelzBalanceImmatureText->setVisible(showzcarbonImmature);
-    //void OverviewPage::setNumBlocks(int count);
-
     // Percent split
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
     ui->labelCZEPercent->setVisible(showPercentages);
@@ -419,6 +408,7 @@ void OverviewPage::updateCarbonStats()
     QString _kWh;
     QString _CO2;
     QString _CCT;
+    QString _CMC;
 
     double _nblcks = clientModel->getNumBlocks();
     double _ntxs = clientModel->getNumTXs();
@@ -427,12 +417,15 @@ void OverviewPage::updateCarbonStats()
     currentCO2 = 439.89 * ((_ntxs - (2*_nblcks))+1000);
     //Adjust for 2.2% block overhead
     currentCCT = currentCO2 / 1022.0;
+    currentMCap = currentCCT *9.5
 
     //setlocale(LC_NUMERIC, "");
 
     _kWh.sprintf("%'12.0f",currentkWh);
     _CO2.sprintf("%'12.0f",currentCO2);
     _CCT.sprintf("%'12.0f",currentCCT);
+    _CCT.sprintf("%'12.0f",currentMCap);
+      
 
     //chainActive.Height()
     //chainActive.Tip()->nChainTx
@@ -441,5 +434,6 @@ void OverviewPage::updateCarbonStats()
     ui->labelEnergySaved->setText(_kWh);
     ui->labelCO2->setText(_CO2);
     ui->labelCarbonCredit->setText(_CCT);
+    ui->labelMarketCap->setText(_CMC);
   }
 }
