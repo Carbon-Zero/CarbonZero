@@ -901,26 +901,10 @@
                       </widget>
                      </item>
                      <item>
-                      <layout class="QGridLayout" name="gridLayout_5" rowstretch="0,0,0,0,0" rowminimumheight="0,0,0,0,0">
+                      <layout class="QGridLayout" name="gridLayout_5" rowstretch="0,0,0,0,0">
                        <property name="spacing">
                         <number>12</number>
                        </property>
-                       <item row="1" column="0">
-                        <widget class="QLabel" name="labelEnergySavedText">
-                         <property name="font">
-                          <font>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="toolTip">
-                          <string>The amount of energy saved using Carbon Zero vs Bitcoin</string>
-                         </property>
-                         <property name="text">
-                          <string>Energy Saved</string>
-                         </property>
-                        </widget>
-                       </item>
                        <item row="1" column="1">
                         <widget class="QLabel" name="labelEnergySaved">
                          <property name="font">
@@ -937,35 +921,6 @@
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="1" column="2">
-                        <widget class="QLabel" name="labelEnergySavedUnitText">
-                         <property name="font">
-                          <font>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>kWh</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="2" column="0">
-                        <widget class="QLabel" name="labelCO2Text">
-                         <property name="font">
-                          <font>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="toolTip">
-                          <string>The amount of greenhouse gasses avoided by using Carbon Zero vs Bitcoin</string>
-                         </property>
-                         <property name="text">
-                          <string>CO2 Emissions Avoided</string>
                          </property>
                         </widget>
                        </item>
@@ -988,8 +943,24 @@
                          </property>
                         </widget>
                        </item>
-                       <item row="2" column="2">
-                        <widget class="QLabel" name="labelCO2UnitText">
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="labelCO2Text">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="toolTip">
+                          <string>The amount of greenhouse gasses avoided by using Carbon Zero vs Bitcoin</string>
+                         </property>
+                         <property name="text">
+                          <string>CO2 Emissions Avoided</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QLabel" name="labelEnergySavedUnitText">
                          <property name="font">
                           <font>
                            <weight>75</weight>
@@ -997,7 +968,7 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>Kg</string>
+                          <string>kWh</string>
                          </property>
                         </widget>
                        </item>
@@ -1014,6 +985,32 @@
                          </property>
                          <property name="text">
                           <string>Carbon Credit Tokens Produced</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="2">
+                        <widget class="QLabel" name="labelCarbonCreditUnitText">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>CCT</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="2">
+                        <widget class="QLabel" name="labelCO2UnitText">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Kg</string>
                          </property>
                         </widget>
                        </item>
@@ -1036,19 +1033,6 @@
                          </property>
                         </widget>
                        </item>
-                       <item row="3" column="2">
-                        <widget class="QLabel" name="labelCarbonCreditUnitText">
-                         <property name="font">
-                          <font>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>CCT</string>
-                         </property>
-                        </widget>
-                       </item>
                        <item row="3" column="3">
                         <spacer name="horizontalSpacer_4">
                          <property name="orientation">
@@ -1061,6 +1045,61 @@
                           </size>
                          </property>
                         </spacer>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="labelEnergySavedText">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="toolTip">
+                          <string>The amount of energy saved using Carbon Zero vs Bitcoin</string>
+                         </property>
+                         <property name="text">
+                          <string>Energy Saved</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QLabel" name="labelMarketCapText">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Approximate Token Market Cap</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="QLabel" name="labelMarketCap">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>0,000,000,000</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="2">
+                        <widget class="QLabel" name="labelMarketCapUnitText">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>USD</string>
+                         </property>
+                        </widget>
                        </item>
                       </layout>
                      </item>
