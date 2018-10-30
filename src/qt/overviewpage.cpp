@@ -425,9 +425,9 @@ void OverviewPage::updateCarbonStats()
 
     currentkWh = 898 * (_ntxs - _nblcks);
     currentCO2 = 439.89 * (_ntxs - _nblcks);
-    currentCCT = currentCO2 / 1000.0;
+    currentCCT = currentCO2 / 1001.0;
       
-    setlocale(LC_NUMERIC, "");
+    //setlocale(LC_NUMERIC, "");
 
     _kWh.sprintf("%'12.0f kWh",currentkWh);
     _CO2.sprintf("%'12.0f kg",currentCO2);
