@@ -423,8 +423,8 @@ void OverviewPage::updateCarbonStats()
     double _nblcks = clientModel->getNumBlocks();
     double _ntxs = clientModel->getNumTXs();
 
-    currentkWh = 898 * (_ntxs - (2*_nblcks));
-    currentCO2 = 439.89 * (_ntxs - (2*_nblcks));
+    currentkWh = 898 * (_ntxs - (2*(_nblcks-1000));
+    currentCO2 = 439.89 * (_ntxs - (2*(_nblcks-1000));
     //Adjust for 2.2% block overhead
     currentCCT = currentCO2 / 1022.0;
 
