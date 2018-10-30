@@ -423,9 +423,9 @@ void OverviewPage::updateCarbonStats()
     double _nblcks = clientModel->getNumBlocks();
     double _ntxs = clientModel->getNumTXs();
 
-    currentkWh = 898 * (_ntxs - _nblcks);
-    currentCO2 = 439.89 * (_ntxs - _nblcks);
-    //this is technically /1000, but changed slightly so it's not the same as previous line
+    currentkWh = 898 * (_ntxs - (2*_nblcks);
+    currentCO2 = 4395.89 * (_ntxs - 2*_nblcks);
+    //Adjust for 2.2% block overhead
     currentCCT = currentCO2 / 1011.0;
 
     //setlocale(LC_NUMERIC, "");
