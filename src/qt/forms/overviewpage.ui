@@ -1084,7 +1084,10 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>0,000,000,000</string>
+                          <string>$0,000,000,000</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                          </property>
                         </widget>
                        </item>
@@ -1111,7 +1114,7 @@
                        <property name="sizeHint" stdset="0">
                         <size>
                          <width>20</width>
-                         <height>40</height>
+                         <height>35</height>
                         </size>
                        </property>
                       </spacer>
