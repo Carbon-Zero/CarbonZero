@@ -425,14 +425,14 @@ void OverviewPage::updateCarbonStats()
 
     currentkWh = 898 * (_ntxs - _nblcks);
     currentCO2 = 439.89 * (_ntxs - _nblcks);
-    //this is technically /1000, but changed slightly so it's not the same as previous line  
+    //this is technically /1000, but changed slightly so it's not the same as previous line
     currentCCT = currentCO2 / 1011.0;
-      
+
     //setlocale(LC_NUMERIC, "");
 
-    _kWh.sprintf("%'12.0f kWh",currentkWh);
-    _CO2.sprintf("%'12.0f kg",currentCO2);
-    _CCT.sprintf("%'12.0f CCT",currentCCT);
+    _kWh.sprintf("%'12.0f",currentkWh);
+    _CO2.sprintf("%'12.0f",currentCO2);
+    _CCT.sprintf("%'12.0f",currentCCT);
 
     //chainActive.Height()
     //chainActive.Tip()->nChainTx
