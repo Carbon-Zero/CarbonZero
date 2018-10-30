@@ -431,7 +431,7 @@ void OverviewPage::updateCarbonStats()
     //setlocale(LC_NUMERIC, "");
 
     _kWh.sprintf("%'12.0f kWh",currentkWh);
-    _CO2.sprintf("%'12.0f  kg",currentCO2);
+    _CO2.sprintf("%'12.0f kg",currentCO2);
     _CCT.sprintf("%'12.0f CCT",currentCCT);
 
     //chainActive.Height()
