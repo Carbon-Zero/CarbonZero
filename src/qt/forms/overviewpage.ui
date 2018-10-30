@@ -1071,7 +1071,7 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>Approximate Token Market Cap</string>
+                          <string>Token Market Cap</string>
                          </property>
                         </widget>
                        </item>
