@@ -127,7 +127,7 @@ width: 20px;
 
 QLabel#progressBarLabel {
 background-color:transparent;
-color: #382f44;
+color: #32373f;
 padding-left:5px;
 padding-right:5px;
 }
@@ -226,7 +226,7 @@ QPushButton { /* Global Button Style */
 background-color: #28333a;
 border-width: 1px;
 border-style: outset;
-border-color: #382f44;
+border-color: #32373f;
 border-radius: 2px;
 color:#ffffff;
 font-size:12px;
@@ -288,7 +288,7 @@ background:#f2f2f2;
 }
 
 QComboBox:editable {
-background:#382f44;
+background:#32373f;
 color:#616161;
 border:0px solid transparent;
 }
@@ -772,7 +772,7 @@ color:#57606D;
 }
 
 QWidget#PrivacyDialog QProgressBar#obfuscationProgress::chunk {
-background-color: #382f44;
+background-color: #32373f;
 width:1px;
 }
 
@@ -835,7 +835,7 @@ min-width:180px;
 }
 
 QDialog#RPCConsole QWidget#tab_peers QLabel#peerHeading { /* Peers Info Header */
-color:#382f44;
+color:#32373f;
 }
 
 QDialog#RPCConsole QTableView#peerWidget::item { /* Peers Table Items */
@@ -1632,7 +1632,7 @@ border:1px solid #9e9e9e;
 }
 
 QWidget#ReceiveCoinsDialog .QFrame#frame .QLabel#label_6 { /* Requested Payments History Label */
-color:#382f44;
+color:#32373f;
 font-weight:bold;
 font-size:14px;
 }
