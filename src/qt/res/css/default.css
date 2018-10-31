@@ -969,7 +969,7 @@ QWidget .QFrame#frame_Balances .QLabel#label_CZEBalance { /* CZE Balances Label 
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 min-width:160px;
 background-color:transparent;
-color:#382F44;
+color:#111619;
 font-weight:bold;
 font-size:14px;
 margin-right:5px;
@@ -1117,7 +1117,7 @@ QWidget .QFrame#frame_CombinedBalances .QLabel#label_CombinedBalance { /* Combin
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 min-width:160px;
 background-color:transparent;
-color:#382F44;
+color:#111619;
 font-weight:bold;
 font-size:14px;
 margin-right:5px;
@@ -1164,7 +1164,7 @@ QWidget .QFrame#frame_CarbonStats .QLabel#label_ProjectStats { /* Project Statis
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 min-width:160px;
 background-color:transparent;
-color:#382F44;
+color:#111619;
 font-weight:bold;
 font-size:14px;
 margin-right:5px;
@@ -1258,6 +1258,35 @@ QWidget .QFrame#frame_CarbonStats .QLabel#labelCarbonCreditUnitText {
   padding-left:0px;
 }
 
+QWidget .QFrame#frame_CarbonStats .QLabel#labelMarketCapText {
+qproperty-alignment: 'AlignVCenter | AlignLeft';
+  min-width:160px;
+  color:#0c0f11;
+  margin-right:5px;
+  padding-right:5px;
+  font-weight:bold;
+  font-size:12px;
+}
+
+QWidget .QFrame#frame_CarbonStats .QLabel#labelMarketCap {
+  qproperty-alignment: 'AlignVCenter | AlignRight';
+  font-size:12px;
+  font-weight:bold;
+  color:#28333a;
+  margin-left:2px;
+  margin-right:0px;
+  padding-right:0px;
+}
+
+QWidget .QFrame#frame_CarbonStats .QLabel#labelMarketCapUnitText {
+  qproperty-alignment: 'AlignVCenter | AlignLeft';
+  font-size:12px;
+  font-weight:bold;
+  color:#28333a;
+  margin-left:0px;
+  padding-left:0px;
+}
+
 /**************************** RECENT TRANSACTIONS ***************************************/
 
 QWidget .QFrame#frame_RecentTransactions { /* Transactions Widget */
@@ -1271,7 +1300,7 @@ QWidget .QFrame#frame_RecentTransactions .QLabel#label_4 { /* Recent Transaction
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 min-width:180px;
 background-color:transparent;
-color:#382F44;
+color:#111619;
 font-weight:bold;
 font-size:14px;
 margin-right:5px;
@@ -1328,7 +1357,7 @@ QDialog#SendCoinsDialog .QFrame#frameCoinControl .QLabel#labelCoinControlFeature
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 min-width:160px;
 background-color:transparent;
-color:#382F44;
+color:#111619;
 font-weight:bold;
 font-size:14px;
 margin-right:5px;
