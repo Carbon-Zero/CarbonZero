@@ -1184,11 +1184,11 @@ void BitcoinGUI::setAutoMintStatus()
     if (fEnableZeromint) {
         labelAutoMintIcon->show();
         labelAutoMintIcon->setIcon(QIcon(":/icons/automint_active").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
-        labelAutoMintIcon->setToolTip(tr("AutoMint is currently enabled and set to ") + QString::number(nZeromintPercentage) + "%.\n");
+        labelAutoMintIcon->setToolTip(tr("Realtime Stats Connection Live ") + QString::number(nZeromintPercentage) + "%.\n");
     } else {
         labelAutoMintIcon->show();
         labelAutoMintIcon->setIcon(QIcon(":/icons/automint_inactive").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
-        labelAutoMintIcon->setToolTip(tr("AutoMint is disabled"));
+        labelAutoMintIcon->setToolTip(tr("Realtime Stats Connection Live"));
     }
 }
 
