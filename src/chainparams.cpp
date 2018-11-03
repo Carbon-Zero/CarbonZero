@@ -160,20 +160,17 @@ public:
         genesis.nNonce = 779137;
 
         hashGenesisBlock = genesis.GetHash();
-        // printf("%s\n", hashGenesisBlock.ToString().c_str());
-	// printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
         assert(hashGenesisBlock == uint256("0x0000042a0b819d21acd7605d964025b5ceca173631b1bac2523b54e690257e2b"));
         assert(genesis.hashMerkleRoot == uint256("0xd69bd71023c7bc0274f9c1fe33251139cad6b5031bc9732003d601d0eabfe632"));
 
         
-	//vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
-        //vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
-	//vSeeds.push_back(CDNSSeedData(""));     // Primary DNS Seeder from Fuzzbawls
-        //vSeeds.push_back(CDNSSeedData(""));    // Secondary DNS Seeder from Fuzzbawls
-        //vSeeds.push_back(CDNSSeedData("coin-server.com", "coin-server.com"));         // Single node address
-        //vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
-        vSeeds.push_back(CDNSSeedData("13.58.16.18", "13.58.16.18"));           // Single node address
-	vSeeds.push_back(CDNSSeedData("18.223.253.176", "18.223.253.176"));           // Single node address
+	//vFixedSeeds.clear(); //! No Fixed Seeds
+        //vSeeds.clear();      //! No DNS Seeds
+        vSeeds.push_back(CDNSSeedData("54.86.71.197", "54.86.71.197"));           // Single node address
+	vSeeds.push_back(CDNSSeedData("54.209.143.250", "54.209.143.250"));           // Single node address
+	vSeeds.push_back(CDNSSeedData("35.169.184.177", "35.169.184.177"));           // Single node address
+	vSeeds.push_back(CDNSSeedData("18.207.37.156", "18.207.37.156"));           // Single node address
+	
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 28);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 81);
