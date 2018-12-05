@@ -198,9 +198,9 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     }
 
     // CZE Balance
-    CAmount nTotalBalance = balance + unconfirmedBalance;
-    CAmount pivAvailableBalance = balance - immatureBalance - nLockedBalance;
-    CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
+    CAmount nTotalBalance = balance + unconfirmedBalance + nLockedBalance;
+    CAmount pivAvailableBalance = balance - immatureBalance;
+    CAmount nUnlockedBalance = nTotalBalance - nLockedBalance -nLockedBalance;  // increment nLockedBalance twice because it was added to
 
     // CZE Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
