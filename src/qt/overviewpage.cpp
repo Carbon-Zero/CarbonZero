@@ -426,7 +426,7 @@ void OverviewPage::updateCarbonStats()
     _CO2.sprintf("%'12.0f",currentCO2);
     _CCT.sprintf("%'12.0f",currentCCT);
     _CMC.sprintf("$%'4.0f",currentMCap);
-    _CTX.sprintf("%'0.0f",currentCTX);
+    _CTX.sprintf("%'0.0f",currentTxns);
       
 
     //chainActive.Height()
@@ -437,6 +437,6 @@ void OverviewPage::updateCarbonStats()
     ui->labelCO2->setText(_CO2);
     ui->labelCarbonCredit->setText(_CCT);
     ui->labelMarketCap->setText(_CMC);
-    ui->labelMarketCap->setText(_CTX);
+    ui->labelTransactions->setText(_CTX);
   }
 }
