@@ -409,6 +409,7 @@ void OverviewPage::updateCarbonStats()
     QString _CO2;
     QString _CCT;
     QString _CMC;
+    QString _CTX;
 
     double _nblcks = clientModel->getNumBlocks();
     double _ntxs = clientModel->getNumTXs();
@@ -418,13 +419,14 @@ void OverviewPage::updateCarbonStats()
     //Adjust for 2.2% block overhead
     currentCCT = currentCO2 / 1022.0;
     currentMCap = currentCCT *9.5;
-
+    currentTxns = (_ntxs)
     //setlocale(LC_NUMERIC, "");
 
     _kWh.sprintf("%'12.0f",currentkWh);
     _CO2.sprintf("%'12.0f",currentCO2);
     _CCT.sprintf("%'12.0f",currentCCT);
     _CMC.sprintf("$%'4.0f",currentMCap);
+    _CTX.sprintf("%'0.0f",currentCTX);
       
 
     //chainActive.Height()
@@ -435,5 +437,6 @@ void OverviewPage::updateCarbonStats()
     ui->labelCO2->setText(_CO2);
     ui->labelCarbonCredit->setText(_CCT);
     ui->labelMarketCap->setText(_CMC);
+    ui->labelMarketCap->setText(_CTX);
   }
 }
