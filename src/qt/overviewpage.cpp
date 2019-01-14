@@ -199,9 +199,9 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     }
 
     // CZE Balance
-    CAmount nTotalBalance = balance + unconfirmedBalance;
-    CAmount pivAvailableBalance = balance - immatureBalance - nLockedBalance;
-    CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
+    CAmount nTotalBalance = balance + unconfirmedBalance + nLockedBalance;
+    CAmount pivAvailableBalance = balance - immatureBalance;
+    CAmount nUnlockedBalance = nTotalBalance - nLockedBalance -nLockedBalance;  // increment nLockedBalance twice because it was added to
 
     // CZE Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
@@ -428,6 +428,7 @@ void OverviewPage::updateCarbonStats()
     _CO2.sprintf("%'12.0f",currentCO2);
     _CCT.sprintf("%'12.0f",currentCZT);
     _CMC.sprintf("$%'4.0f",currentMCap);
+    _CTX.sprintf("%'0.0f",currentTxns);
       
 
     //chainActive.Height()
