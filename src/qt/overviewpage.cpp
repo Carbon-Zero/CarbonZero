@@ -418,7 +418,7 @@ void OverviewPage::updateCarbonStats()
     currentkWh = 464 * ((_ntxs - (2*_nblcks))+1000); // https://digiconomist.net/bitcoin-energy-consumption 1/13/19
     currentCO2 = 227.53 * ((_ntxs - (2*_nblcks))+1000); // https://digiconomist.net/bitcoin-energy-consumption 1/13/19
     currentCZT = currentCO2 / 1090.0; //Reduce tokens produced by 9% to make auditors happier.
-    currentMCap = currentCCT *7.125; //Reduce price by 25% off expected price of $9 to create conservative estimate.
+    currentMCap = currentCZT *7.125; //Reduce price by 25% off expected price of $9 to create conservative estimate.
     currentTXNS = (_ntxs);
 
     //setlocale(LC_NUMERIC, "");
