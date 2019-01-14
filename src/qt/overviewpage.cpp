@@ -115,9 +115,10 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
                                               currentWatchOnlyBalance(-1),
                                               currentWatchUnconfBalance(-1),
                                               currentWatchImmatureBalance(-1),
+                                              currentTXNS(0)
                                               currentkWh(0),
                                               currentCO2(0),
-                                              currentCCT(0),
+                                              currentCZT(0),
                                               currentMCap(0),
                                               txdelegate(new TxViewDelegate()),
                                               filter(0)
@@ -407,23 +408,25 @@ void OverviewPage::updateCarbonStats()
   {
     QString _kWh;
     QString _CO2;
-    QString _CCT;
+    QString _CZT;
     QString _CMC;
+    QString _TXNS;
 
     double _nblcks = clientModel->getNumBlocks();
     double _ntxs = clientModel->getNumTXs();
 
-    currentkWh = 898 * ((_ntxs - (2*_nblcks))+1000);
-    currentCO2 = 439.89 * ((_ntxs - (2*_nblcks))+1000);
-    //Adjust for 2.2% block overhead
-    currentCCT = currentCO2 / 1022.0;
-    currentMCap = currentCCT *9.5;
+    currentkWh = 464 * ((_ntxs - (2*_nblcks))+1000); // https://digiconomist.net/bitcoin-energy-consumption 1/13/19
+    currentCO2 = 227.53 * ((_ntxs - (2*_nblcks))+1000); // https://digiconomist.net/bitcoin-energy-consumption 1/13/19
+    currentCZT = currentCO2 / 1090.0; //Reduce tokens produced by 9% to make auditors happier.
+    currentMCap = currentCCT *7.125; //Reduce price by 25% off expected price of $9 to create conservative estimate.
+    currentTXNS = (_ntxs)
 
     //setlocale(LC_NUMERIC, "");
 
+    _TXNS.sprintf("%'0.0f",currentTXNS);
     _kWh.sprintf("%'12.0f",currentkWh);
     _CO2.sprintf("%'12.0f",currentCO2);
-    _CCT.sprintf("%'12.0f",currentCCT);
+    _CCT.sprintf("%'12.0f",currentCZT);
     _CMC.sprintf("$%'4.0f",currentMCap);
       
 
@@ -431,9 +434,10 @@ void OverviewPage::updateCarbonStats()
     //chainActive.Tip()->nChainTx
 
     // CarbonStats labels
+    ui->labelTransactions->setText(_TXNS)
     ui->labelEnergySaved->setText(_kWh);
     ui->labelCO2->setText(_CO2);
-    ui->labelCarbonCredit->setText(_CCT);
+    ui->labelCarbonCredit->setText(_CZT);
     ui->labelMarketCap->setText(_CMC);
   }
 }
