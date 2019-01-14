@@ -428,14 +428,12 @@ void OverviewPage::updateCarbonStats()
     _CO2.sprintf("%'12.0f",currentCO2);
     _CCT.sprintf("%'12.0f",currentCZT);
     _CMC.sprintf("$%'4.0f",currentMCap);
-    _CTX.sprintf("%'0.0f",currentTxns);
-      
 
     //chainActive.Height()
     //chainActive.Tip()->nChainTx
 
     // CarbonStats labels
-    ui->labelTransactions->setText(_TXNS)
+    ui->labelTransactions->setText(_TXNS);
     ui->labelEnergySaved->setText(_kWh);
     ui->labelCO2->setText(_CO2);
     ui->labelCarbonCredit->setText(_CZT);
