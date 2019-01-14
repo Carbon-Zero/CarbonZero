@@ -426,7 +426,7 @@ void OverviewPage::updateCarbonStats()
     _TXNS.sprintf("%'0.0f",currentTXNS);
     _kWh.sprintf("%'12.0f",currentkWh);
     _CO2.sprintf("%'12.0f",currentCO2);
-    _CCT.sprintf("%'12.0f",currentCZT);
+    _CZT.sprintf("%'12.0f",currentCZT);
     _CMC.sprintf("$%'4.0f",currentMCap);
 
     //chainActive.Height()
