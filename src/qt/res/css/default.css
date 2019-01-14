@@ -842,6 +842,11 @@ QDialog#RPCConsole QTableView#peerWidget::item { /* Peers Table Items */
 color:#333;
 }
 
+QDialog#RPCConsole QTableView#peerWidget::item:selected { /* Peers Table Item Selected */
+background-color:#28333a;
+color:#fff;
+}
+
 QDialog#RPCConsole QPushButton#openDebugLogfileButton {
 max-width:60px;
 }
@@ -1169,6 +1174,35 @@ font-weight:bold;
 font-size:14px;
 margin-right:5px;
 padding-right:5px;
+}
+
+QWidget .QFrame#frame_CarbonStats .QLabel#labelTransactionsText {
+  qproperty-alignment: 'AlignVCenter | AlignLeft';
+  min-width:160px;
+  color:#0c0f11;
+  margin-right:5px;
+  padding-right:5px;
+  font-weight:bold;
+  font-size:12px;
+}
+
+QWidget .QFrame#frame_CarbonStats .QLabel#labelTransactions {
+  qproperty-alignment: 'AlignVCenter | AlignRight';
+  font-size:12px;
+  font-weight:bold;
+  color:#28333a;
+  margin-left:2px;
+  margin-right:0px;
+  padding-right:0px;
+}
+
+QWidget .QFrame#frame_CarbonStats .QLabel#labelTransactionsUnitText {
+  qproperty-alignment: 'AlignVCenter | AlignLeft';
+  font-size:12px;
+  font-weight:bold;
+  color:#28333a;
+  margin-left:0px;
+  padding-left:0px;
 }
 
 QWidget .QFrame#frame_CarbonStats .QLabel#labelEnergySavedText {

@@ -60,9 +60,10 @@ private:
     CAmount currentWatchOnlyBalance;
     CAmount currentWatchUnconfBalance;
     CAmount currentWatchImmatureBalance;
+    double currentTXNS;
     double currentkWh;
     double currentCO2;
-    double currentCCT;
+    double currentCZT;
     double currentMCap;
     int nDisplayUnit;
     void getPercentage(CAmount nTotalBalance, CAmount nZerocoinBalance, QString& sCZEPercentage, QString& szcarbonPercentage);
