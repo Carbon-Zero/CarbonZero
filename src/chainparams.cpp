@@ -243,7 +243,7 @@ public:
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // CarbonZero: 1 day
-        nTargetSpacing = 1 * 60;  // CarbonZero: 1 minute
+        nTargetSpacing = 1 * 30;  // CarbonZero: 1 minute
         nLastPOWBlock = 300;
         nMaturity = 5;
         nMasternodeCountDrift = 4;
