@@ -391,9 +391,10 @@ CNode* ConnectNode(CAddress addrConnect, const char* pszDest, bool obfuScationMa
     if (pszDest == NULL) {
         // we clean masternode connections in CMasternodeMan::ProcessMasternodeConnections()
         // so should be safe to skip this and connect to local Hot MN on CActiveMasternode::ManageStatus()
-        if (IsLocal(addrConnect) && !obfuScationMaster)
+        if (IsLocal(addrConnect) && !obfuScationMaster) {
+            LogPrint("net", "ConnectNode() is local (%s) and is not obfuscationMaster (%d)\n", addrConnect.ToString(), obfuScationMaster );
             return NULL;
-
+        }
         // Look for an existing connection
         CNode* pnode = FindNode((CService)addrConnect);
         if (pnode) {

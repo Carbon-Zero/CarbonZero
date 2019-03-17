@@ -240,10 +240,11 @@ void CMasternodeSync::Process()
         /* 
             Resync if we lose all masternodes from sleep/wake or failure to sync originally
         */
-        if (mnodeman.CountEnabled() == 0) {
+        if (Params().NetworkID() == CBaseChainParams::MAIN && mnodeman.CountEnabled() == 0) {
             Reset();
-        } else
+        } else {
             return;
+        }
     }
 
     //try syncing again

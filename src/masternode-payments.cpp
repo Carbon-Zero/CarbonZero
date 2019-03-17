@@ -36,6 +36,8 @@ CMasternodePaymentDB::CMasternodePaymentDB()
 
 bool CMasternodePaymentDB::Write(const CMasternodePayments& objToSave)
 {
+    STACK_TRACE();
+
     int64_t nStart = GetTimeMillis();
 
     // serialize, checksum data up to that point, then append checksum
@@ -67,6 +69,8 @@ bool CMasternodePaymentDB::Write(const CMasternodePayments& objToSave)
 
 CMasternodePaymentDB::ReadResult CMasternodePaymentDB::Read(CMasternodePayments& objToLoad, bool fDryRun)
 {
+    STACK_TRACE();
+
     int64_t nStart = GetTimeMillis();
     // open input file, and associate with CAutoFile
     FILE* file = fopen(pathDB.string().c_str(), "rb");
@@ -149,6 +153,8 @@ CMasternodePaymentDB::ReadResult CMasternodePaymentDB::Read(CMasternodePayments&
 
 void DumpMasternodePayments()
 {
+    STACK_TRACE();
+
     int64_t nStart = GetTimeMillis();
 
     CMasternodePaymentDB paymentdb;
@@ -176,6 +182,8 @@ void DumpMasternodePayments()
 
 bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMinted)
 {
+    STACK_TRACE();
+
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (pindexPrev == NULL) return true;
 
@@ -225,6 +233,8 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
 
 bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
 {
+    STACK_TRACE();
+
     TrxValidationStatus transactionStatus = TrxValidationStatus::InValid;
 
     if (!masternodeSync.IsSynced()) { //there is no budget data to use to check anything -- find the longest chain
@@ -272,6 +282,8 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
 
 void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStake, bool fZCZEStake)
 {
+    STACK_TRACE();
+
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev) return;
 
@@ -284,6 +296,8 @@ void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStak
 
 std::string GetRequiredPaymentsString(int nBlockHeight)
 {
+    STACK_TRACE();
+
     if (IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS) && budget.IsBudgetPaymentBlock(nBlockHeight)) {
         return budget.GetRequiredPaymentsString(nBlockHeight);
     } else {
@@ -293,6 +307,8 @@ std::string GetRequiredPaymentsString(int nBlockHeight)
 
 void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFees, bool fProofOfStake, bool fZCZEStake)
 {
+    STACK_TRACE();
+
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev) return;
 
@@ -438,6 +454,8 @@ void CMasternodePayments::ProcessMessageMasternodePayments(CNode* pfrom, std::st
 
 bool CMasternodePaymentWinner::Sign(CKey& keyMasternode, CPubKey& pubKeyMasternode)
 {
+    STACK_TRACE();
+
     std::string errorMessage;
     std::string strMasterNodeSignMessage;
 
@@ -460,6 +478,8 @@ bool CMasternodePaymentWinner::Sign(CKey& keyMasternode, CPubKey& pubKeyMasterno
 
 bool CMasternodePayments::GetBlockPayee(int nBlockHeight, CScript& payee)
 {
+    STACK_TRACE();
+
     if (mapMasternodeBlocks.count(nBlockHeight)) {
         return mapMasternodeBlocks[nBlockHeight].GetPayee(payee);
     }
@@ -471,6 +491,8 @@ bool CMasternodePayments::GetBlockPayee(int nBlockHeight, CScript& payee)
 // -- Only look ahead up to 8 blocks to allow for propagation of the latest 2 winners
 bool CMasternodePayments::IsScheduled(CMasternode& mn, int nNotBlockHeight)
 {
+    STACK_TRACE();
+
     LOCK(cs_mapMasternodeBlocks);
 
     int nHeight;
@@ -500,6 +522,8 @@ bool CMasternodePayments::IsScheduled(CMasternode& mn, int nNotBlockHeight)
 
 bool CMasternodePayments::AddWinningMasternode(CMasternodePaymentWinner& winnerIn)
 {
+    STACK_TRACE();
+
     uint256 blockHash = 0;
     if (!GetBlockHash(blockHash, winnerIn.nBlockHeight - 100)) {
         return false;
@@ -527,6 +551,8 @@ bool CMasternodePayments::AddWinningMasternode(CMasternodePaymentWinner& winnerI
 
 bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
 {
+    STACK_TRACE();
+
     LOCK(cs_vecPayments);
 
     int nMaxSignatures = 0;
@@ -589,6 +615,8 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
 
 std::string CMasternodeBlockPayees::GetRequiredPaymentsString()
 {
+    STACK_TRACE();
+
     LOCK(cs_vecPayments);
 
     std::string ret = "Unknown";
@@ -610,6 +638,8 @@ std::string CMasternodeBlockPayees::GetRequiredPaymentsString()
 
 std::string CMasternodePayments::GetRequiredPaymentsString(int nBlockHeight)
 {
+    STACK_TRACE();
+
     LOCK(cs_mapMasternodeBlocks);
 
     if (mapMasternodeBlocks.count(nBlockHeight)) {
@@ -621,6 +651,8 @@ std::string CMasternodePayments::GetRequiredPaymentsString(int nBlockHeight)
 
 bool CMasternodePayments::IsTransactionValid(const CTransaction& txNew, int nBlockHeight)
 {
+    STACK_TRACE();
+
     LOCK(cs_mapMasternodeBlocks);
 
     if (mapMasternodeBlocks.count(nBlockHeight)) {
@@ -632,6 +664,8 @@ bool CMasternodePayments::IsTransactionValid(const CTransaction& txNew, int nBlo
 
 void CMasternodePayments::CleanPaymentList()
 {
+    STACK_TRACE();
+
     LOCK2(cs_mapMasternodePayeeVotes, cs_mapMasternodeBlocks);
 
     int nHeight;
@@ -661,6 +695,8 @@ void CMasternodePayments::CleanPaymentList()
 
 bool CMasternodePaymentWinner::IsValid(CNode* pnode, std::string& strError)
 {
+    STACK_TRACE();
+
     CMasternode* pmn = mnodeman.Find(vinMasternode);
 
     if (!pmn) {
@@ -766,12 +802,16 @@ bool CMasternodePayments::ProcessBlock(int nBlockHeight)
 
 void CMasternodePaymentWinner::Relay()
 {
+    STACK_TRACE();
+
     CInv inv(MSG_MASTERNODE_WINNER, GetHash());
     RelayInv(inv);
 }
 
 bool CMasternodePaymentWinner::SignatureValid()
 {
+    STACK_TRACE();
+
     CMasternode* pmn = mnodeman.Find(vinMasternode);
 
     if (pmn != NULL) {
@@ -792,6 +832,8 @@ bool CMasternodePaymentWinner::SignatureValid()
 
 void CMasternodePayments::Sync(CNode* node, int nCountNeeded)
 {
+    STACK_TRACE();
+
     LOCK(cs_mapMasternodePayeeVotes);
 
     int nHeight;
@@ -829,6 +871,8 @@ std::string CMasternodePayments::ToString() const
 
 int CMasternodePayments::GetOldestBlock()
 {
+    STACK_TRACE();
+
     LOCK(cs_mapMasternodeBlocks);
 
     int nOldestBlock = std::numeric_limits<int>::max();
@@ -847,6 +891,8 @@ int CMasternodePayments::GetOldestBlock()
 
 int CMasternodePayments::GetNewestBlock()
 {
+    STACK_TRACE();
+
     LOCK(cs_mapMasternodeBlocks);
 
     int nNewestBlock = 0;

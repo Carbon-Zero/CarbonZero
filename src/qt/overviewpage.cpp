@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2018 The PIVX Developers
 // Copyright (c) 2015-2018 The CarbonZero developers
 // Distributed under the MIT/X11 software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.F
 
 #include "overviewpage.h"
 #include "ui_overviewpage.h"
@@ -418,7 +418,7 @@ void OverviewPage::updateCarbonStats()
     currentkWh = 464 * ((_ntxs - (2*_nblcks))+1000); // https://digiconomist.net/bitcoin-energy-consumption 1/13/19
     currentCO2 = 227.53 * ((_ntxs - (2*_nblcks))+1000); // https://digiconomist.net/bitcoin-energy-consumption 1/13/19
     currentCZT = currentCO2 / 1090.0; //Reduce tokens produced by 9% to make auditors happier.
-    currentMCap = currentCZT *9;
+    currentMCap = currentCZT * 2.75;
     currentTXNS = (_ntxs);
 
     //setlocale(LC_NUMERIC, "");

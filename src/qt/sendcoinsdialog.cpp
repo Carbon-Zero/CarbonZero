@@ -59,7 +59,11 @@ SendCoinsDialog::SendCoinsDialog(QWidget* parent) : QDialog(parent, Qt::WindowSy
     // UTXO Splitter
     connect(ui->splitBlockCheckBox, SIGNAL(stateChanged(int)), this, SLOT(splitBlockChecked(int)));
     connect(ui->splitBlockLineEdit, SIGNAL(textChanged(const QString&)), this, SLOT(splitBlockLineEditChanged(const QString&)));
-
+    
+    // Bitcoin Checkbox
+    connect(ui->bitcoinCheckBox, SIGNAL(stateChanged(int)), this, SLOT(bitcoinCheckbox(int)));
+    ui->bitcoinCheckBox->setChecked(1);
+            
     // CarbonZero specific
     QSettings settings;
     if (!settings.contains("bUseObfuScation"))
@@ -649,9 +653,9 @@ void SendCoinsDialog::processSendCoinsReturn(const WalletModel::SendCoinsReturn&
             msgParams.first = tr("Error: The wallet was unlocked only to anonymize coins.");
         break;
 
-    case WalletModel::InsaneFee:
-        msgParams.first = tr("A fee %1 times higher than %2 per kB is considered an insanely high fee.").arg(10000).arg(BitcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(), ::minRelayTxFee.GetFeePerK()));
-        break;
+    //case WalletModel::InsaneFee:
+    //    msgParams.first = tr("A fee %1 times higher than %2 per kB is considered an insanely high fee.").arg(10000).arg(BitcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(), ::minRelayTxFee.GetFeePerK()));
+    //    break;
     // included to prevent a compiler warning.
     case WalletModel::OK:
     default:
