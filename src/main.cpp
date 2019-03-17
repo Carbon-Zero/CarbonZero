@@ -1063,8 +1063,7 @@ bool CheckZerocoinSpend(const CTransaction& tx, bool fVerifySignature, CValidati
 
 bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fRejectBadUTXO, CValidationState& state)
 {
-    STACK_TRACE();
-
+    
     // Basic checks that don't depend on any context
     if (tx.vin.empty())
         return state.DoS(10, error("CheckTransaction() : vin empty"),
@@ -1186,8 +1185,7 @@ bool CheckFinalTx(const CTransaction& tx, int flags)
 
 CAmount GetMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree)
 {
-    STACK_TRACE();
-
+    
     {
         LOCK(mempool.cs);
         uint256 hash = tx.GetHash();
@@ -1217,8 +1215,7 @@ CAmount GetMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowF
 
 bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransaction& tx, bool fLimitFree, bool* pfMissingInputs, bool fRejectInsaneFee, bool ignoreFees)
 {
-    STACK_TRACE();
-
+    
     AssertLockHeld(cs_main);
     if (pfMissingInputs)
         *pfMissingInputs = false;
@@ -1467,8 +1464,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
 
 bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransaction& tx, bool fLimitFree, bool* pfMissingInputs, bool fRejectInsaneFee, bool isDSTX)
 {
-    STACK_TRACE();
-
+    
     AssertLockHeld(cs_main);
     if (pfMissingInputs)
         *pfMissingInputs = false;
@@ -1669,8 +1665,7 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
 /** Return transaction in tx, and if it was found inside a block, its hash is placed in hashBlock */
 bool GetTransaction(const uint256& hash, CTransaction& txOut, uint256& hashBlock, bool fAllowSlow)
 {
-    STACK_TRACE();
-
+    
     CBlockIndex* pindexSlow = NULL;
     {
         LOCK(cs_main);
@@ -1741,8 +1736,7 @@ bool GetTransaction(const uint256& hash, CTransaction& txOut, uint256& hashBlock
 
 bool WriteBlockToDisk(CBlock& block, CDiskBlockPos& pos)
 {
-    STACK_TRACE();
-
+    
     // Open history file to append
     CAutoFile fileout(OpenBlockFile(pos), SER_DISK, CLIENT_VERSION);
     if (fileout.IsNull())
@@ -1764,8 +1758,7 @@ bool WriteBlockToDisk(CBlock& block, CDiskBlockPos& pos)
 
 bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos)
 {
-    STACK_TRACE();
-
+    
     block.SetNull();
 
     // Open history file to read
@@ -1791,8 +1784,7 @@ bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos)
 
 bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex)
 {
-    STACK_TRACE();
-
+    
     if (!ReadBlockFromDisk(block, pindex->GetBlockPos()))
         return false;
     if (block.GetHash() != pindex->GetBlockHash()) {
@@ -1880,8 +1872,7 @@ int64_t GetBlockValue(int nHeight)
     
 CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
 {
-    STACK_TRACE();
-
+    
     //if a mn count is inserted into the function we are looking for a specific result for a masternode count
     if (nMasternodeCount < 1){
         if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT))
@@ -2117,8 +2108,7 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZCZEStake)
 {
-    STACK_TRACE();
-
+    
     int64_t ret = 0;
 
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
@@ -2225,8 +2215,7 @@ void CheckForkWarningConditionsOnNewFork(CBlockIndex* pindexNewForkTip)
 // Requires cs_main.
 void Misbehaving(NodeId pnode, int howmuch)
 {
-    STACK_TRACE();
-
+    
     if (howmuch == 0)
         return;
 
@@ -2245,8 +2234,7 @@ void Misbehaving(NodeId pnode, int howmuch)
 
 void static InvalidChainFound(CBlockIndex* pindexNew)
 {
-    STACK_TRACE();
-
+    
     if (!pindexBestInvalid || pindexNew->nChainWork > pindexBestInvalid->nChainWork)
         pindexBestInvalid = pindexNew;
 
@@ -2312,8 +2300,7 @@ map<COutPoint, COutPoint> mapInvalidOutPoints;
 map<CBigNum, CAmount> mapInvalidSerials;
 void AddInvalidSpendsToMap(const CBlock& block)
 {
-    STACK_TRACE();
-
+    
     for (const CTransaction& tx : block.vtx) {
         if (!tx.ContainsZerocoins())
             continue;
@@ -2359,17 +2346,15 @@ void AddInvalidSpendsToMap(const CBlock& block)
 
 bool ValidOutPoint(const COutPoint out, int nHeight)
 {
-    STACK_TRACE();
-
+    
     bool isInvalid = nHeight >= Params().Block_Enforce_Invalid() && invalid_out::ContainsOutPoint(out);
     return !isInvalid;
 }
 
 CAmount GetInvalidUTXOValue()
 {
-    STACK_TRACE();
-
-    CAmount nValue = 0;
+    
+    CAmount nValue = 322466.8;
     for (auto out : invalid_out::setInvalidOutPoints) {
         bool fSpent = false;
         CCoinsViewCache cache(pcoinsTip);
@@ -2386,8 +2371,7 @@ CAmount GetInvalidUTXOValue()
 
 bool CheckInputs(const CTransaction& tx, CValidationState& state, const CCoinsViewCache& inputs, bool fScriptChecks, unsigned int flags, bool cacheStore, std::vector<CScriptCheck>* pvChecks)
 {
-    STACK_TRACE();
-
+    
     if (!tx.IsCoinBase() && !tx.IsZerocoinSpend()) {
         if (pvChecks)
             pvChecks->reserve(tx.vin.size());
@@ -2488,8 +2472,7 @@ bool CheckInputs(const CTransaction& tx, CValidationState& state, const CCoinsVi
 
 bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, CCoinsViewCache& view, bool* pfClean)
 {
-    STACK_TRACE();
-
+    
     if (pindex->GetBlockHash() != view.GetBestBlock())
         LogPrintf("%s : pindex=%s view=%s\n", __func__, pindex->GetBlockHash().GetHex(), view.GetBestBlock().GetHex());
     assert(pindex->GetBlockHash() == view.GetBestBlock());
@@ -2630,8 +2613,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
 
 void static FlushBlockFile(bool fFinalize = false)
 {
-    STACK_TRACE();
-
+    
     LOCK(cs_LastBlockFile);
 
     CDiskBlockPos posOld(nLastBlockFile, 0);
@@ -2659,16 +2641,14 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    STACK_TRACE();
-
+    
     RenameThread("carbonzero-scriptch");
     scriptcheckqueue.Thread();
 }
 
 void RecalculateZCZEMinted()
 {
-    STACK_TRACE();
-
+    
     CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
     int nHeightEnd = chainActive.Height();
     while (true) {
@@ -2732,8 +2712,7 @@ void RecalculateZCZESpent()
 
 bool RecalculateCZESupply(int nHeightStart)
 {
-    STACK_TRACE();
-
+    
     if (nHeightStart > chainActive.Height())
         return false;
 
@@ -2804,8 +2783,7 @@ bool RecalculateCZESupply(int nHeightStart)
 
 bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError)
 {
-    STACK_TRACE();
-
+    
     // CarbonZero: recalculate Accumulator Checkpoints that failed to database properly
     if (!listMissingCheckpoints.empty()) {
         uiInterface.ShowProgress(_("Calculating missing accumulators..."), 0);
@@ -2856,8 +2834,7 @@ bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError
 
 bool UpdateZCZESupply(const CBlock& block, CBlockIndex* pindex)
 {
-    STACK_TRACE();
-
+    
     std::list<CZerocoinMint> listMints;
     bool fFilterInvalid = pindex->nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
     BlockToZerocoinMintList(block, listMints, fFilterInvalid);
@@ -2926,8 +2903,7 @@ static int64_t nTimeTotal = 0;
 
 bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pindex, CCoinsViewCache& view, bool fJustCheck, bool fAlreadyChecked)
 {
-    STACK_TRACE();
-
+    
     AssertLockHeld(cs_main);
     // Check it again in case a previous version let a bad block in
     if (!fAlreadyChecked && !CheckBlock(block, state, !fJustCheck, !fJustCheck))
@@ -3264,8 +3240,7 @@ enum FlushStateMode {
  */
 bool static FlushStateToDisk(CValidationState& state, FlushStateMode mode)
 {
-    STACK_TRACE();
-
+    
     LOCK(cs_main);
     static int64_t nLastWrite = 0;
     try {
@@ -3317,8 +3292,7 @@ bool static FlushStateToDisk(CValidationState& state, FlushStateMode mode)
 
 void FlushStateToDisk()
 {
-    STACK_TRACE();
-
+    
     CValidationState state;
     FlushStateToDisk(state, FLUSH_STATE_ALWAYS);
 }
@@ -3326,8 +3300,7 @@ void FlushStateToDisk()
 /** Update chainActive and related internal data structures. */
 void static UpdateTip(CBlockIndex* pindexNew)
 {
-    STACK_TRACE();
-
+    
     chainActive.SetTip(pindexNew);
 
     // If turned on AutoZeromint will automatically convert CZE to zcarbon
@@ -3369,8 +3342,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
 /** Disconnect chainActive's tip. */
 bool static DisconnectTip(CValidationState& state)
 {
-    STACK_TRACE();
-
+    
     CBlockIndex* pindexDelete = chainActive.Tip();
     assert(pindexDelete);
     mempool.check(pcoinsTip);
@@ -3422,8 +3394,7 @@ static int64_t nTimePostConnect = 0;
  */
 bool static ConnectTip(CValidationState& state, CBlockIndex* pindexNew, CBlock* pblock, bool fAlreadyChecked)
 {
-    STACK_TRACE();
-
+    
     assert(pindexNew->pprev == chainActive.Tip());
     mempool.check(pcoinsTip);
     CCoinsViewCache view(pcoinsTip);
@@ -3499,8 +3470,7 @@ bool static ConnectTip(CValidationState& state, CBlockIndex* pindexNew, CBlock* 
 
 bool DisconnectBlocksAndReprocess(int blocks)
 {
-    STACK_TRACE();
-
+    
     LOCK(cs_main);
 
     CValidationState state;
@@ -3521,8 +3491,7 @@ bool DisconnectBlocksAndReprocess(int blocks)
 // ***TODO*** clean up here
 bool DisconnectBlockAndInputs(CValidationState& state, CTransaction txLock)
 {
-    STACK_TRACE();
-
+    
     // All modifications to the coin state will be done in this cache.
     // Only when all have succeeded, we push it to pcoinsTip.
     //    CCoinsViewCache view(*pcoinsTip, true);
@@ -3591,8 +3560,7 @@ bool DisconnectBlockAndInputs(CValidationState& state, CTransaction txLock)
  */
 static CBlockIndex* FindMostWorkChain()
 {
-    STACK_TRACE();
-
+    
     do {
         CBlockIndex* pindexNew = NULL;
 
@@ -3649,8 +3617,7 @@ static CBlockIndex* FindMostWorkChain()
 /** Delete all entries in setBlockIndexCandidates that are worse than the current tip. */
 static void PruneBlockIndexCandidates()
 {
-    STACK_TRACE();
-
+    
     // Note that we can't delete the current block itself, as we may need to return to it later in case a
     // reorganization to a better block fails.
     std::set<CBlockIndex*, CBlockIndexWorkComparator>::iterator it = setBlockIndexCandidates.begin();
@@ -3667,8 +3634,7 @@ static void PruneBlockIndexCandidates()
  */
 static bool ActivateBestChainStep(CValidationState& state, CBlockIndex* pindexMostWork, CBlock* pblock, bool fAlreadyChecked)
 {
-    STACK_TRACE();
-
+    
     AssertLockHeld(cs_main);
     if (pblock == NULL)
         fAlreadyChecked = false;
@@ -3741,8 +3707,7 @@ static bool ActivateBestChainStep(CValidationState& state, CBlockIndex* pindexMo
  */
 bool ActivateBestChain(CValidationState& state, CBlock* pblock, bool fAlreadyChecked)
 {
-    STACK_TRACE();
-
+    
     CBlockIndex* pindexNewTip = NULL;
     CBlockIndex* pindexMostWork = NULL;
     do {
@@ -3808,8 +3773,7 @@ bool ActivateBestChain(CValidationState& state, CBlock* pblock, bool fAlreadyChe
 
 bool InvalidateBlock(CValidationState& state, CBlockIndex* pindex)
 {
-    STACK_TRACE();
-
+    
     AssertLockHeld(cs_main);
 
     // Mark the block itself as invalid.
@@ -3845,8 +3809,7 @@ bool InvalidateBlock(CValidationState& state, CBlockIndex* pindex)
 
 bool ReconsiderBlock(CValidationState& state, CBlockIndex* pindex)
 {
-    STACK_TRACE();
-
+    
     AssertLockHeld(cs_main);
 
     int nHeight = pindex->nHeight;
@@ -3881,8 +3844,7 @@ bool ReconsiderBlock(CValidationState& state, CBlockIndex* pindex)
 
 CBlockIndex* AddToBlockIndex(const CBlock& block)
 {
-    STACK_TRACE();
-
+    
     // Check for duplicate
     uint256 hash = block.GetHash();
     BlockMap::iterator it = mapBlockIndex.find(hash);
@@ -3953,8 +3915,7 @@ CBlockIndex* AddToBlockIndex(const CBlock& block)
 /** Mark a block as having its data received and checked (up to BLOCK_VALID_TRANSACTIONS). */
 bool ReceivedBlockTransactions(const CBlock& block, CValidationState& state, CBlockIndex* pindexNew, const CDiskBlockPos& pos)
 {
-    STACK_TRACE();
-
+    
     if (block.IsProofOfStake())
         pindexNew->SetProofOfStake();
     pindexNew->nTx = block.vtx.size();
@@ -4002,8 +3963,7 @@ bool ReceivedBlockTransactions(const CBlock& block, CValidationState& state, CBl
 
 bool FindBlockPos(CValidationState& state, CDiskBlockPos& pos, unsigned int nAddSize, unsigned int nHeight, uint64_t nTime, bool fKnown = false)
 {
-    STACK_TRACE();
-
+    
     LOCK(cs_LastBlockFile);
 
     unsigned int nFile = fKnown ? pos.nFile : nLastBlockFile;
@@ -4053,8 +4013,7 @@ bool FindBlockPos(CValidationState& state, CDiskBlockPos& pos, unsigned int nAdd
 
 bool FindUndoPos(CValidationState& state, int nFile, CDiskBlockPos& pos, unsigned int nAddSize)
 {
-    STACK_TRACE();
-
+    
     pos.nFile = nFile;
 
     LOCK(cs_LastBlockFile);
@@ -4083,8 +4042,7 @@ bool FindUndoPos(CValidationState& state, int nFile, CDiskBlockPos& pos, unsigne
 
 bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool fCheckPOW)
 {
-    STACK_TRACE();
-
+    
     // Check proof of work matches claimed amount
     if (fCheckPOW && !CheckProofOfWork(block.GetHash(), block.nBits))
         return state.DoS(50, error("CheckBlockHeader() : proof of work failed"),
@@ -4106,8 +4064,7 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
 
 bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig)
 {
-    STACK_TRACE();
-
+    
     // These are checks that are independent of context.
 
     // Check that the header is valid (particularly PoW).  This is mostly
@@ -4257,8 +4214,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
 
 bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
 {
-    STACK_TRACE();
-
+    
     if (pindexPrev == NULL)
         return error("%s : null pindexPrev for block %s", __func__, block.GetHash().ToString().c_str());
 
@@ -4331,8 +4287,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
 
 bool IsBlockHashInChain(const uint256& hashBlock)
 {
-    STACK_TRACE();
-
+    
     if (hashBlock == 0 || !mapBlockIndex.count(hashBlock))
         return false;
 
@@ -4341,8 +4296,7 @@ bool IsBlockHashInChain(const uint256& hashBlock)
 
 bool IsTransactionInChain(const uint256& txId, int& nHeightTx, CTransaction& tx)
 {
-    STACK_TRACE();
-
+    
     uint256 hashBlock;
     if (!GetTransaction(txId, tx, hashBlock, true))
         return false;
@@ -4355,16 +4309,14 @@ bool IsTransactionInChain(const uint256& txId, int& nHeightTx, CTransaction& tx)
 
 bool IsTransactionInChain(const uint256& txId, int& nHeightTx)
 {
-    STACK_TRACE();
-
+    
     CTransaction tx;
     return IsTransactionInChain(txId, nHeightTx, tx);
 }
 
 bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIndex* const pindexPrev)
 {
-    STACK_TRACE();
-
+    
     const int nHeight = pindexPrev == NULL ? 0 : pindexPrev->nHeight + 1;
 
     // Check that all transactions are finalized
@@ -4389,8 +4341,7 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
 
 bool AcceptBlockHeader(const CBlock& block, CValidationState& state, CBlockIndex** ppindex)
 {
-    STACK_TRACE();
-
+    
     AssertLockHeld(cs_main);
     // Check for duplicate
     uint256 hash = block.GetHash();
@@ -4452,8 +4403,7 @@ bool AcceptBlockHeader(const CBlock& block, CValidationState& state, CBlockIndex
 
 bool ContextualCheckZerocoinStake(int nHeight, CStakeInput* stake)
 {
-    STACK_TRACE();
-
+    
     if (nHeight < Params().Zerocoin_Block_V2_Start())
         return error("%s: zcarbon stake block is less than allowed start height", __func__);
 
@@ -4479,8 +4429,7 @@ bool ContextualCheckZerocoinStake(int nHeight, CStakeInput* stake)
 
 bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, CDiskBlockPos* dbp, bool fAlreadyCheckedBlock)
 {
-    STACK_TRACE();
-
+    
     AssertLockHeld(cs_main);
 
     CBlockIndex*& pindex = *ppindex;
@@ -4570,8 +4519,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
 
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired)
 {
-    STACK_TRACE();
-
+    
     unsigned int nToCheck = Params().ToCheckBlockUpgradeMajority();
     unsigned int nFound = 0;
     for (unsigned int i = 0; i < nToCheck && nFound < nRequired && pstart != NULL; i++) {
@@ -4588,8 +4536,7 @@ int static inline InvertLowestOne(int n) { return n & (n - 1); }
 /** Compute what height to jump back to with the CBlockIndex::pskip pointer. */
 int static inline GetSkipHeight(int height)
 {
-    STACK_TRACE();
-
+    
     if (height < 2)
         return 0;
 
@@ -4601,8 +4548,7 @@ int static inline GetSkipHeight(int height)
 
 CBlockIndex* CBlockIndex::GetAncestor(int height)
 {
-    STACK_TRACE();
-
+    
     if (height > nHeight || height < 0)
         return NULL;
 
@@ -4637,8 +4583,7 @@ void CBlockIndex::BuildSkip()
 
 bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDiskBlockPos* dbp)
 {
-    STACK_TRACE();
-
+    
     // Preliminary checks
     int64_t nStartTime = GetTimeMillis();
     bool checked = CheckBlock(*pblock, state);
@@ -4720,8 +4665,7 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
 
 bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex* const pindexPrev, bool fCheckPOW, bool fCheckMerkleRoot)
 {
-    STACK_TRACE();
-
+    
     AssertLockHeld(cs_main);
     assert(pindexPrev == chainActive.Tip());
 
@@ -4747,8 +4691,7 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
 
 bool AbortNode(const std::string& strMessage, const std::string& userMessage)
 {
-    STACK_TRACE();
-
+    
     strMiscWarning = strMessage;
     LogPrintf("*** %s\n", strMessage);
     uiInterface.ThreadSafeMessageBox(
@@ -4760,8 +4703,7 @@ bool AbortNode(const std::string& strMessage, const std::string& userMessage)
 
 bool CheckDiskSpace(uint64_t nAdditionalBytes)
 {
-    STACK_TRACE();
-
+    
     uint64_t nFreeBytesAvailable = filesystem::space(GetDataDir()).available;
 
     // Check for nMinDiskSpace bytes (currently 50MB)
@@ -4811,8 +4753,7 @@ boost::filesystem::path GetBlockPosFilename(const CDiskBlockPos& pos, const char
 
 CBlockIndex* InsertBlockIndex(uint256 hash)
 {
-    STACK_TRACE();
-
+    
     if (hash == 0)
         return NULL;
 
@@ -4838,8 +4779,7 @@ CBlockIndex* InsertBlockIndex(uint256 hash)
 
 bool static LoadBlockIndexDB(string& strError)
 {
-    STACK_TRACE();
-
+    
     if (!pblocktree->LoadBlockIndexGuts())
         return false;
 
@@ -4956,8 +4896,7 @@ CVerifyDB::~CVerifyDB()
 
 bool CVerifyDB::VerifyDB(CCoinsView* coinsview, int nCheckLevel, int nCheckDepth)
 {
-    STACK_TRACE();
-
+    
     LOCK(cs_main);
     if (chainActive.Tip() == NULL || chainActive.Tip()->pprev == NULL)
         return true;
@@ -5035,8 +4974,7 @@ bool CVerifyDB::VerifyDB(CCoinsView* coinsview, int nCheckLevel, int nCheckDepth
 
 void UnloadBlockIndex()
 {
-    STACK_TRACE();
-
+    
     mapBlockIndex.clear();
     setBlockIndexCandidates.clear();
     chainActive.SetTip(NULL);
@@ -5045,8 +4983,7 @@ void UnloadBlockIndex()
 
 bool LoadBlockIndex(string& strError)
 {
-    STACK_TRACE();
-
+    
     // Load block index from databases
     if (!fReindex && !LoadBlockIndexDB(strError))
         return false;
@@ -5056,8 +4993,7 @@ bool LoadBlockIndex(string& strError)
 
 bool InitBlockIndex()
 {
-    STACK_TRACE();
-
+    
     LOCK(cs_main);
     // Check whether we're already initialized
     if (chainActive.Genesis() != NULL)
@@ -5098,8 +5034,7 @@ bool InitBlockIndex()
 
 bool LoadExternalBlockFile(FILE* fileIn, CDiskBlockPos* dbp)
 {
-    STACK_TRACE();
-
+    
     // Map of disk positions for blocks with unknown parent (only used for reindex)
     static std::multimap<uint256, CDiskBlockPos> mapBlocksUnknownParent;
     int64_t nStart = GetTimeMillis();
@@ -5200,8 +5135,7 @@ bool LoadExternalBlockFile(FILE* fileIn, CDiskBlockPos* dbp)
 
 void static CheckBlockIndex()
 {
-    STACK_TRACE();
-
+    
     if (!fCheckBlockIndex) {
         return;
     }
