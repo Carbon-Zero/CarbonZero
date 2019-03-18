@@ -2760,7 +2760,7 @@ bool RecalculateCZESupply(int nHeightStart)
         nSupplyPrev = pindex->nMoneySupply;
 
         // Add fraudulent funds to the supply and remove any recovered funds.
-        if (pindex->nHeight == 22550 ) {
+        if (pindex->nHeight == 22610 ) {
             //Params().Zerocoin_Block_RecalculateAccumulators()
            
             LogPrintf("%s : Original money supply=%s\n", __func__, FormatMoney(pindex->nMoneySupply));
