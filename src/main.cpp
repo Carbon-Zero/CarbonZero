@@ -2718,9 +2718,9 @@ bool RecalculateCZESupply(int nHeightStart)
 
     CBlockIndex* pindex = chainActive[nHeightStart];
     CAmount nSupplyPrev = pindex->pprev->nMoneySupply;
-    if (nHeightStart == 1)
-        //Params().Zerocoin_StartHeight()
-        nSupplyPrev = CAmount(100000000);
+    //if (nHeightStart == Params().Zerocoin_StartHeight())
+    Ir (nHeightStart == 1)
+        nSupplyPrev = CAmount(-32246680000000);
 
     while (true) {
         if (pindex->nHeight % 1000 == 0)
