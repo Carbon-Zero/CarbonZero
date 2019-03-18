@@ -243,7 +243,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // CarbonZero: 1 day
         nTargetSpacing = 1 * 60;  // CarbonZero: 1 minute
-        nLastPOWBlock = 500;
+        nLastPOWBlock = 200;
         nMaturity = 5;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
@@ -260,7 +260,7 @@ public:
         nEnforceNewSporkKey = 1536182255; //!> Sporks signed after Wednesday, March 21, 2018 4:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1536182255; //!> Reject old spork key after Saturday, March 31, 2018 12:00:00 AM GMT
 
-        bnProofOfWorkLimit = ~uint256(0) >> 1;
+        //bnProofOfWorkLimit = ~uint256(0) >> 1;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1540529475;
