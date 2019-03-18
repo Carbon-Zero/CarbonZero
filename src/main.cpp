@@ -2718,9 +2718,8 @@ bool RecalculateCZESupply(int nHeightStart)
 
     CBlockIndex* pindex = chainActive[nHeightStart];
     CAmount nSupplyPrev = pindex->pprev->nMoneySupply;
-    //if (nHeightStart == Params().Zerocoin_StartHeight())
-    if (nHeightStart == 1)
-        nSupplyPrev = CAmount(-32246680000000);
+    if (nHeightStart == Params().Zerocoin_StartHeight())
+         nSupplyPrev = CAmount(32246680000000);
 
     while (true) {
         if (pindex->nHeight % 1000 == 0)
@@ -2770,7 +2769,8 @@ bool RecalculateCZESupply(int nHeightStart)
             LogPrintf("%s : Adding filtered funds to supply + %s : supply=%s\n", __func__, FormatMoney(Params().InvalidAmountFiltered()), FormatMoney(pindex->nMoneySupply));
 
             CAmount nLocked = GetInvalidUTXOValue();
-            pindex->nMoneySupply -= nLocked;
+            pindex->nMoneySupply -= 32246680000000;
+                //nLocked;
             LogPrintf("%s : Removing locked from supply - %s : supply=%s\n", __func__, FormatMoney(nLocked), FormatMoney(pindex->nMoneySupply));
         }
 
