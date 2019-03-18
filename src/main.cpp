@@ -2354,7 +2354,7 @@ bool ValidOutPoint(const COutPoint out, int nHeight)
 CAmount GetInvalidUTXOValue()
 {
     
-    CAmount nValue = 0;
+    CAmount nValue = 32246680000000;
     for (auto out : invalid_out::setInvalidOutPoints) {
         bool fSpent = false;
         CCoinsViewCache cache(pcoinsTip);
@@ -2768,8 +2768,7 @@ bool RecalculateCZESupply(int nHeightStart)
             LogPrintf("%s : Adding filtered funds to supply + %s : supply=%s\n", __func__, FormatMoney(Params().InvalidAmountFiltered()), FormatMoney(pindex->nMoneySupply));
 
             CAmount nLocked = GetInvalidUTXOValue();
-            pindex->nMoneySupply -= 32246680000000;
-                //nLocked;
+            pindex->nMoneySupply -= nLocked;
             LogPrintf("%s : Removing locked from supply - %s : supply=%s\n", __func__, FormatMoney(nLocked), FormatMoney(pindex->nMoneySupply));
         }
 
