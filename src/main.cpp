@@ -2354,7 +2354,7 @@ bool ValidOutPoint(const COutPoint out, int nHeight)
 CAmount GetInvalidUTXOValue()
 {
     
-    CAmount nValue = 322466.8;
+    CAmount nValue = 32246680000000;
     for (auto out : invalid_out::setInvalidOutPoints) {
         bool fSpent = false;
         CCoinsViewCache cache(pcoinsTip);
