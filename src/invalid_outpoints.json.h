@@ -33,10 +33,10 @@ std::string LoadInvalidOutPoints()
             "    \"txid\": \"b7f503e4277e7d888a597364f725869939190a4e90c55f8baf458e0b54c64631\",\n"
             "    \"n\": 1\n"
             "  },\n" 
-                    "  {\n"
+            "  {\n"
             "    \"txid\": \"ce84690a7f5df0bf2f677cd3e56ec28fcfe055b14788cb18b83f825f20a509b5\",\n"
             "    \"n\": 1\n"
-            "  },\n" 
+            "  }\n" 
             "]";
     return str;
 }
