@@ -133,7 +133,7 @@ public:
         nLastPOWBlock = 1000;
         nModifierUpdateBlock = 160; // No need to wait for this.
         nZerocoinStartHeight = 1950; // 
-        nZerocoinStartTime = 1539100800; // Needs testing before start
+        nZerocoinStartTime = 1536182255; //
         nBlockEnforceSerialRange = 1; // Serial Range Enforcements start immediately
         nBlockRecalculateAccumulators = 23760; // 
         nBlockFirstFraudulent = 1; // No bad serials.
