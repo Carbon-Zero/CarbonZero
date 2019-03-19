@@ -415,10 +415,10 @@ void OverviewPage::updateCarbonStats()
     double _nblcks = clientModel->getNumBlocks();
     double _ntxs = clientModel->getNumTXs();
 
-    currentkWh = 464 * ((_ntxs - (2*_nblcks))+1000); // https://digiconomist.net/bitcoin-energy-consumption 1/13/19
-    currentCO2 = 227.53 * ((_ntxs - (2*_nblcks))+1000); // https://digiconomist.net/bitcoin-energy-consumption 1/13/19
-    currentCZT = currentCO2 / 1090.0; //Reduce tokens produced by 9% to make auditors happier.
-    currentMCap = currentCZT * 2.75;
+    currentkWh = 482 * ((_ntxs - (2*_nblcks))+1000); // https://digiconomist.net/bitcoin-energy-consumption 1/13/19
+    currentCO2 = 341 * ((_ntxs - (2*_nblcks))+1000); // https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator
+    currentCZT = currentCO2 / 1001; //Reduce tokens produced by 1% to make auditors happier.
+    currentMCap = currentCZT * 3.50;
     currentTXNS = (_ntxs);
 
     //setlocale(LC_NUMERIC, "");
