@@ -132,7 +132,7 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 1000;
         nModifierUpdateBlock = 160; // No need to wait for this.
-        nZerocoinStartHeight = 9999999; // Future
+        nZerocoinStartHeight = 1950; // 
         nZerocoinStartTime = 1539100800; // Needs testing before start
         nBlockEnforceSerialRange = 1; // Serial Range Enforcements start immediately
         nBlockRecalculateAccumulators = 9999999; // Recalculation not needed. Will be correct from start.
