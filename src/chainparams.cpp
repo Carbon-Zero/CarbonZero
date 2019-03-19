@@ -135,7 +135,7 @@ public:
         nZerocoinStartHeight = 1950; // 
         nZerocoinStartTime = 1539100800; // Needs testing before start
         nBlockEnforceSerialRange = 1; // Serial Range Enforcements start immediately
-        nBlockRecalculateAccumulators = 9999999; // Recalculation not needed. Will be correct from start.
+        nBlockRecalculateAccumulators = 23760; // 
         nBlockFirstFraudulent = 1; // No bad serials.
         nBlockLastGoodCheckpoint = 1; // Accumulators will be valid from launch
         nBlockEnforceInvalidUTXO = 1; // Enforce valid UTXOs from launch
