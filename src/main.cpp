@@ -1820,7 +1820,7 @@ int64_t GetBlockValue(int nHeight)
 
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
         nStakeMinAge = 60 * 60 * 1; // 1 hours
-        if (nHeight < 200 && nHeight > 0)
+        if (nHeight < 199 && nHeight > 0)
             return 250000 * COIN;}
     {
     int64_t nSubsidy = 0;{
