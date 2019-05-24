@@ -966,6 +966,11 @@ min-width:400px;
 background-color:#ffffff;
 }
 
+QWidget .QFrame#frame_News { /* Right side */
+min-width:400px;
+background-color:#ffffff;
+}
+
 QWidget .QFrame#frame_Balances > .QLabel {
 min-width:190px;
 font-weight:normal;
@@ -1354,6 +1359,53 @@ font-size:12px;
 max-width:369px;
 margin-top:12px;
 margin-left:0px; /* CSS Voodoo - set to -66px to hide default transaction icons */
+}
+
+/**************************** NEWS ***************************************/
+
+QWidget .QFrame#frame_News { /* News Widget */
+min-width:410px;
+min-height:100px;
+margin-left:0;
+margin-top:0;
+}
+
+QWidget .QFrame#frame_News .QLabel#labelLatestNews { /* Latest News Label */
+qproperty-alignment: 'AlignVCenter | AlignLeft';
+min-width:180px;
+background-color:transparent;
+color:#111619;
+font-weight:bold;
+font-size:14px;
+margin-right:5px;
+padding-right:5px;
+}
+
+QWidget .QFrame#frame_News .QLabel#labelNewsStatus { /* News Sync Status */
+qproperty-alignment: 'AlignVCenter | AlignLeft';
+margin-left:3px;
+}
+
+QWidget .QFrame#frame_News QListWidget { /* Transaction List */
+font-weight:normal;
+font-size:12px;
+margin-top:12px;
+margin-left:0px; /* CSS Voodoo - set to -66px to hide default transaction icons */
+}
+
+#newsTitle {
+font-family: "Oswald";
+font-weight: bold;
+font-size: 14px;
+color: #111619;
+}
+
+#newsAuthor {
+font-family: "Open Sans";
+font-weight: lighter;
+font-size: 11px;
+color: #111619;
+margin-left: 5px;
 }
 
 /**************************** SEND DIALOG ***********************************************/
