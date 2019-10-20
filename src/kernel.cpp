@@ -300,7 +300,7 @@ bool Stake(CStakeInput* stakeInput, unsigned int nBits, unsigned int nTimeBlockF
     if (nTimeTx < nTimeBlockFrom)
         return error("CheckStakeKernelHash() : nTime violation");
 
-    if (nTimeBlockFrom + nStakeMinAge - (5 * 60) > nTimeTx) // Min age requirement - 5 minute margin for block time variance
+    if (nTimeBlockFrom + nStakeMinAge > nTimeTx) // Min age requirement 
         return error("CheckStakeKernelHash() : min age violation - nTimeBlockFrom=%d nStakeMinAge=%d nTimeTx=%d",
                      nTimeBlockFrom, nStakeMinAge, nTimeTx);
 
@@ -316,7 +316,7 @@ bool Stake(CStakeInput* stakeInput, unsigned int nBits, unsigned int nTimeBlockF
     bool fSuccess = false;
     unsigned int nTryTime = 0;
     int nHeightStart = chainActive.Height();
-    int nHashDrift = 30;
+    int nHashDrift = 60;
     CDataStream ssUniqueID = stakeInput->GetUniqueness();
     CAmount nValueIn = stakeInput->GetValue();
     for (int i = 0; i < nHashDrift; i++) //iterate the hashing
