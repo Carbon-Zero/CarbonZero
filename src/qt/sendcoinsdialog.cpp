@@ -61,8 +61,8 @@ SendCoinsDialog::SendCoinsDialog(QWidget* parent) : QDialog(parent, Qt::WindowSy
     connect(ui->splitBlockLineEdit, SIGNAL(textChanged(const QString&)), this, SLOT(splitBlockLineEditChanged(const QString&)));
     
     // Bitcoin Checkbox
-    connect(ui->bitcoinCheckBox, SIGNAL(stateChanged(int)), this, SLOT(bitcoinCheckbox(int)));
-    ui->bitcoinCheckBox->setChecked(1);
+    //connect(ui->bitcoinCheckBox, SIGNAL(stateChanged(int)), this, SLOT(bitcoinCheckbox(int)));
+    //ui->bitcoinCheckBox->setChecked(1);
             
     // CarbonZero specific
     QSettings settings;

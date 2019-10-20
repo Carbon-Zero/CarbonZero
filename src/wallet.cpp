@@ -3003,7 +3003,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
 
             // Calculate reward
             CAmount nReward;
-            nReward = GetBlockValue(chainActive.Height());
+            nReward = GetBlockValue(chainActive.Height()+1);
             nCredit += nReward;
 
             // Create the output transaction(s)
@@ -4113,8 +4113,8 @@ void CWallet::AutoCombineDust()
             vRewardCoins.push_back(out);
             nTotalRewardsValue += out.Value();
 
-            // Combine to the threshold and not way above
-            if (nTotalRewardsValue > nAutoCombineThreshold * COIN)
+            // Combine until our total is enough above the threshold to remain above after adjustments
+            if ((nTotalRewardsValue-nTotalRewardsValue/10) > nAutoCombineThreshold * COIN)
                 break;
 
             // Around 180 bytes per input. We use 190 to be certain
@@ -4160,7 +4160,7 @@ void CWallet::AutoCombineDust()
         }
 
         //we don't combine below the threshold unless the fees are 0 to avoid paying fees over fees over fees
-        if (!maxSize && nTotalRewardsValue < nAutoCombineThreshold * COIN && nFeeRet > 0)
+        if (!maxSize && vecSend[0].second < nAutoCombineThreshold * COIN && nFeeRet > 0)
             continue;
 
         if (!CommitTransaction(wtx, keyChange)) {
@@ -4168,7 +4168,8 @@ void CWallet::AutoCombineDust()
             continue;
         }
 
-        LogPrintf("AutoCombineDust sent transaction\n");
+        LogPrintf("AutoCombineDust sent transaction. Fee=%d, Total Value=%d Sending=%d\n",
+                  nFeeRet, nTotalRewardsValue, vecSend[0].second);
 
         delete coinControl;
     }
